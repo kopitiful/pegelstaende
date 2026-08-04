@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pegelstände Deutschland</title>
+<meta name="description" content="Wasserstände aller PEGELONLINE-Messstellen in Deutschland, mit echter Langzeit-Historie für bayerische Pegel an Donau und Main.">
+<link rel="icon" href="data:,">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    color-scheme: light;
+    --surface-1: #fcfcfb;
+    --surface-2: #f4f3f0;
+    --border: #e2e0da;
+    --text-primary: #0b0b0b;
+    --text-secondary: #52514e;
+    --text-muted: #8a8880;
+    --series-1: #2a78d6;
+    --series-1-soft: rgba(42, 120, 214, 0.14);
+    --accent-disabled: #cbc9c2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --surface-1: #1a1a19;
+      --surface-2: #232322;
+      --border: #34332f;
+      --text-primary: #ffffff;
+      --text-secondary: #c3c2b7;
+      --text-muted: #8a8880;
+      --series-1: #3987e5;
+      --series-1-soft: rgba(57, 135, 229, 0.18);
+      --accent-disabled: #3a3a37;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --surface-1: #1a1a19;
+    --surface-2: #232322;
+    --border: #34332f;
+    --text-primary: #ffffff;
+    --text-secondary: #c3c2b7;
+    --text-muted: #8a8880;
+    --series-1: #3987e5;
+    --series-1-soft: rgba(57, 135, 229, 0.18);
+    --accent-disabled: #3a3a37;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--surface-1);
+    color: var(--text-primary);
+  }
+  .wrap {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 32px 20px 60px;
+  }
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 0 4px;
+  }
+  .subtitle {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin: 0 0 28px;
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  select {
+    font: inherit;
+    font-size: 0.9rem;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--surface-2);
+    color: var(--text-primary);
+    min-width: 180px;
+  }
+  .ranges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 22px;
+  }
+  .range-btn {
+    font: inherit;
+    font-size: 0.85rem;
+    padding: 7px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--surface-2);
+    color: var(--text-secondary);
+    cursor: pointer;
+  }
+  .range-btn[aria-pressed="true"] {
+    background: var(--series-1);
+    border-color: var(--series-1);
+    color: #fff;
+  }
+  .range-btn:disabled {
+    cursor: not-allowed;
+    color: var(--accent-disabled);
+    border-color: var(--border);
+    background: var(--surface-2);
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .stat {
+    background: var(--surface-1);
+    padding: 12px 16px;
+  }
+  .stat .label {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+  }
+  .stat .value {
+    font-size: 1.15rem;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+  .chart-box {
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+    height: 360px;
+    position: relative;
+  }
+  .note {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin-top: 14px;
+    line-height: 1.5;
+  }
+  .empty {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    padding: 40px 0;
+    text-align: center;
+  }
+  footer {
+    margin-top: 40px;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Pegelstände Deutschland</h1>
+  <p class="subtitle">Live-Wasserstände aller PEGELONLINE-Messstellen (WSV). Für bayerische Pegel an Donau &amp; Main zusätzlich echte Langzeit-Historie (GKD Bayern).</p>
+
+  <div class="controls">
+    <select id="waterSelect" aria-label="Fluss"></select>
+    <select id="stationSelect" aria-label="Pegel"></select>
+  </div>
+
+  <div class="ranges" id="ranges">
+    <button class="range-btn" data-range="7d">1 Woche</button>
+    <button class="range-btn" data-range="31d">1 Monat</button>
+    <button class="range-btn" data-range="1y">1 Jahr</button>
+    <button class="range-btn" data-range="5y">5 Jahre</button>
+    <button class="range-btn" data-range="10y">10 Jahre</button>
+    <button class="range-btn" data-range="50y">50 Jahre</button>
+  </div>
+
+  <div class="stats" id="stats"></div>
+
+  <div class="chart-box">
+    <canvas id="chart"></canvas>
+    <div class="empty" id="emptyMsg" style="display:none"></div>
+  </div>
+
+  <p class="note" id="rangeNote"></p>
+
+  <footer id="footer"></footer>
+</div>
+
+<script>
+const DATA = "data/";
+let stations = [];
+let byWater = new Map();
+let currentStation = null;
+let currentRange = "7d";
+let chart = null;
+let liveCache = new Map();
+let historyCache = new Map();
+
+const RANGE_LABELS = {
+  "7d": "1 Woche", "31d": "1 Monat", "1y": "1 Jahr",
+  "5y": "5 Jahre", "10y": "10 Jahre", "50y": "50 Jahre",
+};
+const LIVE_RANGES = new Set(["7d", "31d"]);
+
+async function init() {
+  const [st, meta] = await Promise.all([
+    fetch(DATA + "stations.json").then(r => r.json()),
+    fetch(DATA + "meta.json").then(r => r.json()).catch(() => null),
+  ]);
+  stations = st;
+  for (const s of stations) {
+    if (!byWater.has(s.water)) byWater.set(s.water, []);
+    byWater.get(s.water).push(s);
+  }
+  for (const list of byWater.values()) list.sort((a, b) => (a.km ?? 0) - (b.km ?? 0));
+
+  const waterSelect = document.getElementById("waterSelect");
+  const waters = [...byWater.keys()].sort((a, b) => a.localeCompare(b, "de"));
+  for (const w of waters) {
+    const opt = document.createElement("option");
+    opt.value = w;
+    opt.textContent = titleCase(w) + ` (${byWater.get(w).length})`;
+    waterSelect.appendChild(opt);
+  }
+  const defaultWater = waters.includes("RHEIN") ? "RHEIN" : waters[0];
+  waterSelect.value = defaultWater;
+  waterSelect.addEventListener("change", () => populateStations(waterSelect.value));
+  populateStations(defaultWater);
+
+  document.getElementById("ranges").addEventListener("click", (e) => {
+    const btn = e.target.closest(".range-btn");
+    if (!btn || btn.disabled) return;
+    currentRange = btn.dataset.range;
+    updateRangeButtons();
+    render();
+  });
+
+  if (meta && meta.updated) {
+    const d = new Date(meta.updated);
+    document.getElementById("footer").textContent =
+      "Daten aktualisiert: " + d.toLocaleString("de-DE", { dateStyle: "medium", timeStyle: "short" }) +
+      " · Quellen: PEGELONLINE (WSV), GKD Bayern (Bayerisches Landesamt für Umwelt, CC BY 4.0)";
+  }
+}
+
+function titleCase(s) {
+  return s.toLowerCase().replace(/(^|[\s-])\p{L}/gu, c => c.toUpperCase());
+}
+
+function populateStations(water) {
+  const stationSelect = document.getElementById("stationSelect");
+  stationSelect.innerHTML = "";
+  const list = byWater.get(water) || [];
+  for (const s of list) {
+    const opt = document.createElement("option");
+    opt.value = s.uuid;
+    opt.textContent = titleCase(s.name) + (s.history ? " ★" : "");
+    stationSelect.appendChild(opt);
+  }
+  stationSelect.onchange = () => selectStation(stationSelect.value);
+  if (list.length) selectStation(list[0].uuid);
+}
+
+function selectStation(uuid) {
+  currentStation = stations.find(s => s.uuid === uuid) || null;
+  updateRangeButtons();
+  render();
+}
+
+function updateRangeButtons() {
+  const hasHistory = !!(currentStation && currentStation.history);
+  document.querySelectorAll(".range-btn").forEach(btn => {
+    const r = btn.dataset.range;
+    const needsHistory = !LIVE_RANGES.has(r);
+    btn.disabled = needsHistory && !hasHistory;
+    btn.setAttribute("aria-pressed", r === currentRange ? "true" : "false");
+    btn.title = btn.disabled
+      ? "Nur für bayerische Pegel an Donau/Main verfügbar (GKD Bayern)"
+      : "";
+  });
+  if (!hasHistory && !LIVE_RANGES.has(currentRange)) {
+    currentRange = "7d";
+    document.querySelectorAll(".range-btn").forEach(btn =>
+      btn.setAttribute("aria-pressed", btn.dataset.range === "7d" ? "true" : "false"));
+  }
+}
+
+async function getLive(uuid) {
+  if (liveCache.has(uuid)) return liveCache.get(uuid);
+  try {
+    const data = await fetch(DATA + `live/${uuid}.json`).then(r => r.ok ? r.json() : null);
+    liveCache.set(uuid, data);
+    return data;
+  } catch { return null; }
+}
+
+async function getHistory(gkdId) {
+  if (historyCache.has(gkdId)) return historyCache.get(gkdId);
+  try {
+    const data = await fetch(DATA + `history/${gkdId}.json`).then(r => r.ok ? r.json() : null);
+    historyCache.set(gkdId, data);
+    return data;
+  } catch { return null; }
+}
+
+function monthlyAggregate(dates, mean, max, min) {
+  const buckets = new Map();
+  for (let i = 0; i < dates.length; i++) {
+    const key = dates[i].slice(0, 7);
+    if (!buckets.has(key)) buckets.set(key, { sum: 0, n: 0, max: -Infinity, min: Infinity });
+    const b = buckets.get(key);
+    b.sum += mean[i]; b.n++;
+    b.max = Math.max(b.max, max[i]);
+    b.min = Math.min(b.min, min[i]);
+  }
+  const keys = [...buckets.keys()].sort();
+  return {
+    d: keys.map(k => k + "-15"),
+    mean: keys.map(k => Math.round((buckets.get(k).sum / buckets.get(k).n) * 10) / 10),
+    max: keys.map(k => buckets.get(k).max),
+    min: keys.map(k => buckets.get(k).min),
+  };
+}
+
+async function render() {
+  const emptyMsg = document.getElementById("emptyMsg");
+  const canvas = document.getElementById("chart");
+  if (!currentStation) return;
+
+  let labels = [], values = [], bandMax = null, bandMin = null;
+
+  if (LIVE_RANGES.has(currentRange)) {
+    const live = await getLive(currentStation.uuid);
+    if (live && live.t.length) {
+      const points = currentRange === "7d" ? 7 * 24 : live.t.length;
+      labels = live.t.slice(-points);
+      values = live.v.slice(-points);
+    }
+  } else {
+    const hist = currentStation.history ? await getHistory(currentStation.history.gkd_id) : null;
+    if (hist && hist.d.length) {
+      const days = { "1y": 365, "5y": 365 * 5, "10y": 365 * 10, "50y": 365 * 50 }[currentRange];
+      const n = Math.min(days, hist.d.length);
+      let d = hist.d.slice(-n), mean = hist.mean.slice(-n), max = hist.max.slice(-n), min = hist.min.slice(-n);
+      if (n > 365 * 3) {
+        const agg = monthlyAggregate(d, mean, max, min);
+        d = agg.d; mean = agg.mean; max = agg.max; min = agg.min;
+      }
+      labels = d; values = mean; bandMax = max; bandMin = min;
+    }
+  }
+
+  renderStats(labels, values);
+
+  if (!values.length) {
+    canvas.style.display = "none";
+    emptyMsg.style.display = "block";
+    emptyMsg.textContent = currentStation.history
+      ? "Keine Daten für diesen Zeitraum verfügbar."
+      : "Für diesen Pegel liegen nur Live-Daten (1 Woche / 1 Monat) vor.";
+    if (chart) { chart.destroy(); chart = null; }
+    return;
+  }
+  canvas.style.display = "block";
+  emptyMsg.style.display = "none";
+
+  const isDateOnly = !LIVE_RANGES.has(currentRange);
+  const datasets = [];
+  if (bandMax && bandMin) {
+    datasets.push({
+      label: "Maximum", data: bandMax, borderWidth: 0, pointRadius: 0,
+      backgroundColor: "transparent", fill: false,
+    });
+    datasets.push({
+      label: "Minimum", data: bandMin, borderWidth: 0, pointRadius: 0,
+      backgroundColor: getCss("--series-1-soft"), fill: "-1",
+    });
+  }
+  datasets.push({
+    label: "Wasserstand [cm]",
+    data: values,
+    borderColor: getCss("--series-1"),
+    backgroundColor: getCss("--series-1"),
+    pointRadius: 0,
+    borderWidth: 2,
+    tension: 0.15,
+    fill: false,
+  });
+
+  const textSecondary = getCss("--text-secondary");
+  const border = getCss("--border");
+
+  if (chart) chart.destroy();
+  chart = new Chart(canvas.getContext("2d"), {
+    type: "line",
+    data: { labels, datasets },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: "index", intersect: false },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            title: (items) => formatLabel(items[0].label, isDateOnly),
+            label: (item) => item.dataset.label === "Wasserstand [cm]"
+              ? `${item.formattedValue} cm` : null,
+          },
+          filter: (item) => item.dataset.label === "Wasserstand [cm]",
+        },
+      },
+      scales: {
+        x: {
+          ticks: { color: textSecondary, maxTicksLimit: 8, autoSkip: true },
+          grid: { color: border, display: false },
+        },
+        y: {
+          ticks: { color: textSecondary },
+          grid: { color: border },
+          title: { display: true, text: "cm", color: textSecondary },
+        },
+      },
+    },
+  });
+}
+
+function formatLabel(label, isDateOnly) {
+  if (isDateOnly) {
+    const d = new Date(label);
+    return d.toLocaleDateString("de-DE", { year: "numeric", month: "long", day: label.endsWith("-15") ? undefined : "numeric" });
+  }
+  const d = new Date(label);
+  return d.toLocaleString("de-DE", { dateStyle: "medium", timeStyle: "short" });
+}
+
+function getCss(varName) {
+  return getComputedStyle(document.body).getPropertyValue(varName).trim() || "#2a78d6";
+}
+
+function renderStats(labels, values) {
+  const el = document.getElementById("stats");
+  el.innerHTML = "";
+  if (!currentStation) return;
+  const items = [
+    ["Fluss", titleCase(currentStation.water)],
+    ["Pegel", titleCase(currentStation.name)],
+  ];
+  if (currentStation.km != null) items.push(["Fluss-km", currentStation.km.toFixed(1)]);
+  if (values.length) {
+    items.push(["Aktuell", values[values.length - 1].toFixed(0) + " cm"]);
+    items.push(["Höchststand", Math.max(...values).toFixed(0) + " cm"]);
+    items.push(["Tiefstand", Math.min(...values).toFixed(0) + " cm"]);
+  }
+  for (const [label, value] of items) {
+    const div = document.createElement("div");
+    div.className = "stat";
+    div.innerHTML = `<div class="label">${label}</div><div class="value">${value}</div>`;
+    el.appendChild(div);
+  }
+  const note = document.getElementById("rangeNote");
+  note.textContent = currentStation.history
+    ? `Historische Daten (ab 1 Jahr) stammen vom Pegel ${titleCase(currentStation.name)} (GKD Bayern), verfügbar ${currentStation.history.from} – ${currentStation.history.to}. ★ = Pegel mit Langzeit-Historie.`
+    : "Für diesen Pegel stehen nur Live-Daten der letzten ~31 Tage zur Verfügung (PEGELONLINE/WSV). Lange Zeiträume sind aktuell nur für ausgewählte bayerische Pegel an Donau und Main freigeschaltet.";
+}
+
+init();
+</script>
+</body>
+</html>

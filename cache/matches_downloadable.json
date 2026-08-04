@@ -1,0 +1,227 @@
+[
+  {
+    "pegel_uuid": "33ceb441-23bc-4ca6-9fcd-ac35d41ef117",
+    "pegel_name": "PASSAU ILZSTADT",
+    "pegel_water": "DONAU",
+    "gkd_name": "Passau Ilzstadt",
+    "gkd_gewaesser": "Donau",
+    "gkd_gebiet": "passau",
+    "gkd_station_id": "10092000",
+    "gkd_slug": "passau-ilzstadt-10092000",
+    "downloadable": true,
+    "date_range": [
+      "01.11.1956",
+      "04.08.2026"
+    ]
+  },
+  {
+    "pegel_uuid": "e6d68ab7-5c27-4f25-896f-11dbf04056cd",
+    "pegel_name": "VILSHOFEN",
+    "pegel_water": "DONAU",
+    "gkd_name": "Vilshofen",
+    "gkd_gewaesser": "Donau",
+    "gkd_gebiet": "passau",
+    "gkd_station_id": "10089006",
+    "gkd_slug": "vilshofen-10089006",
+    "downloadable": true,
+    "date_range": [
+      "01.11.1901",
+      "04.08.2026"
+    ]
+  },
+  {
+    "pegel_uuid": "616dd98e-816d-4e17-b8cd-57b163dbc8a2",
+    "pegel_name": "HOFKIRCHEN",
+    "pegel_water": "DONAU",
+    "gkd_name": "Hofkirchen",
+    "gkd_gewaesser": "Donau",
+    "gkd_gebiet": "passau",
+    "gkd_station_id": "10088003",
+    "gkd_slug": "hofkirchen-10088003",
+    "downloadable": true,
+    "date_range": [
+      "01.11.1925",
+      "04.08.2026"
+    ]
+  },
+  {
+    "pegel_uuid": "53d40547-8a09-4b25-988c-2e6d8d8d98ee",
+    "pegel_name": "DEGGENDORF",
+    "pegel_water": "DONAU",
+    "gkd_name": "Deggendorf",
+    "gkd_gewaesser": "Donau",
+    "gkd_gebiet": "passau",
+    "gkd_station_id": "10081004",
+    "gkd_slug": "deggendorf-10081004",
+    "downloadable": true,
+    "date_range": [
+      "16.08.2001",
+      "04.08.2026"
+    ]
+  },
+  {
+    "pegel_uuid": "7fe63a95-8ff6-4cff-9a29-a124136516b5",
+    "pegel_name": "PFELLING",
+    "pegel_water": "DONAU",
+    "gkd_name": "Pfelling",
+    "gkd_gewaesser": "Donau",
+    "gkd_gebiet": "passau",
+    "gkd_station_id": "10078000",
+    "gkd_slug": "pfelling-10078000",
+    "downloadable": true,
+    "date_range": [
+      "04.04.1927",
+      "04.08.2026"
+    ]
+  },
+  {
+    "pegel_uuid": "f768173a-7a22-40f7-90a3-4676da7e5010",
+    "pegel_name": "PFATTER",
+    "pegel_water": "DONAU",
+    "gkd_name": "Pfatter",
+    "gkd_gewaesser": "Donau",
+    "gkd_gebiet": "passau",
+    "gkd_station_id": "10068006",
+    "gkd_slug": "pfatter-10068006",
+    "downloadable": true,
+    "date_range": [
+      "01.11.1969",
+      "04.08.2026"
+    ]
+  },
+  {
+    "pegel_uuid": "7644f1d7-3198-4313-9340-abefd459a4f3",
+    "pegel_name": "SCHWABELWEIS",
+    "pegel_water": "DONAU",
+    "gkd_name": "Schwabelweis",
+    "gkd_gewaesser": "Donau",
+    "gkd_gebiet": "passau",
+    "gkd_station_id": "10062000",
+    "gkd_slug": "schwabelweis-10062000",
+    "downloadable": true,
+    "date_range": [
+      "31.10.1927",
+      "04.08.2026"
+    ]
+  },
+  {
+    "pegel_uuid": "e476bcad-b898-4f68-9c26-4f1a1159dff6",
+    "pegel_name": "OBERNDORF",
+    "pegel_water": "DONAU",
+    "gkd_name": "Oberndorf",
+    "gkd_gewaesser": "Donau",
+    "gkd_gebiet": "kelheim",
+    "gkd_station_id": "10056302",
+    "gkd_slug": "oberndorf-10056302",
+    "downloadable": true,
+    "date_range": [
+      "01.11.1975",
+      "04.08.2026"
+    ]
+  },
+  {
+    "pegel_uuid": "c9409937-b794-4b69-b36b-38467daab09a",
+    "pegel_name": "KELHEIMWINZER",
+    "pegel_water": "DONAU",
+    "gkd_name": "Kelheimwinzer",
+    "gkd_gewaesser": "Donau",
+    "gkd_gebiet": "kelheim",
+    "gkd_station_id": "10054500",
+    "gkd_slug": "kelheimwinzer-10054500",
+    "downloadable": true,
+    "date_range": [
+      "01.11.1986",
+      "04.08.2026"
+    ]
+  },
+  {
+    "pegel_uuid": "824a046b-9ca3-4db8-993d-e755122854e0",
+    "pegel_name": "INGOLSTADT LUITPOLDSTRASSE",
+    "pegel_water": "DONAU",
+    "gkd_name": "Ingolstadt Luitpoldstraße",
+    "gkd_gewaesser": "Donau",
+    "gkd_gebiet": "kelheim",
+    "gkd_station_id": "10046105",
+    "gkd_slug": "ingolstadt-luitpoldstrasse-10046105",
+    "downloadable": true,
+    "date_range": [
+      "27.03.2003",
+      "04.08.2026"
+    ]
+  },
+  {
+    "pegel_uuid": "355b02d2-c578-46d9-a56b-8046d470cb95",
+    "pegel_name": "KLEINHEUBACH",
+    "pegel_water": "MAIN",
+    "gkd_name": "Kleinheubach",
+    "gkd_gewaesser": "Main",
+    "gkd_gebiet": "main_unten",
+    "gkd_station_id": "24064003",
+    "gkd_slug": "kleinheubach-24064003",
+    "downloadable": true,
+    "date_range": [
+      "02.06.1952",
+      "04.08.2026"
+    ]
+  },
+  {
+    "pegel_uuid": "1ed983c3-114c-4fcc-a1db-61d336cf045f",
+    "pegel_name": "STEINBACH",
+    "pegel_water": "MAIN",
+    "gkd_name": "Steinbach",
+    "gkd_gewaesser": "Main",
+    "gkd_gebiet": "main_unten",
+    "gkd_station_id": "24050009",
+    "gkd_slug": "steinbach-24050009",
+    "downloadable": true,
+    "date_range": [
+      "28.10.1963",
+      "04.08.2026"
+    ]
+  },
+  {
+    "pegel_uuid": "915d76e1-3bf9-4e37-9a9a-4d144cd771cc",
+    "pegel_name": "WÜRZBURG",
+    "pegel_water": "MAIN",
+    "gkd_name": "Würzburg",
+    "gkd_gewaesser": "Main",
+    "gkd_gebiet": "main_unten",
+    "gkd_station_id": "24042000",
+    "gkd_slug": "wuerzburg-24042000",
+    "downloadable": true,
+    "date_range": [
+      "28.10.1963",
+      "04.08.2026"
+    ]
+  },
+  {
+    "pegel_uuid": "42ecae60-eeb3-4b41-9721-46b3f12d04b8",
+    "pegel_name": "SCHWEINFURT NEUER HAFEN",
+    "pegel_water": "MAIN",
+    "gkd_name": "Schweinfurt Neuer Hafen",
+    "gkd_gewaesser": "Main",
+    "gkd_gebiet": "main_unten",
+    "gkd_station_id": "24022003",
+    "gkd_slug": "schweinfurt-neuer-hafen-24022003",
+    "downloadable": true,
+    "date_range": [
+      "01.11.1966",
+      "04.08.2026"
+    ]
+  },
+  {
+    "pegel_uuid": "a77aad00-caa0-44a2-95cb-8afd9c4ff00c",
+    "pegel_name": "TRUNSTADT",
+    "pegel_water": "MAIN",
+    "gkd_name": "Trunstadt",
+    "gkd_gewaesser": "Main",
+    "gkd_gebiet": "elbe",
+    "gkd_station_id": "24012203",
+    "gkd_slug": "trunstadt-24012203",
+    "downloadable": true,
+    "date_range": [
+      "01.11.1975",
+      "04.08.2026"
+    ]
+  }
+]

@@ -1,0 +1,4650 @@
+[
+  {
+    "name": "Achsheim",
+    "gewaesser": "Schmutter",
+    "gebiet": "kelheim",
+    "station_id": "11944004",
+    "slug": "achsheim-11944004"
+  },
+  {
+    "name": "Adlerhütte",
+    "gewaesser": "Koserbach",
+    "gebiet": "elbe",
+    "station_id": "24118000",
+    "slug": "adlerhuette-24118000"
+  },
+  {
+    "name": "Aeschach",
+    "gewaesser": "Oberreitnauer Ach",
+    "gebiet": "iller_lech",
+    "station_id": "21516505",
+    "slug": "aeschach-21516505"
+  },
+  {
+    "name": "Aha",
+    "gewaesser": "Altmühl",
+    "gebiet": "kelheim",
+    "station_id": "13405408",
+    "slug": "aha-13405408"
+  },
+  {
+    "name": "Aham",
+    "gewaesser": "Vils",
+    "gebiet": "passau",
+    "station_id": "17201501",
+    "slug": "aham-17201501"
+  },
+  {
+    "name": "Aichach Blauer Steg",
+    "gewaesser": "Paar",
+    "gebiet": "kelheim",
+    "station_id": "13204555",
+    "slug": "aichach-blauer-steg-13204555"
+  },
+  {
+    "name": "Altdorf",
+    "gewaesser": "Pfettrach",
+    "gebiet": "passau",
+    "station_id": "16924707",
+    "slug": "altdorf-16924707"
+  },
+  {
+    "name": "Altendorf",
+    "gewaesser": "Gailach",
+    "gebiet": "kelheim",
+    "station_id": "13455020",
+    "slug": "altendorf-13455020"
+  },
+  {
+    "name": "Altenfurt",
+    "gewaesser": "Weilach",
+    "gebiet": "kelheim",
+    "station_id": "13227000",
+    "slug": "altenfurt-13227000"
+  },
+  {
+    "name": "Altenmarkt a. d. A.",
+    "gewaesser": "Alz",
+    "gebiet": "isar",
+    "station_id": "18405008",
+    "slug": "altenmarkt-a-d-a-18405008"
+  },
+  {
+    "name": "Alzenau",
+    "gewaesser": "Kahl",
+    "gebiet": "main_unten",
+    "station_id": "24776004",
+    "slug": "alzenau-24776004"
+  },
+  {
+    "name": "Amberg",
+    "gewaesser": "Vils",
+    "gebiet": "naab_regen",
+    "station_id": "14604002",
+    "slug": "amberg-14604002"
+  },
+  {
+    "name": "Ammerberg",
+    "gewaesser": "Sur",
+    "gebiet": "isar",
+    "station_id": "18663003",
+    "slug": "ammerberg-18663003"
+  },
+  {
+    "name": "Amorbach",
+    "gewaesser": "Billbach",
+    "gebiet": "main_unten",
+    "station_id": "24726555",
+    "slug": "amorbach-24726555"
+  },
+  {
+    "name": "Ampermoching",
+    "gewaesser": "Amper",
+    "gebiet": "kelheim",
+    "station_id": "16606009",
+    "slug": "ampermoching-16606009"
+  },
+  {
+    "name": "Anger",
+    "gewaesser": "Attel",
+    "gebiet": "isar",
+    "station_id": "18346000",
+    "slug": "anger-18346000"
+  },
+  {
+    "name": "Ansbach",
+    "gewaesser": "Hennenbach",
+    "gebiet": "kelheim",
+    "station_id": "24213101",
+    "slug": "ansbach-24213101"
+  },
+  {
+    "name": "Ansbach",
+    "gewaesser": "Fränkische Rezat",
+    "gebiet": "kelheim",
+    "station_id": "24211651",
+    "slug": "ansbach-24211651"
+  },
+  {
+    "name": "Appolding",
+    "gewaesser": "Strogen",
+    "gebiet": "kelheim",
+    "station_id": "16825002",
+    "slug": "appolding-16825002"
+  },
+  {
+    "name": "Arnstein",
+    "gewaesser": "Wern",
+    "gebiet": "main_unten",
+    "station_id": "24382304",
+    "slug": "arnstein-24382304"
+  },
+  {
+    "name": "Arzberg",
+    "gewaesser": "Röslau",
+    "gebiet": "elbe",
+    "station_id": "53216808",
+    "slug": "arzberg-53216808"
+  },
+  {
+    "name": "Aschau",
+    "gewaesser": "Prien",
+    "gebiet": "isar",
+    "station_id": "18462205",
+    "slug": "aschau-18462205"
+  },
+  {
+    "name": "Aßling",
+    "gewaesser": "Attel",
+    "gebiet": "isar",
+    "station_id": "18343002",
+    "slug": "assling-18343002"
+  },
+  {
+    "name": "Astheim",
+    "gewaesser": "Main",
+    "gebiet": "main_unten",
+    "station_id": "24028000",
+    "slug": "astheim-24028000"
+  },
+  {
+    "name": "Atzhausen",
+    "gewaesser": "Castellbach",
+    "gebiet": "main_unten",
+    "station_id": "24349003",
+    "slug": "atzhausen-24349003"
+  },
+  {
+    "name": "Au b. Bad Aibling",
+    "gewaesser": "Aubach",
+    "gebiet": "isar",
+    "station_id": "18286000",
+    "slug": "au-b-bad-aibling-18286000"
+  },
+  {
+    "name": "Au b. Küps",
+    "gewaesser": "Zweinzen",
+    "gebiet": "elbe",
+    "station_id": "24142855",
+    "slug": "au-b-kueps-24142855"
+  },
+  {
+    "name": "Auerbach",
+    "gewaesser": "Hengersberger Ohe",
+    "gebiet": "passau",
+    "station_id": "17125006",
+    "slug": "auerbach-17125006"
+  },
+  {
+    "name": "Augsburg Oberhausen",
+    "gewaesser": "Wertach",
+    "gebiet": "kelheim",
+    "station_id": "12407000",
+    "slug": "augsburg-oberhausen-12407000"
+  },
+  {
+    "name": "Augsburg u. d. Wertachmündung",
+    "gewaesser": "Lech",
+    "gebiet": "kelheim",
+    "station_id": "12006000",
+    "slug": "augsburg-u-d-wertachmuendung-12006000"
+  },
+  {
+    "name": "Aunkofen",
+    "gewaesser": "Abens",
+    "gebiet": "kelheim",
+    "station_id": "13322005",
+    "slug": "aunkofen-13322005"
+  },
+  {
+    "name": "Autenhausen",
+    "gewaesser": "Kreck",
+    "gebiet": "elbe",
+    "station_id": "24168009",
+    "slug": "autenhausen-24168009"
+  },
+  {
+    "name": "Bächingen",
+    "gewaesser": "Brenz",
+    "gebiet": "kelheim",
+    "station_id": "11723504",
+    "slug": "baechingen-11723504"
+  },
+  {
+    "name": "Bad Aibling",
+    "gewaesser": "Triftbach",
+    "gebiet": "isar",
+    "station_id": "18269001",
+    "slug": "bad-aibling-18269001"
+  },
+  {
+    "name": "Bad Aibling",
+    "gewaesser": "Glonn",
+    "gebiet": "isar",
+    "station_id": "18263005",
+    "slug": "bad-aibling-18263005"
+  },
+  {
+    "name": "Bad Aibling Willinger Brücke",
+    "gewaesser": "Mangfall",
+    "gebiet": "isar",
+    "station_id": "18205985",
+    "slug": "bad-aibling-willinger-bruecke-18205985"
+  },
+  {
+    "name": "Bad Berneck",
+    "gewaesser": "Ölschnitz",
+    "gebiet": "elbe",
+    "station_id": "24113459",
+    "slug": "bad-berneck-24113459"
+  },
+  {
+    "name": "Bad Berneck",
+    "gewaesser": "Weißer Main",
+    "gebiet": "elbe",
+    "station_id": "24110508",
+    "slug": "bad-berneck-24110508"
+  },
+  {
+    "name": "Bad Brückenau",
+    "gewaesser": "Sinn",
+    "gebiet": "main_unten",
+    "station_id": "24481000",
+    "slug": "bad-brueckenau-24481000"
+  },
+  {
+    "name": "Bad Brückenau Staatsbad",
+    "gewaesser": "Sinn",
+    "gebiet": "main_unten",
+    "station_id": "24481500",
+    "slug": "bad-brueckenau-staatsbad-24481500"
+  },
+  {
+    "name": "Bad Feilnbach",
+    "gewaesser": "Jenbach",
+    "gebiet": "isar",
+    "station_id": "18284504",
+    "slug": "bad-feilnbach-18284504"
+  },
+  {
+    "name": "Bad Feilnbach",
+    "gewaesser": "Mühlbach",
+    "gebiet": "isar",
+    "station_id": "18284606",
+    "slug": "bad-feilnbach-18284606"
+  },
+  {
+    "name": "Bad Kissingen Golfplatz",
+    "gewaesser": "Fränkische Saale",
+    "gebiet": "main_unten",
+    "station_id": "24406005",
+    "slug": "bad-kissingen-golfplatz-24406005"
+  },
+  {
+    "name": "Bad Kissingen Prinzreg.-bau",
+    "gewaesser": "Fränkische Saale",
+    "gebiet": "main_unten",
+    "station_id": "24405002",
+    "slug": "bad-kissingen-prinzreg-bau-24405002"
+  },
+  {
+    "name": "Bad Königshofen im Grabfeld",
+    "gewaesser": "Fränkische Saale",
+    "gebiet": "main_unten",
+    "station_id": "24401001",
+    "slug": "bad-koenigshofen-im-grabfeld-24401001"
+  },
+  {
+    "name": "Bad Kreuth",
+    "gewaesser": "Sagenbach",
+    "gebiet": "isar",
+    "station_id": "18214000",
+    "slug": "bad-kreuth-18214000"
+  },
+  {
+    "name": "Bad Tölz",
+    "gewaesser": "Ellbach",
+    "gebiet": "isar",
+    "station_id": "16391004",
+    "slug": "bad-toelz-16391004"
+  },
+  {
+    "name": "Bad Tölz B472",
+    "gewaesser": "Isar",
+    "gebiet": "isar",
+    "station_id": "16003207",
+    "slug": "bad-toelz-b472-16003207"
+  },
+  {
+    "name": "Bad Tölz Brücke",
+    "gewaesser": "Isar",
+    "gebiet": "isar",
+    "station_id": "16003502",
+    "slug": "bad-toelz-bruecke-16003502"
+  },
+  {
+    "name": "Bad Trißl",
+    "gewaesser": "Auerbach",
+    "gebiet": "isar",
+    "station_id": "18193001",
+    "slug": "bad-trissl-18193001"
+  },
+  {
+    "name": "Bad Wiessee",
+    "gewaesser": "Zeiselbach",
+    "gebiet": "isar",
+    "station_id": "18218000",
+    "slug": "bad-wiessee-18218000"
+  },
+  {
+    "name": "Bad Wiessee",
+    "gewaesser": "Söllbach",
+    "gebiet": "isar",
+    "station_id": "18218306",
+    "slug": "bad-wiessee-18218306"
+  },
+  {
+    "name": "Bairawies",
+    "gewaesser": "Zeller Bach",
+    "gebiet": "isar",
+    "station_id": "16395005",
+    "slug": "bairawies-16395005"
+  },
+  {
+    "name": "Balbersdorf",
+    "gewaesser": "Katzbach",
+    "gebiet": "passau",
+    "station_id": "15256855",
+    "slug": "balbersdorf-15256855"
+  },
+  {
+    "name": "Balzhausen HRB Becken",
+    "gewaesser": "Balzhausen HRB",
+    "gebiet": "kelheim",
+    "station_id": "11606353",
+    "slug": "balzhausen-hrb-becken-11606353"
+  },
+  {
+    "name": "Bamberg",
+    "gewaesser": "Main-Donau-Kanal",
+    "gebiet": "elbe",
+    "station_id": "24209300",
+    "slug": "bamberg-24209300"
+  },
+  {
+    "name": "Bärenthal",
+    "gewaesser": "Trubach",
+    "gebiet": "elbe",
+    "station_id": "24249009",
+    "slug": "baerenthal-24249009"
+  },
+  {
+    "name": "Bayerwald",
+    "gewaesser": "Innerer Grüneckgraben",
+    "gebiet": "isar",
+    "station_id": "18213506",
+    "slug": "bayerwald-18213506"
+  },
+  {
+    "name": "Bayreuth",
+    "gewaesser": "Roter Main",
+    "gebiet": "elbe",
+    "station_id": "24123000",
+    "slug": "bayreuth-24123000"
+  },
+  {
+    "name": "Bechhofen",
+    "gewaesser": "Wieseth",
+    "gebiet": "kelheim",
+    "station_id": "13424901",
+    "slug": "bechhofen-13424901"
+  },
+  {
+    "name": "Behringersmühle",
+    "gewaesser": "Wiesent",
+    "gebiet": "elbe",
+    "station_id": "24241710",
+    "slug": "behringersmuehle-24241710"
+  },
+  {
+    "name": "Beilngries oberh. der Sulz",
+    "gewaesser": "Altmühl",
+    "gebiet": "kelheim",
+    "station_id": "13407902",
+    "slug": "beilngries-oberh-der-sulz-13407902"
+  },
+  {
+    "name": "Berching.",
+    "gewaesser": "LDM-Kanal",
+    "gebiet": "kelheim",
+    "station_id": "13418055",
+    "slug": "berching-13418055"
+  },
+  {
+    "name": "Berchtesgaden-Klärwerk",
+    "gewaesser": "Berchtesgadener Ache",
+    "gebiet": "inn",
+    "station_id": "18620500",
+    "slug": "berchtesgaden-klaerwerk-18620500"
+  },
+  {
+    "name": "Berg",
+    "gewaesser": "Sempt",
+    "gebiet": "kelheim",
+    "station_id": "16802007",
+    "slug": "berg-16802007"
+  },
+  {
+    "name": "Bergen",
+    "gewaesser": "Weiße Achen",
+    "gebiet": "isar",
+    "station_id": "18465600",
+    "slug": "bergen-18465600"
+  },
+  {
+    "name": "Bergkirchen",
+    "gewaesser": "Maisach",
+    "gebiet": "kelheim",
+    "station_id": "16658002",
+    "slug": "bergkirchen-16658002"
+  },
+  {
+    "name": "Bernau",
+    "gewaesser": "Bernauer Achen",
+    "gebiet": "isar",
+    "station_id": "18461257",
+    "slug": "bernau-18461257"
+  },
+  {
+    "name": "Bernstein am Wald",
+    "gewaesser": "Wilde Rodach",
+    "gebiet": "elbe",
+    "station_id": "24145502",
+    "slug": "bernstein-am-wald-24145502"
+  },
+  {
+    "name": "Beuerberg",
+    "gewaesser": "Loisach",
+    "gebiet": "isar",
+    "station_id": "16408504",
+    "slug": "beuerberg-16408504"
+  },
+  {
+    "name": "Beyharting",
+    "gewaesser": "Glonn",
+    "gebiet": "isar",
+    "station_id": "18262002",
+    "slug": "beyharting-18262002"
+  },
+  {
+    "name": "Bieberehren",
+    "gewaesser": "Gollach",
+    "gebiet": "main_unten",
+    "station_id": "24623003",
+    "slug": "bieberehren-24623003"
+  },
+  {
+    "name": "Biessenhofen",
+    "gewaesser": "Wertach",
+    "gebiet": "iller_lech",
+    "station_id": "12405005",
+    "slug": "biessenhofen-12405005"
+  },
+  {
+    "name": "Binzwangen",
+    "gewaesser": "Altmühl",
+    "gebiet": "kelheim",
+    "station_id": "13400903",
+    "slug": "binzwangen-13400903"
+  },
+  {
+    "name": "Birgsau",
+    "gewaesser": "Stillach",
+    "gebiet": "iller_lech",
+    "station_id": "11411104",
+    "slug": "birgsau-11411104"
+  },
+  {
+    "name": "Birk",
+    "gewaesser": "Almosbach",
+    "gebiet": "elbe",
+    "station_id": "24127001",
+    "slug": "birk-24127001"
+  },
+  {
+    "name": "Birkenfeld",
+    "gewaesser": "Aisch",
+    "gebiet": "main_unten",
+    "station_id": "24261106",
+    "slug": "birkenfeld-24261106"
+  },
+  {
+    "name": "Birnbach",
+    "gewaesser": "Rott",
+    "gebiet": "passau",
+    "station_id": "18806406",
+    "slug": "birnbach-18806406"
+  },
+  {
+    "name": "Bischbrunn",
+    "gewaesser": "Metzenbach",
+    "gebiet": "main_unten",
+    "station_id": "24569000",
+    "slug": "bischbrunn-24569000"
+  },
+  {
+    "name": "Bleyerbrücke",
+    "gewaesser": "Kieferbach",
+    "gebiet": "isar",
+    "station_id": "18182005",
+    "slug": "bleyerbruecke-18182005"
+  },
+  {
+    "name": "Blumenthal",
+    "gewaesser": "Ecknach",
+    "gebiet": "kelheim",
+    "station_id": "13217000",
+    "slug": "blumenthal-13217000"
+  },
+  {
+    "name": "Bockenfeld",
+    "gewaesser": "Tauber",
+    "gebiet": "kelheim",
+    "station_id": "24601000",
+    "slug": "bockenfeld-24601000"
+  },
+  {
+    "name": "Böhmischbruck",
+    "gewaesser": "Pfreimd",
+    "gebiet": "naab_regen",
+    "station_id": "14362005",
+    "slug": "boehmischbruck-14362005"
+  },
+  {
+    "name": "Brodhausen",
+    "gewaesser": "Sur",
+    "gebiet": "inn",
+    "station_id": "18666001",
+    "slug": "brodhausen-18666001"
+  },
+  {
+    "name": "Bruckberg",
+    "gewaesser": "Haselbach",
+    "gebiet": "kelheim",
+    "station_id": "24219008",
+    "slug": "bruckberg-24219008"
+  },
+  {
+    "name": "Bruckhäuser",
+    "gewaesser": "Altkollbach",
+    "gebiet": "passau",
+    "station_id": "17245609",
+    "slug": "bruckhaeuser-17245609"
+  },
+  {
+    "name": "Bruckhäuser",
+    "gewaesser": "Kollbach",
+    "gebiet": "passau",
+    "station_id": "17245507",
+    "slug": "bruckhaeuser-17245507"
+  },
+  {
+    "name": "Bruggen",
+    "gewaesser": "Loisach-Isar-Kanal",
+    "gebiet": "isar",
+    "station_id": "16495000",
+    "slug": "bruggen-16495000"
+  },
+  {
+    "name": "Brunnen",
+    "gewaesser": "Mühlberger Ach",
+    "gebiet": "iller_lech",
+    "station_id": "12314001",
+    "slug": "brunnen-12314001"
+  },
+  {
+    "name": "Brünnstadt",
+    "gewaesser": "Volkach",
+    "gebiet": "main_unten",
+    "station_id": "24338007",
+    "slug": "bruennstadt-24338007"
+  },
+  {
+    "name": "Buchberger Einschnitt.",
+    "gewaesser": "LDM-Kanal",
+    "gebiet": "kelheim",
+    "station_id": "13416455",
+    "slug": "buchberger-einschnitt-13416455"
+  },
+  {
+    "name": "Buchloe",
+    "gewaesser": "Gennach",
+    "gebiet": "iller_lech",
+    "station_id": "12465007",
+    "slug": "buchloe-12465007"
+  },
+  {
+    "name": "Büg",
+    "gewaesser": "Schwabach",
+    "gebiet": "regnitz",
+    "station_id": "24238002",
+    "slug": "bueg-24238002"
+  },
+  {
+    "name": "Burghaslach Rückhaltebecken",
+    "gewaesser": "Haslach",
+    "gebiet": "elbe",
+    "station_id": "24292802",
+    "slug": "burghaslach-rueckhaltebecken-24292802"
+  },
+  {
+    "name": "Burghausen",
+    "gewaesser": "Salzach",
+    "gebiet": "isar",
+    "station_id": "18606000",
+    "slug": "burghausen-18606000"
+  },
+  {
+    "name": "Burgkirchen",
+    "gewaesser": "Alz",
+    "gebiet": "isar",
+    "station_id": "18408200",
+    "slug": "burgkirchen-18408200"
+  },
+  {
+    "name": "Burgrain",
+    "gewaesser": "Lahnenwiesgraben",
+    "gebiet": "isar",
+    "station_id": "16432000",
+    "slug": "burgrain-16432000"
+  },
+  {
+    "name": "Bürgstadt",
+    "gewaesser": "Erf",
+    "gebiet": "main_unten",
+    "station_id": "24719102",
+    "slug": "buergstadt-24719102"
+  },
+  {
+    "name": "Cham",
+    "gewaesser": "Regen",
+    "gebiet": "passau",
+    "station_id": "15204000",
+    "slug": "cham-15204000"
+  },
+  {
+    "name": "Chamerau",
+    "gewaesser": "Regen",
+    "gebiet": "passau",
+    "station_id": "15202300",
+    "slug": "chamerau-15202300"
+  },
+  {
+    "name": "Coburg",
+    "gewaesser": "Itz",
+    "gebiet": "elbe",
+    "station_id": "24162206",
+    "slug": "coburg-24162206"
+  },
+  {
+    "name": "Creußen",
+    "gewaesser": "Roter Main",
+    "gebiet": "elbe",
+    "station_id": "24121005",
+    "slug": "creussen-24121005"
+  },
+  {
+    "name": "Dachau",
+    "gewaesser": "Gröbenbach",
+    "gebiet": "kelheim",
+    "station_id": "16655004",
+    "slug": "dachau-16655004"
+  },
+  {
+    "name": "Dasing",
+    "gewaesser": "Paar",
+    "gebiet": "kelheim",
+    "station_id": "13202003",
+    "slug": "dasing-13202003"
+  },
+  {
+    "name": "Deggendorf",
+    "gewaesser": "Kollbach",
+    "gebiet": "passau",
+    "station_id": "15993001",
+    "slug": "deggendorf-15993001"
+  },
+  {
+    "name": "Deggendorf",
+    "gewaesser": "Donau",
+    "gebiet": "passau",
+    "station_id": "10081004",
+    "slug": "deggendorf-10081004"
+  },
+  {
+    "name": "Deuerling",
+    "gewaesser": "Schwarze Laber",
+    "gebiet": "kelheim",
+    "station_id": "13926207",
+    "slug": "deuerling-13926207"
+  },
+  {
+    "name": "Deutenhofen",
+    "gewaesser": "Stumpfenbach",
+    "gebiet": "kelheim",
+    "station_id": "16683255",
+    "slug": "deutenhofen-16683255"
+  },
+  {
+    "name": "Dickertsmühle",
+    "gewaesser": "Mühlbach",
+    "gebiet": "isar",
+    "station_id": "18465000",
+    "slug": "dickertsmuehle-18465000"
+  },
+  {
+    "name": "Dieberg",
+    "gewaesser": "Warme Pastritz",
+    "gebiet": "naab_regen",
+    "station_id": "15248555",
+    "slug": "dieberg-15248555"
+  },
+  {
+    "name": "Dietelskirchen",
+    "gewaesser": "Kleine Vils",
+    "gebiet": "passau",
+    "station_id": "17225000",
+    "slug": "dietelskirchen-17225000"
+  },
+  {
+    "name": "Dietldorf",
+    "gewaesser": "Vils",
+    "gebiet": "kelheim",
+    "station_id": "14608003",
+    "slug": "dietldorf-14608003"
+  },
+  {
+    "name": "Dillingen",
+    "gewaesser": "Donau",
+    "gebiet": "kelheim",
+    "station_id": "10035801",
+    "slug": "dillingen-10035801"
+  },
+  {
+    "name": "Dingolshausen",
+    "gewaesser": "Volkach",
+    "gebiet": "main_unten",
+    "station_id": "24336806",
+    "slug": "dingolshausen-24336806"
+  },
+  {
+    "name": "Dinkelsbühl",
+    "gewaesser": "Wörnitz",
+    "gebiet": "kelheim",
+    "station_id": "11803501",
+    "slug": "dinkelsbuehl-11803501"
+  },
+  {
+    "name": "Dobrigau",
+    "gewaesser": "Wondreb",
+    "gebiet": "elbe",
+    "station_id": "53222006",
+    "slug": "dobrigau-53222006"
+  },
+  {
+    "name": "Donauwörth",
+    "gewaesser": "Donau",
+    "gebiet": "kelheim",
+    "station_id": "10039802",
+    "slug": "donauwoerth-10039802"
+  },
+  {
+    "name": "Dorfen",
+    "gewaesser": "Isenflutkanal",
+    "gebiet": "isar",
+    "station_id": "18382004",
+    "slug": "dorfen-18382004"
+  },
+  {
+    "name": "Drachensee Speicherabfluss",
+    "gewaesser": "Chamb",
+    "gebiet": "passau",
+    "station_id": "15242508",
+    "slug": "drachensee-speicherabfluss-15242508"
+  },
+  {
+    "name": "Druisheim",
+    "gewaesser": "Schmutter",
+    "gebiet": "kelheim",
+    "station_id": "11946000",
+    "slug": "druisheim-11946000"
+  },
+  {
+    "name": "Durach",
+    "gewaesser": "Durach",
+    "gebiet": "iller_lech",
+    "station_id": "11455201",
+    "slug": "durach-11455201"
+  },
+  {
+    "name": "Dürnhausen",
+    "gewaesser": "Lothdorfer Bach",
+    "gebiet": "isar",
+    "station_id": "16455005",
+    "slug": "duernhausen-16455005"
+  },
+  {
+    "name": "Dürrach",
+    "gewaesser": "Dürrach",
+    "gebiet": "isar",
+    "station_id": "16163000",
+    "slug": "duerrach-16163000"
+  },
+  {
+    "name": "Eberhardsreuth",
+    "gewaesser": "Mitternacher Ohe",
+    "gebiet": "passau",
+    "station_id": "17425000",
+    "slug": "eberhardsreuth-17425000"
+  },
+  {
+    "name": "Eching",
+    "gewaesser": "Windach",
+    "gebiet": "isar",
+    "station_id": "16646400",
+    "slug": "eching-16646400"
+  },
+  {
+    "name": "Egelsee",
+    "gewaesser": "Iller",
+    "gebiet": "iller_lech",
+    "station_id": "11403004",
+    "slug": "egelsee-11403004"
+  },
+  {
+    "name": "Eggenfelden",
+    "gewaesser": "Mertseebach",
+    "gebiet": "passau",
+    "station_id": "18838005",
+    "slug": "eggenfelden-18838005"
+  },
+  {
+    "name": "Eichstätt",
+    "gewaesser": "Altmühl",
+    "gebiet": "kelheim",
+    "station_id": "13407200",
+    "slug": "eichstaett-13407200"
+  },
+  {
+    "name": "Eixendorf Speicherabfluss",
+    "gewaesser": "Schwarzach",
+    "gebiet": "naab_regen",
+    "station_id": "14406508",
+    "slug": "eixendorf-speicherabfluss-14406508"
+  },
+  {
+    "name": "Eldern HRB UW",
+    "gewaesser": "Westliche Günz",
+    "gebiet": "iller_lech",
+    "station_id": "11587005",
+    "slug": "eldern-hrb-uw-11587005"
+  },
+  {
+    "name": "Emskirchen",
+    "gewaesser": "Mittlere Aurach",
+    "gebiet": "main_unten",
+    "station_id": "24236007",
+    "slug": "emskirchen-24236007"
+  },
+  {
+    "name": "Engen",
+    "gewaesser": "Illach",
+    "gebiet": "isar",
+    "station_id": "12335001",
+    "slug": "engen-12335001"
+  },
+  {
+    "name": "Engetried HRB UW",
+    "gewaesser": "Östliche Günz",
+    "gebiet": "iller_lech",
+    "station_id": "11587755",
+    "slug": "engetried-hrb-uw-11587755"
+  },
+  {
+    "name": "Engfurt",
+    "gewaesser": "Isen",
+    "gebiet": "isar",
+    "station_id": "18384509",
+    "slug": "engfurt-18384509"
+  },
+  {
+    "name": "Enkering",
+    "gewaesser": "Anlauter",
+    "gebiet": "kelheim",
+    "station_id": "13468008",
+    "slug": "enkering-13468008"
+  },
+  {
+    "name": "Eppenreuth",
+    "gewaesser": "Ölsnitz",
+    "gebiet": "elbe",
+    "station_id": "56131803",
+    "slug": "eppenreuth-56131803"
+  },
+  {
+    "name": "Erb",
+    "gewaesser": "Leitzach",
+    "gebiet": "isar",
+    "station_id": "18246006",
+    "slug": "erb-18246006"
+  },
+  {
+    "name": "Erbendorf",
+    "gewaesser": "Fichtelnaab",
+    "gebiet": "elbe",
+    "station_id": "14124007",
+    "slug": "erbendorf-14124007"
+  },
+  {
+    "name": "Erlabrück",
+    "gewaesser": "Rodach",
+    "gebiet": "elbe",
+    "station_id": "24141501",
+    "slug": "erlabrueck-24141501"
+  },
+  {
+    "name": "Erlachleiten",
+    "gewaesser": "Erlau",
+    "gebiet": "passau",
+    "station_id": "19145208",
+    "slug": "erlachleiten-19145208"
+  },
+  {
+    "name": "Erlangen",
+    "gewaesser": "Schwabach",
+    "gebiet": "regnitz",
+    "station_id": "24238501",
+    "slug": "erlangen-24238501"
+  },
+  {
+    "name": "Erlau",
+    "gewaesser": "Donau",
+    "gebiet": "passau",
+    "station_id": "10096001",
+    "slug": "erlau-10096001"
+  },
+  {
+    "name": "Eschach",
+    "gewaesser": "Füssener Achen",
+    "gebiet": "iller_lech",
+    "station_id": "12313009",
+    "slug": "eschach-12313009"
+  },
+  {
+    "name": "Eschelbach",
+    "gewaesser": "Inn",
+    "gebiet": "isar",
+    "station_id": "18005000",
+    "slug": "eschelbach-18005000"
+  },
+  {
+    "name": "Eschenlohe Brücke",
+    "gewaesser": "Loisach",
+    "gebiet": "isar",
+    "station_id": "16404106",
+    "slug": "eschenlohe-bruecke-16404106"
+  },
+  {
+    "name": "Eschlkam",
+    "gewaesser": "Chamb",
+    "gebiet": "passau",
+    "station_id": "15242304",
+    "slug": "eschlkam-15242304"
+  },
+  {
+    "name": "Eßlingen",
+    "gewaesser": "Altmühl",
+    "gebiet": "kelheim",
+    "station_id": "13406555",
+    "slug": "esslingen-13406555"
+  },
+  {
+    "name": "Ettleben",
+    "gewaesser": "Wern",
+    "gebiet": "main_unten",
+    "station_id": "24381503",
+    "slug": "ettleben-24381503"
+  },
+  {
+    "name": "Fahrenbühl",
+    "gewaesser": "Lamitz",
+    "gebiet": "elbe",
+    "station_id": "56116005",
+    "slug": "fahrenbuehl-56116005"
+  },
+  {
+    "name": "Fallmühle",
+    "gewaesser": "Steinacher Achen",
+    "gebiet": "iller_lech",
+    "station_id": "12186003",
+    "slug": "fallmuehle-12186003"
+  },
+  {
+    "name": "Farchant",
+    "gewaesser": "Loisach",
+    "gebiet": "isar",
+    "station_id": "16403001",
+    "slug": "farchant-16403001"
+  },
+  {
+    "name": "Faulbach",
+    "gewaesser": "Main",
+    "gebiet": "main_unten",
+    "station_id": "24060002",
+    "slug": "faulbach-24060002"
+  },
+  {
+    "name": "Feldolling",
+    "gewaesser": "Mangfall",
+    "gebiet": "isar",
+    "station_id": "18204006",
+    "slug": "feldolling-18204006"
+  },
+  {
+    "name": "Fischach",
+    "gewaesser": "Schmutter",
+    "gebiet": "kelheim",
+    "station_id": "11942009",
+    "slug": "fischach-11942009"
+  },
+  {
+    "name": "Fischen",
+    "gewaesser": "Iller",
+    "gebiet": "iller_lech",
+    "station_id": "11400505",
+    "slug": "fischen-11400505"
+  },
+  {
+    "name": "Fleinhausen",
+    "gewaesser": "Zusam",
+    "gebiet": "kelheim",
+    "station_id": "11921701",
+    "slug": "fleinhausen-11921701"
+  },
+  {
+    "name": "Förmitz Speicherabfluss",
+    "gewaesser": "Förmitz",
+    "gebiet": "elbe",
+    "station_id": "56114000",
+    "slug": "foermitz-speicherabfluss-56114000"
+  },
+  {
+    "name": "Förmitz Speicherzufluss",
+    "gewaesser": "Förmitz",
+    "gebiet": "elbe",
+    "station_id": "56113404",
+    "slug": "foermitz-speicherzufluss-56113404"
+  },
+  {
+    "name": "Frammersbach",
+    "gewaesser": "Lohr",
+    "gebiet": "main_unten",
+    "station_id": "24521105",
+    "slug": "frammersbach-24521105"
+  },
+  {
+    "name": "Frauenaurach",
+    "gewaesser": "Aurach",
+    "gebiet": "regnitz",
+    "station_id": "24237509",
+    "slug": "frauenaurach-24237509"
+  },
+  {
+    "name": "Frauenkreuz",
+    "gewaesser": "Gründlach",
+    "gebiet": "regnitz",
+    "station_id": "24235208",
+    "slug": "frauenkreuz-24235208"
+  },
+  {
+    "name": "Freising",
+    "gewaesser": "Schleifermoosach",
+    "gebiet": "kelheim",
+    "station_id": "16518808",
+    "slug": "freising-16518808"
+  },
+  {
+    "name": "Freising",
+    "gewaesser": "Isar",
+    "gebiet": "kelheim",
+    "station_id": "16006500",
+    "slug": "freising-16006500"
+  },
+  {
+    "name": "Freising",
+    "gewaesser": "Moosach",
+    "gebiet": "kelheim",
+    "station_id": "16518502",
+    "slug": "freising-16518502"
+  },
+  {
+    "name": "Friedersdorf",
+    "gewaesser": "Buchbach",
+    "gebiet": "elbe",
+    "station_id": "24147600",
+    "slug": "friedersdorf-24147600"
+  },
+  {
+    "name": "Friedersreuth",
+    "gewaesser": "Schweinnaab",
+    "gebiet": "naab_regen",
+    "station_id": "14198105",
+    "slug": "friedersreuth-14198105"
+  },
+  {
+    "name": "Fritz am Sand",
+    "gewaesser": "Weiße Traun",
+    "gebiet": "isar",
+    "station_id": "18484503",
+    "slug": "fritz-am-sand-18484503"
+  },
+  {
+    "name": "Fronhof",
+    "gewaesser": "Murach",
+    "gebiet": "naab_regen",
+    "station_id": "14486008",
+    "slug": "fronhof-14486008"
+  },
+  {
+    "name": "Fürsteneck",
+    "gewaesser": "Wolfsteiner Ohe",
+    "gebiet": "passau",
+    "station_id": "17464001",
+    "slug": "fuersteneck-17464001"
+  },
+  {
+    "name": "Fürstenfeldbruck",
+    "gewaesser": "Amper",
+    "gebiet": "kelheim",
+    "station_id": "16605006",
+    "slug": "fuerstenfeldbruck-16605006"
+  },
+  {
+    "name": "Fürth am Berg",
+    "gewaesser": "Steinach",
+    "gebiet": "elbe",
+    "station_id": "24149208",
+    "slug": "fuerth-am-berg-24149208"
+  },
+  {
+    "name": "Furth im Wald",
+    "gewaesser": "Chamb",
+    "gebiet": "passau",
+    "station_id": "15243001",
+    "slug": "furth-im-wald-15243001"
+  },
+  {
+    "name": "Füssen",
+    "gewaesser": "Lech",
+    "gebiet": "iller_lech",
+    "station_id": "12001006",
+    "slug": "fuessen-12001006"
+  },
+  {
+    "name": "Gaden",
+    "gewaesser": "Schinderbach",
+    "gebiet": "isar",
+    "station_id": "18687500",
+    "slug": "gaden-18687500"
+  },
+  {
+    "name": "Gaißach",
+    "gewaesser": "Große Gaißach",
+    "gebiet": "isar",
+    "station_id": "16345007",
+    "slug": "gaissach-16345007"
+  },
+  {
+    "name": "Gampelmühle",
+    "gewaesser": "Ölschnitz",
+    "gebiet": "elbe",
+    "station_id": "24126009",
+    "slug": "gampelmuehle-24126009"
+  },
+  {
+    "name": "Gärmersdorf",
+    "gewaesser": "Krumbach",
+    "gebiet": "kelheim",
+    "station_id": "14671000",
+    "slug": "gaermersdorf-14671000"
+  },
+  {
+    "name": "Garmisch o. d. Partnachmündung",
+    "gewaesser": "Loisach",
+    "gebiet": "isar",
+    "station_id": "16401006",
+    "slug": "garmisch-o-d-partnachmuendung-16401006"
+  },
+  {
+    "name": "Garmisch u. d. Partnachmündung",
+    "gewaesser": "Loisach",
+    "gebiet": "isar",
+    "station_id": "16402009",
+    "slug": "garmisch-u-d-partnachmuendung-16402009"
+  },
+  {
+    "name": "Gartenried",
+    "gewaesser": "Murach",
+    "gebiet": "naab_regen",
+    "station_id": "14483000",
+    "slug": "gartenried-14483000"
+  },
+  {
+    "name": "Geisenfeld",
+    "gewaesser": "Ilm",
+    "gebiet": "kelheim",
+    "station_id": "13325502",
+    "slug": "geisenfeld-13325502"
+  },
+  {
+    "name": "Geisenhausen",
+    "gewaesser": "Fimbach",
+    "gebiet": "passau",
+    "station_id": "17224155",
+    "slug": "geisenhausen-17224155"
+  },
+  {
+    "name": "Geisleithen",
+    "gewaesser": "Geisbach",
+    "gebiet": "naab_regen",
+    "station_id": "14116009",
+    "slug": "geisleithen-14116009"
+  },
+  {
+    "name": "Gemünden Lachsfangsteg",
+    "gewaesser": "Sinn",
+    "gebiet": "main_unten",
+    "station_id": "24483006",
+    "slug": "gemuenden-lachsfangsteg-24483006"
+  },
+  {
+    "name": "Gerlenhofen",
+    "gewaesser": "Illerkanal",
+    "gebiet": "kelheim",
+    "station_id": "11498000",
+    "slug": "gerlenhofen-11498000"
+  },
+  {
+    "name": "Gerolfingen",
+    "gewaesser": "Wörnitz",
+    "gebiet": "kelheim",
+    "station_id": "11805008",
+    "slug": "gerolfingen-11805008"
+  },
+  {
+    "name": "Geschwend",
+    "gewaesser": "Kremnitz",
+    "gebiet": "elbe",
+    "station_id": "24148500",
+    "slug": "geschwend-24148500"
+  },
+  {
+    "name": "Gogl-Mühle",
+    "gewaesser": "Chamb",
+    "gebiet": "naab_regen",
+    "station_id": "15241006",
+    "slug": "gogl-muehle-15241006"
+  },
+  {
+    "name": "Goldbach",
+    "gewaesser": "Aschaff",
+    "gebiet": "main_unten",
+    "station_id": "24758002",
+    "slug": "goldbach-24758002"
+  },
+  {
+    "name": "Goldbergsee Ablauf",
+    "gewaesser": "Sulzbach",
+    "gebiet": "elbe",
+    "station_id": "24165907",
+    "slug": "goldbergsee-ablauf-24165907"
+  },
+  {
+    "name": "Gollmuthhausen",
+    "gewaesser": "Milz",
+    "gebiet": "main_unten",
+    "station_id": "24412008",
+    "slug": "gollmuthhausen-24412008"
+  },
+  {
+    "name": "Görisried",
+    "gewaesser": "Waldbach",
+    "gebiet": "iller_lech",
+    "station_id": "12418007",
+    "slug": "goerisried-12418007"
+  },
+  {
+    "name": "Grabenstätt",
+    "gewaesser": "Rothgraben",
+    "gebiet": "isar",
+    "station_id": "18466002",
+    "slug": "grabenstaett-18466002"
+  },
+  {
+    "name": "Grabmühle",
+    "gewaesser": "Donaumoos Ach",
+    "gebiet": "kelheim",
+    "station_id": "13242201",
+    "slug": "grabmuehle-13242201"
+  },
+  {
+    "name": "Grafenau",
+    "gewaesser": "Kleine Ohe",
+    "gebiet": "passau",
+    "station_id": "17445007",
+    "slug": "grafenau-17445007"
+  },
+  {
+    "name": "Gräfendorf",
+    "gewaesser": "Schondra",
+    "gebiet": "main_unten",
+    "station_id": "24473055",
+    "slug": "graefendorf-24473055"
+  },
+  {
+    "name": "Grafenmühle",
+    "gewaesser": "Vils",
+    "gebiet": "passau",
+    "station_id": "17207508",
+    "slug": "grafenmuehle-17207508"
+  },
+  {
+    "name": "Grafentraubach",
+    "gewaesser": "Kleine Laber",
+    "gebiet": "passau",
+    "station_id": "15422500",
+    "slug": "grafentraubach-15422500"
+  },
+  {
+    "name": "Grafenwöhr",
+    "gewaesser": "Creußen",
+    "gebiet": "naab_regen",
+    "station_id": "14244803",
+    "slug": "grafenwoehr-14244803"
+  },
+  {
+    "name": "Grafrath",
+    "gewaesser": "Amper",
+    "gebiet": "isar",
+    "station_id": "16603000",
+    "slug": "grafrath-16603000"
+  },
+  {
+    "name": "Grafrath Ampermoos",
+    "gewaesser": "Amper",
+    "gebiet": "isar",
+    "station_id": "16602800",
+    "slug": "grafrath-ampermoos-16602800"
+  },
+  {
+    "name": "Greifenmühle",
+    "gewaesser": "Rottach",
+    "gebiet": "iller_lech",
+    "station_id": "11445004",
+    "slug": "greifenmuehle-11445004"
+  },
+  {
+    "name": "Gressenwöhr",
+    "gewaesser": "Vils",
+    "gebiet": "naab_regen",
+    "station_id": "14601004",
+    "slug": "gressenwoehr-14601004"
+  },
+  {
+    "name": "Griesen",
+    "gewaesser": "Neidernach",
+    "gebiet": "isar",
+    "station_id": "16412002",
+    "slug": "griesen-16412002"
+  },
+  {
+    "name": "Großrehmühle",
+    "gewaesser": "Rehbach",
+    "gebiet": "elbe",
+    "station_id": "24118355",
+    "slug": "grossrehmuehle-24118355"
+  },
+  {
+    "name": "Großschwindau",
+    "gewaesser": "Goldach",
+    "gebiet": "isar",
+    "station_id": "18387008",
+    "slug": "grossschwindau-18387008"
+  },
+  {
+    "name": "Gruben",
+    "gewaesser": "Oybach",
+    "gebiet": "iller_lech",
+    "station_id": "11417100",
+    "slug": "gruben-11417100"
+  },
+  {
+    "name": "Gschwend",
+    "gewaesser": "Rottach",
+    "gebiet": "iller_lech",
+    "station_id": "11443009",
+    "slug": "gschwend-11443009"
+  },
+  {
+    "name": "Gufflham",
+    "gewaesser": "Alzkanal",
+    "gebiet": "isar",
+    "station_id": "18409508",
+    "slug": "gufflham-18409508"
+  },
+  {
+    "name": "Güntersthal",
+    "gewaesser": "Pegnitz",
+    "gebiet": "regnitz",
+    "station_id": "24222002",
+    "slug": "guentersthal-24222002"
+  },
+  {
+    "name": "Günzburg u. d. Günzmündung",
+    "gewaesser": "Donau",
+    "gebiet": "kelheim",
+    "station_id": "10032009",
+    "slug": "guenzburg-u-d-guenzmuendung-10032009"
+  },
+  {
+    "name": "Gunzesried",
+    "gewaesser": "Gunzesrieder Ach",
+    "gebiet": "iller_lech",
+    "station_id": "11432002",
+    "slug": "gunzesried-11432002"
+  },
+  {
+    "name": "Gutenstetten Rückhaltebecken",
+    "gewaesser": "Steinach",
+    "gebiet": "main_unten",
+    "station_id": "24269055",
+    "slug": "gutenstetten-rueckhaltebecken-24269055"
+  },
+  {
+    "name": "Haberkofen",
+    "gewaesser": "Ödbach",
+    "gebiet": "passau",
+    "station_id": "15935504",
+    "slug": "haberkofen-15935504"
+  },
+  {
+    "name": "Hafenlohr",
+    "gewaesser": "Hafenlohr",
+    "gebiet": "main_unten",
+    "station_id": "24562000",
+    "slug": "hafenlohr-24562000"
+  },
+  {
+    "name": "Hahnbach",
+    "gewaesser": "Vils",
+    "gebiet": "naab_regen",
+    "station_id": "14603000",
+    "slug": "hahnbach-14603000"
+  },
+  {
+    "name": "Hahnenkammsee",
+    "gewaesser": "Hahnenkammsee",
+    "gebiet": "kelheim",
+    "station_id": "11857500",
+    "slug": "hahnenkammsee-11857500"
+  },
+  {
+    "name": "Hallerndorf",
+    "gewaesser": "Aisch",
+    "gebiet": "elbe",
+    "station_id": "24263203",
+    "slug": "hallerndorf-24263203"
+  },
+  {
+    "name": "Hammer",
+    "gewaesser": "Oberteisendorfer Ache",
+    "gebiet": "isar",
+    "station_id": "18668007",
+    "slug": "hammer-18668007"
+  },
+  {
+    "name": "Hammerles",
+    "gewaesser": "Schweinnaab",
+    "gebiet": "naab_regen",
+    "station_id": "14198309",
+    "slug": "hammerles-14198309"
+  },
+  {
+    "name": "Hammermühle",
+    "gewaesser": "Otterbach",
+    "gebiet": "passau",
+    "station_id": "15315000",
+    "slug": "hammermuehle-15315000"
+  },
+  {
+    "name": "Hammersbach",
+    "gewaesser": "Hammersbach",
+    "gebiet": "isar",
+    "station_id": "16417055",
+    "slug": "hammersbach-16417055"
+  },
+  {
+    "name": "Hammerschmiede",
+    "gewaesser": "Kalte Pastritz",
+    "gebiet": "naab_regen",
+    "station_id": "15249355",
+    "slug": "hammerschmiede-15249355"
+  },
+  {
+    "name": "Harburg",
+    "gewaesser": "Wörnitz",
+    "gebiet": "kelheim",
+    "station_id": "11809009",
+    "slug": "harburg-11809009"
+  },
+  {
+    "name": "Hasberg",
+    "gewaesser": "Mindel",
+    "gebiet": "kelheim",
+    "station_id": "11605202",
+    "slug": "hasberg-11605202"
+  },
+  {
+    "name": "Hasberg",
+    "gewaesser": "Östliche Mindel",
+    "gebiet": "kelheim",
+    "station_id": "11605009",
+    "slug": "hasberg-11605009"
+  },
+  {
+    "name": "Haslach NM.",
+    "gewaesser": "Kettenbacher Leitgraben",
+    "gebiet": "kelheim",
+    "station_id": "24217012",
+    "slug": "haslach-nm-24217012"
+  },
+  {
+    "name": "Haslach Werksabfluss",
+    "gewaesser": "Wertach",
+    "gebiet": "iller_lech",
+    "station_id": "12404002",
+    "slug": "haslach-werksabfluss-12404002"
+  },
+  {
+    "name": "Haunstetten",
+    "gewaesser": "Lech",
+    "gebiet": "kelheim",
+    "station_id": "12003500",
+    "slug": "haunstetten-12003500"
+  },
+  {
+    "name": "Haupeltshofen",
+    "gewaesser": "Kammel",
+    "gebiet": "kelheim",
+    "station_id": "11688475",
+    "slug": "haupeltshofen-11688475"
+  },
+  {
+    "name": "Hausheim.",
+    "gewaesser": "Hausheimer Leitgraben",
+    "gebiet": "kelheim",
+    "station_id": "13415065",
+    "slug": "hausheim-13415065"
+  },
+  {
+    "name": "Hechendorf",
+    "gewaesser": "Ramsach",
+    "gebiet": "isar",
+    "station_id": "16438055",
+    "slug": "hechendorf-16438055"
+  },
+  {
+    "name": "Heimertingen",
+    "gewaesser": "Memminger Ach",
+    "gebiet": "iller_lech",
+    "station_id": "11495002",
+    "slug": "heimertingen-11495002"
+  },
+  {
+    "name": "Heinersdorf",
+    "gewaesser": "Rodach",
+    "gebiet": "elbe",
+    "station_id": "24167006",
+    "slug": "heinersdorf-24167006"
+  },
+  {
+    "name": "Heitzenhofen",
+    "gewaesser": "Naab",
+    "gebiet": "kelheim",
+    "station_id": "14008006",
+    "slug": "heitzenhofen-14008006"
+  },
+  {
+    "name": "Heroldingen",
+    "gewaesser": "Wörnitz",
+    "gebiet": "kelheim",
+    "station_id": "11808006",
+    "slug": "heroldingen-11808006"
+  },
+  {
+    "name": "Herrsching",
+    "gewaesser": "Kienbach",
+    "gebiet": "isar",
+    "station_id": "16627009",
+    "slug": "herrsching-16627009"
+  },
+  {
+    "name": "Herzogenaurach",
+    "gewaesser": "Mittlere Aurach",
+    "gebiet": "regnitz",
+    "station_id": "24237005",
+    "slug": "herzogenaurach-24237005"
+  },
+  {
+    "name": "Heuweg",
+    "gewaesser": "Otterbach",
+    "gebiet": "passau",
+    "station_id": "15314008",
+    "slug": "heuweg-15314008"
+  },
+  {
+    "name": "Hiltmannsdorf HW",
+    "gewaesser": "Farrnbach",
+    "gebiet": "regnitz",
+    "station_id": "24230500",
+    "slug": "hiltmannsdorf-hw-24230500"
+  },
+  {
+    "name": "Hirschbach",
+    "gewaesser": "Kleiner Regen",
+    "gebiet": "passau",
+    "station_id": "15214604",
+    "slug": "hirschbach-15214604"
+  },
+  {
+    "name": "Hobbach",
+    "gewaesser": "Elsava",
+    "gebiet": "main_unten",
+    "station_id": "24751003",
+    "slug": "hobbach-24751003"
+  },
+  {
+    "name": "Hocha Perlseeabfluss",
+    "gewaesser": "Schwarzach",
+    "gebiet": "naab_regen",
+    "station_id": "14402507",
+    "slug": "hocha-perlseeabfluss-14402507"
+  },
+  {
+    "name": "Hochberg",
+    "gewaesser": "Traun",
+    "gebiet": "isar",
+    "station_id": "18481006",
+    "slug": "hochberg-18481006"
+  },
+  {
+    "name": "Hof",
+    "gewaesser": "Sächsische Saale",
+    "gebiet": "elbe",
+    "station_id": "56001502",
+    "slug": "hof-56001502"
+  },
+  {
+    "name": "Hofkirchen",
+    "gewaesser": "Donau",
+    "gebiet": "passau",
+    "station_id": "10088003",
+    "slug": "hofkirchen-10088003"
+  },
+  {
+    "name": "Hoflach",
+    "gewaesser": "Birkenmoosgraben",
+    "gebiet": "kelheim",
+    "station_id": "16653055",
+    "slug": "hoflach-16653055"
+  },
+  {
+    "name": "Hohenberg",
+    "gewaesser": "Eger",
+    "gebiet": "elbe",
+    "station_id": "53202508",
+    "slug": "hohenberg-53202508"
+  },
+  {
+    "name": "Hohenkammer",
+    "gewaesser": "Glonn",
+    "gebiet": "kelheim",
+    "station_id": "16686008",
+    "slug": "hohenkammer-16686008"
+  },
+  {
+    "name": "Hohenofen",
+    "gewaesser": "Kaltenbach",
+    "gebiet": "isar",
+    "station_id": "18285507",
+    "slug": "hohenofen-18285507"
+  },
+  {
+    "name": "Hohenstadt",
+    "gewaesser": "Pegnitz",
+    "gebiet": "regnitz",
+    "station_id": "24223005",
+    "slug": "hohenstadt-24223005"
+  },
+  {
+    "name": "Höll",
+    "gewaesser": "Schwarzach",
+    "gebiet": "naab_regen",
+    "station_id": "14402008",
+    "slug": "hoell-14402008"
+  },
+  {
+    "name": "Hölle",
+    "gewaesser": "Selbitz",
+    "gebiet": "elbe",
+    "station_id": "56161509",
+    "slug": "hoelle-56161509"
+  },
+  {
+    "name": "Hollfeld",
+    "gewaesser": "Wiesent",
+    "gebiet": "elbe",
+    "station_id": "24240503",
+    "slug": "hollfeld-24240503"
+  },
+  {
+    "name": "Holnstein",
+    "gewaesser": "Unterbürger Laber",
+    "gebiet": "kelheim",
+    "station_id": "13483004",
+    "slug": "holnstein-13483004"
+  },
+  {
+    "name": "Hörmannsberg",
+    "gewaesser": "Gaißa",
+    "gebiet": "passau",
+    "station_id": "17345002",
+    "slug": "hoermannsberg-17345002"
+  },
+  {
+    "name": "Hörmanshofen",
+    "gewaesser": "Geltnach",
+    "gebiet": "iller_lech",
+    "station_id": "12445000",
+    "slug": "hoermanshofen-12445000"
+  },
+  {
+    "name": "Hüttendorf",
+    "gewaesser": "Regnitz",
+    "gebiet": "regnitz",
+    "station_id": "24201501",
+    "slug": "huettendorf-24201501"
+  },
+  {
+    "name": "Iglersreuth Speicherzufluss",
+    "gewaesser": "Tirschenreuther Waldnaab",
+    "gebiet": "naab_regen",
+    "station_id": "14107008",
+    "slug": "iglersreuth-speicherzufluss-14107008"
+  },
+  {
+    "name": "Illesheim",
+    "gewaesser": "Aisch",
+    "gebiet": "main_unten",
+    "station_id": "24260500",
+    "slug": "illesheim-24260500"
+  },
+  {
+    "name": "Ilsank",
+    "gewaesser": "Ramsauer Ache",
+    "gebiet": "inn",
+    "station_id": "18622006",
+    "slug": "ilsank-18622006"
+  },
+  {
+    "name": "Immenstadt",
+    "gewaesser": "Konstanzer Ach",
+    "gebiet": "iller_lech",
+    "station_id": "11438015",
+    "slug": "immenstadt-11438015"
+  },
+  {
+    "name": "Immenstadt Zollbrücke",
+    "gewaesser": "Iller",
+    "gebiet": "iller_lech",
+    "station_id": "11401202",
+    "slug": "immenstadt-zollbruecke-11401202"
+  },
+  {
+    "name": "Ingolstadt Luitpoldstraße",
+    "gewaesser": "Donau",
+    "gebiet": "kelheim",
+    "station_id": "10046105",
+    "slug": "ingolstadt-luitpoldstrasse-10046105"
+  },
+  {
+    "name": "Inkofen",
+    "gewaesser": "Amper",
+    "gebiet": "kelheim",
+    "station_id": "16607001",
+    "slug": "inkofen-16607001"
+  },
+  {
+    "name": "Johannisthal",
+    "gewaesser": "Tirschenreuther Waldnaab",
+    "gebiet": "naab_regen",
+    "station_id": "14114003",
+    "slug": "johannisthal-14114003"
+  },
+  {
+    "name": "Kaltenbrunn",
+    "gewaesser": "Kanker",
+    "gebiet": "isar",
+    "station_id": "16427108",
+    "slug": "kaltenbrunn-16427108"
+  },
+  {
+    "name": "Kalteneck",
+    "gewaesser": "Ilz",
+    "gebiet": "passau",
+    "station_id": "17406005",
+    "slug": "kalteneck-17406005"
+  },
+  {
+    "name": "Kastl",
+    "gewaesser": "Lauterach",
+    "gebiet": "kelheim",
+    "station_id": "14681003",
+    "slug": "kastl-14681003"
+  },
+  {
+    "name": "Katzwang",
+    "gewaesser": "Rednitz",
+    "gebiet": "kelheim",
+    "station_id": "24210706",
+    "slug": "katzwang-24210706"
+  },
+  {
+    "name": "Kauerndorf",
+    "gewaesser": "Schorgast",
+    "gebiet": "elbe",
+    "station_id": "24117008",
+    "slug": "kauerndorf-24117008"
+  },
+  {
+    "name": "Kautendorf",
+    "gewaesser": "Südliche Regnitz",
+    "gebiet": "elbe",
+    "station_id": "56143008",
+    "slug": "kautendorf-56143008"
+  },
+  {
+    "name": "Kelheim",
+    "gewaesser": "Donau",
+    "gebiet": "kelheim",
+    "station_id": "10053009",
+    "slug": "kelheim-10053009"
+  },
+  {
+    "name": "Kelheimwinzer",
+    "gewaesser": "Donau",
+    "gebiet": "kelheim",
+    "station_id": "10054500",
+    "slug": "kelheimwinzer-10054500"
+  },
+  {
+    "name": "Kemmern",
+    "gewaesser": "Main",
+    "gebiet": "elbe",
+    "station_id": "24010004",
+    "slug": "kemmern-24010004"
+  },
+  {
+    "name": "Kempten",
+    "gewaesser": "Iller",
+    "gebiet": "iller_lech",
+    "station_id": "11402001",
+    "slug": "kempten-11402001"
+  },
+  {
+    "name": "Kettenbach.",
+    "gewaesser": "LDM-Kanal",
+    "gebiet": "kelheim",
+    "station_id": "13415055",
+    "slug": "kettenbach-13415055"
+  },
+  {
+    "name": "Kettnitzmühle",
+    "gewaesser": "Ehenbach",
+    "gebiet": "naab_regen",
+    "station_id": "14338000",
+    "slug": "kettnitzmuehle-14338000"
+  },
+  {
+    "name": "Kienhof",
+    "gewaesser": "Regen",
+    "gebiet": "passau",
+    "station_id": "15205501",
+    "slug": "kienhof-15205501"
+  },
+  {
+    "name": "Kinding KA",
+    "gewaesser": "Altmühl",
+    "gebiet": "kelheim",
+    "station_id": "13407709",
+    "slug": "kinding-ka-13407709"
+  },
+  {
+    "name": "Kinning",
+    "gewaesser": "Rott",
+    "gebiet": "isar",
+    "station_id": "18801005",
+    "slug": "kinning-18801005"
+  },
+  {
+    "name": "Kirchberg",
+    "gewaesser": "Mertseebach",
+    "gebiet": "passau",
+    "station_id": "18835007",
+    "slug": "kirchberg-18835007"
+  },
+  {
+    "name": "Kissing",
+    "gewaesser": "Auensee",
+    "gebiet": "kelheim",
+    "station_id": "13134055",
+    "slug": "kissing-13134055"
+  },
+  {
+    "name": "Kleinheubach",
+    "gewaesser": "Main",
+    "gebiet": "main_unten",
+    "station_id": "24064003",
+    "slug": "kleinheubach-24064003"
+  },
+  {
+    "name": "Kochel",
+    "gewaesser": "Loisach",
+    "gebiet": "isar",
+    "station_id": "16407002",
+    "slug": "kochel-16407002"
+  },
+  {
+    "name": "Ködnitz",
+    "gewaesser": "Weißer Main",
+    "gebiet": "elbe",
+    "station_id": "24110955",
+    "slug": "koednitz-24110955"
+  },
+  {
+    "name": "Köfering",
+    "gewaesser": "Pfatter",
+    "gebiet": "passau",
+    "station_id": "15325004",
+    "slug": "koefering-15325004"
+  },
+  {
+    "name": "Kollbach",
+    "gewaesser": "Kollbach",
+    "gebiet": "passau",
+    "station_id": "17242000",
+    "slug": "kollbach-17242000"
+  },
+  {
+    "name": "Kösfeld",
+    "gewaesser": "Sulzbach",
+    "gebiet": "elbe",
+    "station_id": "24165805",
+    "slug": "koesfeld-24165805"
+  },
+  {
+    "name": "Kothmaißling",
+    "gewaesser": "Chamb",
+    "gebiet": "passau",
+    "station_id": "15246000",
+    "slug": "kothmaissling-15246000"
+  },
+  {
+    "name": "Kötzting",
+    "gewaesser": "Weißer Regen",
+    "gebiet": "passau",
+    "station_id": "15228008",
+    "slug": "koetzting-15228008"
+  },
+  {
+    "name": "Kraiburg",
+    "gewaesser": "Inn",
+    "gebiet": "isar",
+    "station_id": "18004007",
+    "slug": "kraiburg-18004007"
+  },
+  {
+    "name": "Kreppendorf",
+    "gewaesser": "Zenn",
+    "gebiet": "regnitz",
+    "station_id": "24232301",
+    "slug": "kreppendorf-24232301"
+  },
+  {
+    "name": "Kulmbach",
+    "gewaesser": "Weißer Main",
+    "gebiet": "elbe",
+    "station_id": "24112155",
+    "slug": "kulmbach-24112155"
+  },
+  {
+    "name": "Labersricht.",
+    "gewaesser": "Pilsacher Leitgraben",
+    "gebiet": "kelheim",
+    "station_id": "24217005",
+    "slug": "labersricht-24217005"
+  },
+  {
+    "name": "Landau",
+    "gewaesser": "Isar",
+    "gebiet": "passau",
+    "station_id": "16008007",
+    "slug": "landau-16008007"
+  },
+  {
+    "name": "Landsberg",
+    "gewaesser": "Lech",
+    "gebiet": "isar",
+    "station_id": "12003001",
+    "slug": "landsberg-12003001"
+  },
+  {
+    "name": "Landshut Birket",
+    "gewaesser": "Isar",
+    "gebiet": "passau",
+    "station_id": "16007004",
+    "slug": "landshut-birket-16007004"
+  },
+  {
+    "name": "Landshut Flutmulde",
+    "gewaesser": "Isar",
+    "gebiet": "passau",
+    "station_id": "16007106",
+    "slug": "landshut-flutmulde-16007106"
+  },
+  {
+    "name": "Langenau",
+    "gewaesser": "Langenaubach",
+    "gebiet": "elbe",
+    "station_id": "24143507",
+    "slug": "langenau-24143507"
+  },
+  {
+    "name": "Langenbruck",
+    "gewaesser": "Frankenohe",
+    "gebiet": "naab_regen",
+    "station_id": "14615009",
+    "slug": "langenbruck-14615009"
+  },
+  {
+    "name": "Langengeisling",
+    "gewaesser": "Sempt",
+    "gebiet": "kelheim",
+    "station_id": "16805005",
+    "slug": "langengeisling-16805005"
+  },
+  {
+    "name": "Langengeisling",
+    "gewaesser": "Saubach",
+    "gebiet": "kelheim",
+    "station_id": "16806008",
+    "slug": "langengeisling-16806008"
+  },
+  {
+    "name": "Langerringen",
+    "gewaesser": "Singold",
+    "gebiet": "kelheim",
+    "station_id": "12483009",
+    "slug": "langerringen-12483009"
+  },
+  {
+    "name": "Langerringen Hochwasserlauf",
+    "gewaesser": "Singold Hochwasserlauf",
+    "gebiet": "kelheim",
+    "station_id": "12483100",
+    "slug": "langerringen-hochwasserlauf-12483100"
+  },
+  {
+    "name": "Lauben",
+    "gewaesser": "Günz",
+    "gebiet": "iller_lech",
+    "station_id": "11582300",
+    "slug": "lauben-11582300"
+  },
+  {
+    "name": "Laubendorf",
+    "gewaesser": "Zenn",
+    "gebiet": "main_unten",
+    "station_id": "24232006",
+    "slug": "laubendorf-24232006"
+  },
+  {
+    "name": "Lauf",
+    "gewaesser": "Pegnitz",
+    "gebiet": "regnitz",
+    "station_id": "24224008",
+    "slug": "lauf-24224008"
+  },
+  {
+    "name": "Laufen Siegerstetter Keller",
+    "gewaesser": "Salzach",
+    "gebiet": "inn",
+    "station_id": "18602009",
+    "slug": "laufen-siegerstetter-keller-18602009"
+  },
+  {
+    "name": "Laufermühle",
+    "gewaesser": "Aisch",
+    "gebiet": "elbe",
+    "station_id": "24263000",
+    "slug": "laufermuehle-24263000"
+  },
+  {
+    "name": "Lauterüberleitung Stollen",
+    "gewaesser": "Lauterüberleitung",
+    "gebiet": "elbe",
+    "station_id": "24165302",
+    "slug": "lauterueberleitung-stollen-24165302"
+  },
+  {
+    "name": "Lechbruck",
+    "gewaesser": "Lech",
+    "gebiet": "iller_lech",
+    "station_id": "12002009",
+    "slug": "lechbruck-12002009"
+  },
+  {
+    "name": "Leming",
+    "gewaesser": "Freybach",
+    "gebiet": "passau",
+    "station_id": "15247002",
+    "slug": "leming-15247002"
+  },
+  {
+    "name": "Lenggries",
+    "gewaesser": "Arzbach",
+    "gebiet": "isar",
+    "station_id": "16336555",
+    "slug": "lenggries-16336555"
+  },
+  {
+    "name": "Lenggries",
+    "gewaesser": "Almbach",
+    "gebiet": "isar",
+    "station_id": "16331955",
+    "slug": "lenggries-16331955"
+  },
+  {
+    "name": "Lenggries",
+    "gewaesser": "Isar",
+    "gebiet": "isar",
+    "station_id": "16003003",
+    "slug": "lenggries-16003003"
+  },
+  {
+    "name": "Lentersdorf",
+    "gewaesser": "Bibert",
+    "gebiet": "kelheim",
+    "station_id": "24218504",
+    "slug": "lentersdorf-24218504"
+  },
+  {
+    "name": "Leucherhof",
+    "gewaesser": "Baunach",
+    "gebiet": "elbe",
+    "station_id": "24186000",
+    "slug": "leucherhof-24186000"
+  },
+  {
+    "name": "Leuterschach",
+    "gewaesser": "Lobach",
+    "gebiet": "iller_lech",
+    "station_id": "12425002",
+    "slug": "leuterschach-12425002"
+  },
+  {
+    "name": "Leutstetten",
+    "gewaesser": "Würm",
+    "gebiet": "isar",
+    "station_id": "16665008",
+    "slug": "leutstetten-16665008"
+  },
+  {
+    "name": "Lichtenfels",
+    "gewaesser": "Main",
+    "gebiet": "elbe",
+    "station_id": "24008002",
+    "slug": "lichtenfels-24008002"
+  },
+  {
+    "name": "Liebenstein Werksabfluss",
+    "gewaesser": "Tirschenreuther Waldnaab",
+    "gebiet": "naab_regen",
+    "station_id": "14108000",
+    "slug": "liebenstein-werksabfluss-14108000"
+  },
+  {
+    "name": "Lierheim",
+    "gewaesser": "Eger",
+    "gebiet": "kelheim",
+    "station_id": "11864007",
+    "slug": "lierheim-11864007"
+  },
+  {
+    "name": "Linden",
+    "gewaesser": "Rott",
+    "gebiet": "passau",
+    "station_id": "18803805",
+    "slug": "linden-18803805"
+  },
+  {
+    "name": "Linden",
+    "gewaesser": "Sausswasser",
+    "gebiet": "passau",
+    "station_id": "17467000",
+    "slug": "linden-17467000"
+  },
+  {
+    "name": "Lohberg",
+    "gewaesser": "Weißer Regen",
+    "gebiet": "passau",
+    "station_id": "15221009",
+    "slug": "lohberg-15221009"
+  },
+  {
+    "name": "Lohma",
+    "gewaesser": "Zottbach",
+    "gebiet": "naab_regen",
+    "station_id": "14368500",
+    "slug": "lohma-14368500"
+  },
+  {
+    "name": "Lohmannmühle",
+    "gewaesser": "Kleiner Regen",
+    "gebiet": "passau",
+    "station_id": "15216009",
+    "slug": "lohmannmuehle-15216009"
+  },
+  {
+    "name": "Lohr",
+    "gewaesser": "Baunach",
+    "gebiet": "elbe",
+    "station_id": "24183002",
+    "slug": "lohr-24183002"
+  },
+  {
+    "name": "Lorenzreuth",
+    "gewaesser": "Röslau",
+    "gebiet": "elbe",
+    "station_id": "53216003",
+    "slug": "lorenzreuth-53216003"
+  },
+  {
+    "name": "Mainburg",
+    "gewaesser": "Abens",
+    "gebiet": "kelheim",
+    "station_id": "13321002",
+    "slug": "mainburg-13321002"
+  },
+  {
+    "name": "Mainleus",
+    "gewaesser": "Main",
+    "gebiet": "elbe",
+    "station_id": "24003009",
+    "slug": "mainleus-24003009"
+  },
+  {
+    "name": "Manching (Ort)",
+    "gewaesser": "Paar",
+    "gebiet": "kelheim",
+    "station_id": "13208000",
+    "slug": "manching-ort-13208000"
+  },
+  {
+    "name": "Manching Bahnbrücke",
+    "gewaesser": "Paar",
+    "gebiet": "kelheim",
+    "station_id": "13208509",
+    "slug": "manching-bahnbruecke-13208509"
+  },
+  {
+    "name": "Marienthal",
+    "gewaesser": "Regen",
+    "gebiet": "passau",
+    "station_id": "15207507",
+    "slug": "marienthal-15207507"
+  },
+  {
+    "name": "Marktbreit",
+    "gewaesser": "Breitbach",
+    "gebiet": "main_unten",
+    "station_id": "24369000",
+    "slug": "marktbreit-24369000"
+  },
+  {
+    "name": "Marktleuthen",
+    "gewaesser": "Eger",
+    "gebiet": "elbe",
+    "station_id": "53201505",
+    "slug": "marktleuthen-53201505"
+  },
+  {
+    "name": "Marktredwitz",
+    "gewaesser": "Kössein",
+    "gebiet": "elbe",
+    "station_id": "53216954",
+    "slug": "marktredwitz-53216954"
+  },
+  {
+    "name": "Martinszell",
+    "gewaesser": "Iller",
+    "gebiet": "iller_lech",
+    "station_id": "11401701",
+    "slug": "martinszell-11401701"
+  },
+  {
+    "name": "Mauthaus",
+    "gewaesser": "Nordhalbener Ködel",
+    "gebiet": "elbe",
+    "station_id": "24144500",
+    "slug": "mauthaus-24144500"
+  },
+  {
+    "name": "Mauthaus",
+    "gewaesser": "Tschirner Ködel",
+    "gebiet": "elbe",
+    "station_id": "24145003",
+    "slug": "mauthaus-24145003"
+  },
+  {
+    "name": "Mauthaus Großes Meßwehr",
+    "gewaesser": "Nurner Ködel",
+    "gebiet": "elbe",
+    "station_id": "24143857",
+    "slug": "mauthaus-grosses-messwehr-24143857"
+  },
+  {
+    "name": "Mauthaus Kleines Meßwehr",
+    "gewaesser": "Nurner Ködel",
+    "gebiet": "elbe",
+    "station_id": "24143802",
+    "slug": "mauthaus-kleines-messwehr-24143802"
+  },
+  {
+    "name": "Maxkron",
+    "gewaesser": "Loisach",
+    "gebiet": "isar",
+    "station_id": "16408130",
+    "slug": "maxkron-16408130"
+  },
+  {
+    "name": "Mering",
+    "gewaesser": "Paar",
+    "gebiet": "kelheim",
+    "station_id": "13201000",
+    "slug": "mering-13201000"
+  },
+  {
+    "name": "Mettendorf",
+    "gewaesser": "Schwarzach",
+    "gebiet": "kelheim",
+    "station_id": "13465002",
+    "slug": "mettendorf-13465002"
+  },
+  {
+    "name": "Michelfeld",
+    "gewaesser": "Pegnitz",
+    "gebiet": "naab_regen",
+    "station_id": "24220506",
+    "slug": "michelfeld-24220506"
+  },
+  {
+    "name": "Miesbach",
+    "gewaesser": "Schlierach",
+    "gebiet": "isar",
+    "station_id": "18226009",
+    "slug": "miesbach-18226009"
+  },
+  {
+    "name": "Mitteldachstetten",
+    "gewaesser": "Fränkische Rezat",
+    "gebiet": "kelheim",
+    "station_id": "24211414",
+    "slug": "mitteldachstetten-24211414"
+  },
+  {
+    "name": "Mittelsinn",
+    "gewaesser": "Sinn",
+    "gebiet": "main_unten",
+    "station_id": "24482003",
+    "slug": "mittelsinn-24482003"
+  },
+  {
+    "name": "Mittenwald",
+    "gewaesser": "Isar",
+    "gebiet": "isar",
+    "station_id": "16000708",
+    "slug": "mittenwald-16000708"
+  },
+  {
+    "name": "Mittenwald",
+    "gewaesser": "Leutasch",
+    "gebiet": "isar",
+    "station_id": "16124950",
+    "slug": "mittenwald-16124950"
+  },
+  {
+    "name": "Mitterrohrenstadt",
+    "gewaesser": "Rohrenstadter Bach",
+    "gebiet": "kelheim",
+    "station_id": "24217055",
+    "slug": "mitterrohrenstadt-24217055"
+  },
+  {
+    "name": "Mönchröden",
+    "gewaesser": "Röden",
+    "gebiet": "elbe",
+    "station_id": "24165102",
+    "slug": "moenchroeden-24165102"
+  },
+  {
+    "name": "Moosburg",
+    "gewaesser": "Isar",
+    "gebiet": "kelheim",
+    "station_id": "16006613",
+    "slug": "moosburg-16006613"
+  },
+  {
+    "name": "Moosburg",
+    "gewaesser": "Amper",
+    "gebiet": "kelheim",
+    "station_id": "16609109",
+    "slug": "moosburg-16609109"
+  },
+  {
+    "name": "Moschendorf",
+    "gewaesser": "Ölsnitz",
+    "gebiet": "elbe",
+    "station_id": "56132001",
+    "slug": "moschendorf-56132001"
+  },
+  {
+    "name": "Muggendorf",
+    "gewaesser": "Wiesent",
+    "gebiet": "elbe",
+    "station_id": "24242000",
+    "slug": "muggendorf-24242000"
+  },
+  {
+    "name": "Mühlau",
+    "gewaesser": "Mühlbach",
+    "gebiet": "isar",
+    "station_id": "18459007",
+    "slug": "muehlau-18459007"
+  },
+  {
+    "name": "Mühldorf",
+    "gewaesser": "Inn",
+    "gebiet": "isar",
+    "station_id": "18004506",
+    "slug": "muehldorf-18004506"
+  },
+  {
+    "name": "Mühlhausen",
+    "gewaesser": "Euzenauerbach",
+    "gebiet": "isar",
+    "station_id": "18194503",
+    "slug": "muehlhausen-18194503"
+  },
+  {
+    "name": "Mühlried",
+    "gewaesser": "Paar",
+    "gebiet": "kelheim",
+    "station_id": "13206004",
+    "slug": "muehlried-13206004"
+  },
+  {
+    "name": "Mühlstetten",
+    "gewaesser": "Schwäbische Rezat",
+    "gebiet": "kelheim",
+    "station_id": "24214004",
+    "slug": "muehlstetten-24214004"
+  },
+  {
+    "name": "Mühlthal",
+    "gewaesser": "Glonn",
+    "gebiet": "isar",
+    "station_id": "18261000",
+    "slug": "muehlthal-18261000"
+  },
+  {
+    "name": "München",
+    "gewaesser": "Isar",
+    "gebiet": "kelheim",
+    "station_id": "16005701",
+    "slug": "muenchen-16005701"
+  },
+  {
+    "name": "München Himmelreichbrücke",
+    "gewaesser": "Eisbach",
+    "gebiet": "kelheim",
+    "station_id": "16515005",
+    "slug": "muenchen-himmelreichbruecke-16515005"
+  },
+  {
+    "name": "München Tierärztl. Hochschule",
+    "gewaesser": "Schwabinger Bach",
+    "gebiet": "kelheim",
+    "station_id": "16516008",
+    "slug": "muenchen-tieraerztl-hochschule-16516008"
+  },
+  {
+    "name": "Münchshofen",
+    "gewaesser": "Naab",
+    "gebiet": "kelheim",
+    "station_id": "14006000",
+    "slug": "muenchshofen-14006000"
+  },
+  {
+    "name": "Münnerstadt",
+    "gewaesser": "Lauer",
+    "gebiet": "main_unten",
+    "station_id": "24441301",
+    "slug": "muennerstadt-24441301"
+  },
+  {
+    "name": "Nattenhausen",
+    "gewaesser": "Günz",
+    "gebiet": "kelheim",
+    "station_id": "11583303",
+    "slug": "nattenhausen-11583303"
+  },
+  {
+    "name": "Neu-Ulm",
+    "gewaesser": "Donau",
+    "gebiet": "kelheim",
+    "station_id": "10026293",
+    "slug": "neu-ulm-10026293"
+  },
+  {
+    "name": "Neu-Ulm Bad Held",
+    "gewaesser": "Donau",
+    "gebiet": "kelheim",
+    "station_id": "10026301",
+    "slug": "neu-ulm-bad-held-10026301"
+  },
+  {
+    "name": "Neuburg",
+    "gewaesser": "Donau",
+    "gebiet": "kelheim",
+    "station_id": "10043708",
+    "slug": "neuburg-10043708"
+  },
+  {
+    "name": "Neudorf",
+    "gewaesser": "Kronach",
+    "gebiet": "elbe",
+    "station_id": "24113506",
+    "slug": "neudorf-24113506"
+  },
+  {
+    "name": "Neukenroth",
+    "gewaesser": "Haßlach",
+    "gebiet": "elbe",
+    "station_id": "24146505",
+    "slug": "neukenroth-24146505"
+  },
+  {
+    "name": "Neukirchen",
+    "gewaesser": "Lauterbach",
+    "gebiet": "elbe",
+    "station_id": "24165204",
+    "slug": "neukirchen-24165204"
+  },
+  {
+    "name": "Neumarkt Kanalhafen.",
+    "gewaesser": "LDM-Kanal",
+    "gebiet": "kelheim",
+    "station_id": "13415955",
+    "slug": "neumarkt-kanalhafen-13415955"
+  },
+  {
+    "name": "Neumühle",
+    "gewaesser": "Rednitz",
+    "gebiet": "kelheim",
+    "station_id": "24211200",
+    "slug": "neumuehle-24211200"
+  },
+  {
+    "name": "Neumühle",
+    "gewaesser": "Vilskanal",
+    "gebiet": "passau",
+    "station_id": "17203802",
+    "slug": "neumuehle-17203802"
+  },
+  {
+    "name": "Neumühlschwaig",
+    "gewaesser": "Amper",
+    "gebiet": "kelheim",
+    "station_id": "16609007",
+    "slug": "neumuehlschwaig-16609007"
+  },
+  {
+    "name": "Neunstetten",
+    "gewaesser": "Altmühl",
+    "gebiet": "kelheim",
+    "station_id": "13402002",
+    "slug": "neunstetten-13402002"
+  },
+  {
+    "name": "Neusling",
+    "gewaesser": "Neuslinger Bach",
+    "gebiet": "passau",
+    "station_id": "17131055",
+    "slug": "neusling-17131055"
+  },
+  {
+    "name": "Neustadt",
+    "gewaesser": "Waldnaab",
+    "gebiet": "naab_regen",
+    "station_id": "14106005",
+    "slug": "neustadt-14106005"
+  },
+  {
+    "name": "Neustadt",
+    "gewaesser": "Donau",
+    "gebiet": "kelheim",
+    "station_id": "10051105",
+    "slug": "neustadt-10051105"
+  },
+  {
+    "name": "Neustift",
+    "gewaesser": "Wolfach",
+    "gebiet": "passau",
+    "station_id": "17325005",
+    "slug": "neustift-17325005"
+  },
+  {
+    "name": "Niederstimm",
+    "gewaesser": "Sandrach",
+    "gebiet": "kelheim",
+    "station_id": "13241005",
+    "slug": "niederstimm-13241005"
+  },
+  {
+    "name": "Nittenau",
+    "gewaesser": "Regen",
+    "gebiet": "passau",
+    "station_id": "15207055",
+    "slug": "nittenau-15207055"
+  },
+  {
+    "name": "Nordheim vor der Rhön",
+    "gewaesser": "Streu",
+    "gebiet": "main_unten",
+    "station_id": "24421009",
+    "slug": "nordheim-vor-der-rhoen-24421009"
+  },
+  {
+    "name": "Nürnberg Lederersteg",
+    "gewaesser": "Pegnitz",
+    "gebiet": "regnitz",
+    "station_id": "24225000",
+    "slug": "nuernberg-lederersteg-24225000"
+  },
+  {
+    "name": "Nußdorf",
+    "gewaesser": "Steinbach",
+    "gebiet": "isar",
+    "station_id": "18196000",
+    "slug": "nussdorf-18196000"
+  },
+  {
+    "name": "Oberach",
+    "gewaesser": "Weißach",
+    "gebiet": "isar",
+    "station_id": "18212004",
+    "slug": "oberach-18212004"
+  },
+  {
+    "name": "Oberammergau",
+    "gewaesser": "Ammer",
+    "gebiet": "isar",
+    "station_id": "16610709",
+    "slug": "oberammergau-16610709"
+  },
+  {
+    "name": "Oberaudorf",
+    "gewaesser": "Inn",
+    "gebiet": "isar",
+    "station_id": "18000403",
+    "slug": "oberaudorf-18000403"
+  },
+  {
+    "name": "Oberding",
+    "gewaesser": "Gfällach",
+    "gebiet": "kelheim",
+    "station_id": "16527503",
+    "slug": "oberding-16527503"
+  },
+  {
+    "name": "Oberfinning Speicherabgabe",
+    "gewaesser": "Windach",
+    "gebiet": "isar",
+    "station_id": "16644050",
+    "slug": "oberfinning-speicherabgabe-16644050"
+  },
+  {
+    "name": "Oberhammer",
+    "gewaesser": "Untere Steinach",
+    "gebiet": "elbe",
+    "station_id": "24118500",
+    "slug": "oberhammer-24118500"
+  },
+  {
+    "name": "Oberhausen",
+    "gewaesser": "Ach",
+    "gebiet": "isar",
+    "station_id": "16618008",
+    "slug": "oberhausen-16618008"
+  },
+  {
+    "name": "Oberheßbach",
+    "gewaesser": "Fränkische Rezat",
+    "gebiet": "kelheim",
+    "station_id": "24211505",
+    "slug": "oberhessbach-24211505"
+  },
+  {
+    "name": "Oberkotzau",
+    "gewaesser": "Sächsische Saale",
+    "gebiet": "elbe",
+    "station_id": "56001003",
+    "slug": "oberkotzau-56001003"
+  },
+  {
+    "name": "Oberlauter",
+    "gewaesser": "Lauterbach",
+    "gebiet": "elbe",
+    "station_id": "24165306",
+    "slug": "oberlauter-24165306"
+  },
+  {
+    "name": "Obermenzing",
+    "gewaesser": "Würm",
+    "gebiet": "kelheim",
+    "station_id": "16666000",
+    "slug": "obermenzing-16666000"
+  },
+  {
+    "name": "Obermühlhausen",
+    "gewaesser": "Beurerbach",
+    "gebiet": "isar",
+    "station_id": "16647458",
+    "slug": "obermuehlhausen-16647458"
+  },
+  {
+    "name": "Obermühlhausen",
+    "gewaesser": "Windach",
+    "gebiet": "isar",
+    "station_id": "16642002",
+    "slug": "obermuehlhausen-16642002"
+  },
+  {
+    "name": "Obernach",
+    "gewaesser": "Ach",
+    "gebiet": "isar",
+    "station_id": "16616002",
+    "slug": "obernach-16616002"
+  },
+  {
+    "name": "Obernau",
+    "gewaesser": "Main",
+    "gebiet": "main_unten",
+    "station_id": "24070006",
+    "slug": "obernau-24070006"
+  },
+  {
+    "name": "Oberndorf",
+    "gewaesser": "Donau",
+    "gebiet": "kelheim",
+    "station_id": "10056302",
+    "slug": "oberndorf-10056302"
+  },
+  {
+    "name": "Obersdorf",
+    "gewaesser": "Rosenbach",
+    "gebiet": "naab_regen",
+    "station_id": "14644801",
+    "slug": "obersdorf-14644801"
+  },
+  {
+    "name": "Oberstaufen",
+    "gewaesser": "Weißach",
+    "gebiet": "iller_lech",
+    "station_id": "21627008",
+    "slug": "oberstaufen-21627008"
+  },
+  {
+    "name": "Oberstdorf",
+    "gewaesser": "Stillach",
+    "gebiet": "iller_lech",
+    "station_id": "11412107",
+    "slug": "oberstdorf-11412107"
+  },
+  {
+    "name": "Oberstdorf",
+    "gewaesser": "Trettach",
+    "gebiet": "iller_lech",
+    "station_id": "11415003",
+    "slug": "oberstdorf-11415003"
+  },
+  {
+    "name": "Oberstimm",
+    "gewaesser": "Brautlach",
+    "gebiet": "kelheim",
+    "station_id": "13249007",
+    "slug": "oberstimm-13249007"
+  },
+  {
+    "name": "Oberthulba",
+    "gewaesser": "Thulba",
+    "gebiet": "main_unten",
+    "station_id": "24460306",
+    "slug": "oberthulba-24460306"
+  },
+  {
+    "name": "Odelzhausen",
+    "gewaesser": "Glonn",
+    "gebiet": "kelheim",
+    "station_id": "16683010",
+    "slug": "odelzhausen-16683010"
+  },
+  {
+    "name": "Offingen",
+    "gewaesser": "Mindel",
+    "gebiet": "kelheim",
+    "station_id": "11609000",
+    "slug": "offingen-11609000"
+  },
+  {
+    "name": "Operding",
+    "gewaesser": "Hammerbach",
+    "gebiet": "kelheim",
+    "station_id": "16827008",
+    "slug": "operding-16827008"
+  },
+  {
+    "name": "Ösbühl",
+    "gewaesser": "Danglesbach",
+    "gebiet": "naab_regen",
+    "station_id": "15247501",
+    "slug": "oesbuehl-15247501"
+  },
+  {
+    "name": "Panzing",
+    "gewaesser": "Bina",
+    "gebiet": "passau",
+    "station_id": "18825003",
+    "slug": "panzing-18825003"
+  },
+  {
+    "name": "Parsberg",
+    "gewaesser": "Schwarze Laber",
+    "gebiet": "kelheim",
+    "station_id": "13922002",
+    "slug": "parsberg-13922002"
+  },
+  {
+    "name": "Partenkirchen",
+    "gewaesser": "Partnach",
+    "gebiet": "isar",
+    "station_id": "16425003",
+    "slug": "partenkirchen-16425003"
+  },
+  {
+    "name": "Partenkirchen (neu)",
+    "gewaesser": "Kanker",
+    "gebiet": "isar",
+    "station_id": "16427513",
+    "slug": "partenkirchen-neu-16427513"
+  },
+  {
+    "name": "Partenstein",
+    "gewaesser": "Lohr",
+    "gebiet": "main_unten",
+    "station_id": "24522006",
+    "slug": "partenstein-24522006"
+  },
+  {
+    "name": "Passau",
+    "gewaesser": "Donau",
+    "gebiet": "passau",
+    "station_id": "10091008",
+    "slug": "passau-10091008"
+  },
+  {
+    "name": "Passau Ilzstadt",
+    "gewaesser": "Donau",
+    "gebiet": "passau",
+    "station_id": "10092000",
+    "slug": "passau-ilzstadt-10092000"
+  },
+  {
+    "name": "Passau Ingling",
+    "gewaesser": "Inn",
+    "gebiet": "passau",
+    "station_id": "18008008",
+    "slug": "passau-ingling-18008008"
+  },
+  {
+    "name": "Passau Marienbrücke",
+    "gewaesser": "Inn",
+    "gebiet": "passau",
+    "station_id": "18009000",
+    "slug": "passau-marienbruecke-18009000"
+  },
+  {
+    "name": "Pegnitz",
+    "gewaesser": "Fichtenohe",
+    "gebiet": "naab_regen",
+    "station_id": "24225408",
+    "slug": "pegnitz-24225408"
+  },
+  {
+    "name": "Peißenberg",
+    "gewaesser": "Ammer",
+    "gebiet": "isar",
+    "station_id": "16612001",
+    "slug": "peissenberg-16612001"
+  },
+  {
+    "name": "Percha",
+    "gewaesser": "Lüßbach",
+    "gebiet": "isar",
+    "station_id": "16669009",
+    "slug": "percha-16669009"
+  },
+  {
+    "name": "Peternerbrücke",
+    "gewaesser": "Jachen",
+    "gebiet": "isar",
+    "station_id": "16326002",
+    "slug": "peternerbruecke-16326002"
+  },
+  {
+    "name": "Pettstadt",
+    "gewaesser": "Regnitz",
+    "gebiet": "elbe",
+    "station_id": "24208806",
+    "slug": "pettstadt-24208806"
+  },
+  {
+    "name": "Pfaffenhofen",
+    "gewaesser": "Ilm",
+    "gebiet": "kelheim",
+    "station_id": "13325207",
+    "slug": "pfaffenhofen-13325207"
+  },
+  {
+    "name": "Pfaffenhofen",
+    "gewaesser": "Zusam",
+    "gebiet": "kelheim",
+    "station_id": "11924007",
+    "slug": "pfaffenhofen-11924007"
+  },
+  {
+    "name": "Pfaffenhofen",
+    "gewaesser": "Gerolsbach",
+    "gebiet": "kelheim",
+    "station_id": "13327655",
+    "slug": "pfaffenhofen-13327655"
+  },
+  {
+    "name": "Pfarrweisach",
+    "gewaesser": "Weisach",
+    "gebiet": "elbe",
+    "station_id": "24187502",
+    "slug": "pfarrweisach-24187502"
+  },
+  {
+    "name": "Pfatter",
+    "gewaesser": "Donau",
+    "gebiet": "passau",
+    "station_id": "10068006",
+    "slug": "pfatter-10068006"
+  },
+  {
+    "name": "Pfelling",
+    "gewaesser": "Donau",
+    "gebiet": "passau",
+    "station_id": "10078000",
+    "slug": "pfelling-10078000"
+  },
+  {
+    "name": "Pfrentsch",
+    "gewaesser": "Pfreimd",
+    "gebiet": "naab_regen",
+    "station_id": "14361206",
+    "slug": "pfrentsch-14361206"
+  },
+  {
+    "name": "Pfronten Ried",
+    "gewaesser": "Vils",
+    "gebiet": "iller_lech",
+    "station_id": "12183005",
+    "slug": "pfronten-ried-12183005"
+  },
+  {
+    "name": "Piding",
+    "gewaesser": "Stoißer Ache",
+    "gebiet": "inn",
+    "station_id": "18646809",
+    "slug": "piding-18646809"
+  },
+  {
+    "name": "Plankenfels",
+    "gewaesser": "Truppach",
+    "gebiet": "elbe",
+    "station_id": "24244504",
+    "slug": "plankenfels-24244504"
+  },
+  {
+    "name": "Plattling",
+    "gewaesser": "Isar",
+    "gebiet": "passau",
+    "station_id": "16008506",
+    "slug": "plattling-16008506"
+  },
+  {
+    "name": "Pommelsbrunn",
+    "gewaesser": "Högenbach",
+    "gebiet": "naab_regen",
+    "station_id": "24227006",
+    "slug": "pommelsbrunn-24227006"
+  },
+  {
+    "name": "Poppenlauer",
+    "gewaesser": "Lauer",
+    "gebiet": "main_unten",
+    "station_id": "24441006",
+    "slug": "poppenlauer-24441006"
+  },
+  {
+    "name": "Postmünster",
+    "gewaesser": "Rott",
+    "gebiet": "passau",
+    "station_id": "18804706",
+    "slug": "postmuenster-18804706"
+  },
+  {
+    "name": "Postmünster",
+    "gewaesser": "Gambach",
+    "gebiet": "passau",
+    "station_id": "18855004",
+    "slug": "postmuenster-18855004"
+  },
+  {
+    "name": "Pottenstein",
+    "gewaesser": "Püttlach",
+    "gebiet": "elbe",
+    "station_id": "24246000",
+    "slug": "pottenstein-24246000"
+  },
+  {
+    "name": "Pöttmes",
+    "gewaesser": "Donaumoos Ach",
+    "gebiet": "kelheim",
+    "station_id": "13242008",
+    "slug": "poettmes-13242008"
+  },
+  {
+    "name": "Pressath",
+    "gewaesser": "Haidenaab",
+    "gebiet": "naab_regen",
+    "station_id": "14203001",
+    "slug": "pressath-14203001"
+  },
+  {
+    "name": "Prien",
+    "gewaesser": "Prien",
+    "gebiet": "isar",
+    "station_id": "18463004",
+    "slug": "prien-18463004"
+  },
+  {
+    "name": "Pulling",
+    "gewaesser": "Regen",
+    "gebiet": "passau",
+    "station_id": "15201001",
+    "slug": "pulling-15201001"
+  },
+  {
+    "name": "Puppling",
+    "gewaesser": "Isar",
+    "gebiet": "isar",
+    "station_id": "16004403",
+    "slug": "puppling-16004403"
+  },
+  {
+    "name": "Rachel-Diensthütte",
+    "gewaesser": "Markungsgraben",
+    "gebiet": "passau",
+    "station_id": "17418004",
+    "slug": "rachel-diensthuette-17418004"
+  },
+  {
+    "name": "Raigering",
+    "gewaesser": "Krumbach",
+    "gebiet": "naab_regen",
+    "station_id": "14670505",
+    "slug": "raigering-14670505"
+  },
+  {
+    "name": "Raisting",
+    "gewaesser": "Rott",
+    "gebiet": "isar",
+    "station_id": "16625003",
+    "slug": "raisting-16625003"
+  },
+  {
+    "name": "Rannasäge",
+    "gewaesser": "Ranna",
+    "gebiet": "passau",
+    "station_id": "19168000",
+    "slug": "rannasaege-19168000"
+  },
+  {
+    "name": "Rappoldshofen",
+    "gewaesser": "Aisch",
+    "gebiet": "main_unten",
+    "station_id": "24262007",
+    "slug": "rappoldshofen-24262007"
+  },
+  {
+    "name": "Rasch",
+    "gewaesser": "Schwarzach",
+    "gebiet": "kelheim",
+    "station_id": "24217104",
+    "slug": "rasch-24217104"
+  },
+  {
+    "name": "Rauhenzell",
+    "gewaesser": "Iller",
+    "gebiet": "iller_lech",
+    "station_id": "11401185",
+    "slug": "rauhenzell-11401185"
+  },
+  {
+    "name": "Reckenberg",
+    "gewaesser": "Ostrach",
+    "gebiet": "iller_lech",
+    "station_id": "11425200",
+    "slug": "reckenberg-11425200"
+  },
+  {
+    "name": "Regensburg Eiserne Brücke",
+    "gewaesser": "Donau",
+    "gebiet": "kelheim",
+    "station_id": "10061007",
+    "slug": "regensburg-eiserne-bruecke-10061007"
+  },
+  {
+    "name": "Rehau",
+    "gewaesser": "Mähringsbach",
+    "gebiet": "elbe",
+    "station_id": "56121655",
+    "slug": "rehau-56121655"
+  },
+  {
+    "name": "Rehau",
+    "gewaesser": "Schwesnitz",
+    "gebiet": "elbe",
+    "station_id": "56122008",
+    "slug": "rehau-56122008"
+  },
+  {
+    "name": "Rehau",
+    "gewaesser": "Höllbach",
+    "gebiet": "elbe",
+    "station_id": "56121855",
+    "slug": "rehau-56121855"
+  },
+  {
+    "name": "Reichenbach",
+    "gewaesser": "Wörnitz",
+    "gebiet": "kelheim",
+    "station_id": "11802509",
+    "slug": "reichenbach-11802509"
+  },
+  {
+    "name": "Reichstorf",
+    "gewaesser": "Vilskanal",
+    "gebiet": "passau",
+    "station_id": "17206006",
+    "slug": "reichstorf-17206006"
+  },
+  {
+    "name": "Reit im Winkl",
+    "gewaesser": "Schwarzlofer",
+    "gebiet": "isar",
+    "station_id": "18458503",
+    "slug": "reit-im-winkl-18458503"
+  },
+  {
+    "name": "Remshart",
+    "gewaesser": "Kammel",
+    "gebiet": "kelheim",
+    "station_id": "11689508",
+    "slug": "remshart-11689508"
+  },
+  {
+    "name": "Rennertshofen",
+    "gewaesser": "Ussel",
+    "gebiet": "kelheim",
+    "station_id": "13191030",
+    "slug": "rennertshofen-13191030"
+  },
+  {
+    "name": "Reupelsdorf",
+    "gewaesser": "Schwarzach",
+    "gebiet": "main_unten",
+    "station_id": "24345206",
+    "slug": "reupelsdorf-24345206"
+  },
+  {
+    "name": "Rieblich",
+    "gewaesser": "Rodach",
+    "gebiet": "elbe",
+    "station_id": "24141206",
+    "slug": "rieblich-24141206"
+  },
+  {
+    "name": "Rißbachdüker",
+    "gewaesser": "Isar",
+    "gebiet": "isar",
+    "station_id": "16001303",
+    "slug": "rissbachdueker-16001303"
+  },
+  {
+    "name": "Rißbachklamm",
+    "gewaesser": "Rißbach",
+    "gebiet": "isar",
+    "station_id": "16145008",
+    "slug": "rissbachklamm-16145008"
+  },
+  {
+    "name": "Röbersdorf",
+    "gewaesser": "Reiche Ebrach",
+    "gebiet": "elbe",
+    "station_id": "24292507",
+    "slug": "roebersdorf-24292507"
+  },
+  {
+    "name": "Rödenweiler",
+    "gewaesser": "Sulzach",
+    "gebiet": "kelheim",
+    "station_id": "11840508",
+    "slug": "roedenweiler-11840508"
+  },
+  {
+    "name": "Röhrnbach",
+    "gewaesser": "Osterbach",
+    "gebiet": "passau",
+    "station_id": "17468002",
+    "slug": "roehrnbach-17468002"
+  },
+  {
+    "name": "Römershofen",
+    "gewaesser": "Nassach",
+    "gebiet": "main_unten",
+    "station_id": "24322506",
+    "slug": "roemershofen-24322506"
+  },
+  {
+    "name": "Rosenheim",
+    "gewaesser": "Mangfall",
+    "gebiet": "isar",
+    "station_id": "18209000",
+    "slug": "rosenheim-18209000"
+  },
+  {
+    "name": "Rosenheim",
+    "gewaesser": "Hammerbach",
+    "gebiet": "isar",
+    "station_id": "18312009",
+    "slug": "rosenheim-18312009"
+  },
+  {
+    "name": "Rosenheim o.d. Mangfallmündung",
+    "gewaesser": "Inn",
+    "gebiet": "isar",
+    "station_id": "18001508",
+    "slug": "rosenheim-o-d-mangfallmuendung-18001508"
+  },
+  {
+    "name": "Rosenheim u.d. Mangfallmündung",
+    "gewaesser": "Inn",
+    "gebiet": "isar",
+    "station_id": "18002001",
+    "slug": "rosenheim-u-d-mangfallmuendung-18002001"
+  },
+  {
+    "name": "Roth",
+    "gewaesser": "Roth",
+    "gebiet": "kelheim",
+    "station_id": "11548007",
+    "slug": "roth-11548007"
+  },
+  {
+    "name": "Roth Bleiche",
+    "gewaesser": "Roth",
+    "gebiet": "kelheim",
+    "station_id": "24214900",
+    "slug": "roth-bleiche-24214900"
+  },
+  {
+    "name": "Roth Kläranlage",
+    "gewaesser": "Rednitz",
+    "gebiet": "kelheim",
+    "station_id": "24210309",
+    "slug": "roth-klaeranlage-24210309"
+  },
+  {
+    "name": "Rothaurach",
+    "gewaesser": "Aurach",
+    "gebiet": "kelheim",
+    "station_id": "24215903",
+    "slug": "rothaurach-24215903"
+  },
+  {
+    "name": "Röthenbach",
+    "gewaesser": "Röthenbach",
+    "gebiet": "regnitz",
+    "station_id": "24228905",
+    "slug": "roethenbach-24228905"
+  },
+  {
+    "name": "Rottach",
+    "gewaesser": "Rottach",
+    "gebiet": "isar",
+    "station_id": "18216005",
+    "slug": "rottach-18216005"
+  },
+  {
+    "name": "Rottenburg",
+    "gewaesser": "Große Laber",
+    "gebiet": "kelheim",
+    "station_id": "15403006",
+    "slug": "rottenburg-15403006"
+  },
+  {
+    "name": "Rottersdorf",
+    "gewaesser": "Vils",
+    "gebiet": "passau",
+    "station_id": "17204204",
+    "slug": "rottersdorf-17204204"
+  },
+  {
+    "name": "Rötz Speicherzufluss",
+    "gewaesser": "Schwarzach",
+    "gebiet": "naab_regen",
+    "station_id": "14405200",
+    "slug": "roetz-speicherzufluss-14405200"
+  },
+  {
+    "name": "Rück",
+    "gewaesser": "Elsava",
+    "gebiet": "main_unten",
+    "station_id": "24752006",
+    "slug": "rueck-24752006"
+  },
+  {
+    "name": "Ruhstorf",
+    "gewaesser": "Rott",
+    "gebiet": "passau",
+    "station_id": "18808004",
+    "slug": "ruhstorf-18808004"
+  },
+  {
+    "name": "Sachenbach",
+    "gewaesser": "Sachenbach",
+    "gebiet": "isar",
+    "station_id": "16327504",
+    "slug": "sachenbach-16327504"
+  },
+  {
+    "name": "Sachsenheim",
+    "gewaesser": "Wern",
+    "gebiet": "main_unten",
+    "station_id": "24385007",
+    "slug": "sachsenheim-24385007"
+  },
+  {
+    "name": "Sägmühle",
+    "gewaesser": "Schwarzer Regen",
+    "gebiet": "passau",
+    "station_id": "15212700",
+    "slug": "saegmuehle-15212700"
+  },
+  {
+    "name": "Salching",
+    "gewaesser": "Aiterach",
+    "gebiet": "passau",
+    "station_id": "15916000",
+    "slug": "salching-15916000"
+  },
+  {
+    "name": "Salz",
+    "gewaesser": "Fränkische Saale",
+    "gebiet": "main_unten",
+    "station_id": "24403007",
+    "slug": "salz-24403007"
+  },
+  {
+    "name": "Schambach",
+    "gewaesser": "Schambach",
+    "gebiet": "kelheim",
+    "station_id": "13450300",
+    "slug": "schambach-13450300"
+  },
+  {
+    "name": "Scheinfeld",
+    "gewaesser": "Scheine",
+    "gebiet": "main_unten",
+    "station_id": "24268535",
+    "slug": "scheinfeld-24268535"
+  },
+  {
+    "name": "Schenkenau",
+    "gewaesser": "Itz",
+    "gebiet": "elbe",
+    "station_id": "24163005",
+    "slug": "schenkenau-24163005"
+  },
+  {
+    "name": "Schermühle",
+    "gewaesser": "Antersdorfer Bach",
+    "gebiet": "inn",
+    "station_id": "18715055",
+    "slug": "schermuehle-18715055"
+  },
+  {
+    "name": "Schlehdorf",
+    "gewaesser": "Loisach",
+    "gebiet": "isar",
+    "station_id": "16404900",
+    "slug": "schlehdorf-16404900"
+  },
+  {
+    "name": "Schlehenmühle",
+    "gewaesser": "Roter Main",
+    "gebiet": "elbe",
+    "station_id": "24122008",
+    "slug": "schlehenmuehle-24122008"
+  },
+  {
+    "name": "Schlimpfhof",
+    "gewaesser": "Lauter",
+    "gebiet": "main_unten",
+    "station_id": "24461003",
+    "slug": "schlimpfhof-24461003"
+  },
+  {
+    "name": "Schmerold",
+    "gewaesser": "Mangfall",
+    "gebiet": "isar",
+    "station_id": "18202000",
+    "slug": "schmerold-18202000"
+  },
+  {
+    "name": "Schmidmühlen",
+    "gewaesser": "Vils",
+    "gebiet": "kelheim",
+    "station_id": "14606008",
+    "slug": "schmidmuehlen-14606008"
+  },
+  {
+    "name": "Schnaittach Markt",
+    "gewaesser": "Schnaittach",
+    "gebiet": "regnitz",
+    "station_id": "24228009",
+    "slug": "schnaittach-markt-24228009"
+  },
+  {
+    "name": "Schneizlreuth Weißbach",
+    "gewaesser": "Weißbach",
+    "gebiet": "isar",
+    "station_id": "18645001",
+    "slug": "schneizlreuth-weissbach-18645001"
+  },
+  {
+    "name": "Schnepfenmühle",
+    "gewaesser": "Lamitz",
+    "gebiet": "elbe",
+    "station_id": "56116002",
+    "slug": "schnepfenmuehle-56116002"
+  },
+  {
+    "name": "Schöllang",
+    "gewaesser": "Eybach",
+    "gebiet": "iller_lech",
+    "station_id": "11419004",
+    "slug": "schoellang-11419004"
+  },
+  {
+    "name": "Schöllkrippen",
+    "gewaesser": "Kahl",
+    "gebiet": "main_unten",
+    "station_id": "24772003",
+    "slug": "schoellkrippen-24772003"
+  },
+  {
+    "name": "Schönach",
+    "gewaesser": "Große Laber",
+    "gebiet": "passau",
+    "station_id": "15408000",
+    "slug": "schoenach-15408000"
+  },
+  {
+    "name": "Schönberg",
+    "gewaesser": "Große Ohe",
+    "gebiet": "passau",
+    "station_id": "17415006",
+    "slug": "schoenberg-17415006"
+  },
+  {
+    "name": "Schönbrunn",
+    "gewaesser": "Rauhe Ebrach",
+    "gebiet": "elbe",
+    "station_id": "24293497",
+    "slug": "schoenbrunn-24293497"
+  },
+  {
+    "name": "Schönstädt",
+    "gewaesser": "Itz",
+    "gebiet": "elbe",
+    "station_id": "24160903",
+    "slug": "schoenstaedt-24160903"
+  },
+  {
+    "name": "Schrottenbaummühle",
+    "gewaesser": "Ilz",
+    "gebiet": "passau",
+    "station_id": "17404000",
+    "slug": "schrottenbaummuehle-17404000"
+  },
+  {
+    "name": "Schwabach",
+    "gewaesser": "Schwabach",
+    "gebiet": "kelheim",
+    "station_id": "24217603",
+    "slug": "schwabach-24217603"
+  },
+  {
+    "name": "Schwabelweis",
+    "gewaesser": "Donau",
+    "gebiet": "passau",
+    "station_id": "10062000",
+    "slug": "schwabelweis-10062000"
+  },
+  {
+    "name": "Schwandorf",
+    "gewaesser": "Naab",
+    "gebiet": "kelheim",
+    "station_id": "14004708",
+    "slug": "schwandorf-14004708"
+  },
+  {
+    "name": "Schweinfurt Neuer Hafen",
+    "gewaesser": "Main",
+    "gebiet": "main_unten",
+    "station_id": "24022003",
+    "slug": "schweinfurt-neuer-hafen-24022003"
+  },
+  {
+    "name": "Schweinhof",
+    "gewaesser": "Brend",
+    "gebiet": "main_unten",
+    "station_id": "24432504",
+    "slug": "schweinhof-24432504"
+  },
+  {
+    "name": "Schweinsmühle",
+    "gewaesser": "Ailsbach",
+    "gebiet": "elbe",
+    "station_id": "24247400",
+    "slug": "schweinsmuehle-24247400"
+  },
+  {
+    "name": "Schwöbbrücke",
+    "gewaesser": "Königsseer Ache",
+    "gebiet": "inn",
+    "station_id": "18625004",
+    "slug": "schwoebbruecke-18625004"
+  },
+  {
+    "name": "Schwürbitz",
+    "gewaesser": "Main",
+    "gebiet": "elbe",
+    "station_id": "24006007",
+    "slug": "schwuerbitz-24006007"
+  },
+  {
+    "name": "Sebastianskapelle",
+    "gewaesser": "Wertach",
+    "gebiet": "iller_lech",
+    "station_id": "12402007",
+    "slug": "sebastianskapelle-12402007"
+  },
+  {
+    "name": "Seebruck",
+    "gewaesser": "Alz",
+    "gebiet": "isar",
+    "station_id": "18403002",
+    "slug": "seebruck-18403002"
+  },
+  {
+    "name": "Seemannsmühle",
+    "gewaesser": "Schwäbische Rezat",
+    "gebiet": "kelheim",
+    "station_id": "24213806",
+    "slug": "seemannsmuehle-24213806"
+  },
+  {
+    "name": "Seeshaupt",
+    "gewaesser": "Steinbach",
+    "gebiet": "isar",
+    "station_id": "16667604",
+    "slug": "seeshaupt-16667604"
+  },
+  {
+    "name": "Seltmans",
+    "gewaesser": "Untere Argen",
+    "gebiet": "iller_lech",
+    "station_id": "21645000",
+    "slug": "seltmans-21645000"
+  },
+  {
+    "name": "Siegenburg",
+    "gewaesser": "Abens",
+    "gebiet": "kelheim",
+    "station_id": "13321655",
+    "slug": "siegenburg-13321655"
+  },
+  {
+    "name": "Siegsdorf",
+    "gewaesser": "Weiße Traun",
+    "gebiet": "isar",
+    "station_id": "18486000",
+    "slug": "siegsdorf-18486000"
+  },
+  {
+    "name": "Silberackersteg",
+    "gewaesser": "Partnach",
+    "gebiet": "isar",
+    "station_id": "16425300",
+    "slug": "silberackersteg-16425300"
+  },
+  {
+    "name": "Simbach",
+    "gewaesser": "Simbach",
+    "gebiet": "inn",
+    "station_id": "18719006",
+    "slug": "simbach-18719006"
+  },
+  {
+    "name": "Sonthofen",
+    "gewaesser": "Iller",
+    "gebiet": "iller_lech",
+    "station_id": "11401009",
+    "slug": "sonthofen-11401009"
+  },
+  {
+    "name": "Spielmannsau",
+    "gewaesser": "Traufbach",
+    "gebiet": "iller_lech",
+    "station_id": "11416006",
+    "slug": "spielmannsau-11416006"
+  },
+  {
+    "name": "Stanggass",
+    "gewaesser": "Bischofswiesener Ache",
+    "gebiet": "inn",
+    "station_id": "18624003",
+    "slug": "stanggass-18624003"
+  },
+  {
+    "name": "Starnberg",
+    "gewaesser": "Georgenbach",
+    "gebiet": "isar",
+    "station_id": "16668800",
+    "slug": "starnberg-16668800"
+  },
+  {
+    "name": "Staudach",
+    "gewaesser": "Tiroler Achen",
+    "gebiet": "isar",
+    "station_id": "18454003",
+    "slug": "staudach-18454003"
+  },
+  {
+    "name": "Stauden",
+    "gewaesser": "Leitzach",
+    "gebiet": "isar",
+    "station_id": "18242005",
+    "slug": "stauden-18242005"
+  },
+  {
+    "name": "Staufeneck",
+    "gewaesser": "Saalach",
+    "gebiet": "inn",
+    "station_id": "18643006",
+    "slug": "staufeneck-18643006"
+  },
+  {
+    "name": "Stegen",
+    "gewaesser": "Amper",
+    "gebiet": "isar",
+    "station_id": "16602303",
+    "slug": "stegen-16602303"
+  },
+  {
+    "name": "Stein bei Altenmarkt",
+    "gewaesser": "Traun",
+    "gebiet": "isar",
+    "station_id": "18483500",
+    "slug": "stein-bei-altenmarkt-18483500"
+  },
+  {
+    "name": "Steinbach",
+    "gewaesser": "Main",
+    "gebiet": "main_unten",
+    "station_id": "24050009",
+    "slug": "steinbach-24050009"
+  },
+  {
+    "name": "Steinberg",
+    "gewaesser": "Kronach",
+    "gebiet": "elbe",
+    "station_id": "24148001",
+    "slug": "steinberg-24148001"
+  },
+  {
+    "name": "Stephanskirchen",
+    "gewaesser": "Sims",
+    "gebiet": "isar",
+    "station_id": "18199008",
+    "slug": "stephanskirchen-18199008"
+  },
+  {
+    "name": "Stettkirchen",
+    "gewaesser": "Lauterach",
+    "gebiet": "kelheim",
+    "station_id": "14685004",
+    "slug": "stettkirchen-14685004"
+  },
+  {
+    "name": "Stielings",
+    "gewaesser": "Leubas",
+    "gebiet": "iller_lech",
+    "station_id": "11465001",
+    "slug": "stielings-11465001"
+  },
+  {
+    "name": "Stöckach",
+    "gewaesser": "Zenn",
+    "gebiet": "main_unten",
+    "station_id": "24231309",
+    "slug": "stoeckach-24231309"
+  },
+  {
+    "name": "Stockheim",
+    "gewaesser": "Sulz",
+    "gebiet": "main_unten",
+    "station_id": "24424007",
+    "slug": "stockheim-24424007"
+  },
+  {
+    "name": "Straubing",
+    "gewaesser": "Donau",
+    "gebiet": "passau",
+    "station_id": "10074009",
+    "slug": "straubing-10074009"
+  },
+  {
+    "name": "Streitmühle",
+    "gewaesser": "Rodach",
+    "gebiet": "elbe",
+    "station_id": "24140509",
+    "slug": "streitmuehle-24140509"
+  },
+  {
+    "name": "Sylvenstein",
+    "gewaesser": "Isar",
+    "gebiet": "isar",
+    "station_id": "16002500",
+    "slug": "sylvenstein-16002500"
+  },
+  {
+    "name": "Sylvenstein",
+    "gewaesser": "Schronbach",
+    "gebiet": "isar",
+    "station_id": "16312008",
+    "slug": "sylvenstein-16312008"
+  },
+  {
+    "name": "Taferlruck",
+    "gewaesser": "Große Ohe",
+    "gebiet": "passau",
+    "station_id": "17413000",
+    "slug": "taferlruck-17413000"
+  },
+  {
+    "name": "Teisendorf",
+    "gewaesser": "Sur",
+    "gebiet": "isar",
+    "station_id": "18662000",
+    "slug": "teisendorf-18662000"
+  },
+  {
+    "name": "Teisnach",
+    "gewaesser": "Schwarzer Regen",
+    "gebiet": "passau",
+    "station_id": "15212008",
+    "slug": "teisnach-15212008"
+  },
+  {
+    "name": "Teisnach",
+    "gewaesser": "Teisnach",
+    "gebiet": "passau",
+    "station_id": "15217908",
+    "slug": "teisnach-15217908"
+  },
+  {
+    "name": "Thalhofen",
+    "gewaesser": "Wertach",
+    "gebiet": "iller_lech",
+    "station_id": "12404705",
+    "slug": "thalhofen-12404705"
+  },
+  {
+    "name": "Thalkirchdorf",
+    "gewaesser": "Konstanzer Ach",
+    "gebiet": "iller_lech",
+    "station_id": "11434008",
+    "slug": "thalkirchdorf-11434008"
+  },
+  {
+    "name": "Thalmannsdorf",
+    "gewaesser": "Ilm",
+    "gebiet": "kelheim",
+    "station_id": "13323955",
+    "slug": "thalmannsdorf-13323955"
+  },
+  {
+    "name": "Thann",
+    "gewaesser": "Altmühl",
+    "gebiet": "kelheim",
+    "station_id": "13402807",
+    "slug": "thann-13402807"
+  },
+  {
+    "name": "Thundorf",
+    "gewaesser": "Kleine Sur",
+    "gebiet": "inn",
+    "station_id": "18669000",
+    "slug": "thundorf-18669000"
+  },
+  {
+    "name": "Tiefenbach",
+    "gewaesser": "Tiefenbach",
+    "gebiet": "kelheim",
+    "station_id": "16899009",
+    "slug": "tiefenbach-16899009"
+  },
+  {
+    "name": "Tiefenbach",
+    "gewaesser": "Breitach",
+    "gebiet": "iller_lech",
+    "station_id": "11418250",
+    "slug": "tiefenbach-11418250"
+  },
+  {
+    "name": "Tiefenbach",
+    "gewaesser": "Bayerische Schwarzach",
+    "gebiet": "naab_regen",
+    "station_id": "14425003",
+    "slug": "tiefenbach-14425003"
+  },
+  {
+    "name": "Titting",
+    "gewaesser": "Anlauter",
+    "gebiet": "kelheim",
+    "station_id": "13468003",
+    "slug": "titting-13468003"
+  },
+  {
+    "name": "Trauchgau",
+    "gewaesser": "Trauchgauer Ach",
+    "gebiet": "bayern",
+    "station_id": "12327003",
+    "slug": "trauchgau-12327003"
+  },
+  {
+    "name": "Trauchgau",
+    "gewaesser": "Halblech",
+    "gebiet": "bayern",
+    "station_id": "12321007",
+    "slug": "trauchgau-12321007"
+  },
+  {
+    "name": "Traunstein Heilig-Geist",
+    "gewaesser": "Traun",
+    "gebiet": "isar",
+    "station_id": "18482009",
+    "slug": "traunstein-heilig-geist-18482009"
+  },
+  {
+    "name": "Trausnitz u. d. Mühle",
+    "gewaesser": "Pfreimd",
+    "gebiet": "naab_regen",
+    "station_id": "14364000",
+    "slug": "trausnitz-u-d-muehle-14364000"
+  },
+  {
+    "name": "Trebgast",
+    "gewaesser": "Trebgast",
+    "gebiet": "elbe",
+    "station_id": "24114000",
+    "slug": "trebgast-24114000"
+  },
+  {
+    "name": "Treuchtlingen",
+    "gewaesser": "Altmühl",
+    "gebiet": "kelheim",
+    "station_id": "13406105",
+    "slug": "treuchtlingen-13406105"
+  },
+  {
+    "name": "Triftern",
+    "gewaesser": "Altbach",
+    "gebiet": "inn",
+    "station_id": "18859005",
+    "slug": "triftern-18859005"
+  },
+  {
+    "name": "Trostberg",
+    "gewaesser": "Alz",
+    "gebiet": "isar",
+    "station_id": "18407003",
+    "slug": "trostberg-18407003"
+  },
+  {
+    "name": "Trostberg",
+    "gewaesser": "Alzkanal",
+    "gebiet": "isar",
+    "station_id": "18409009",
+    "slug": "trostberg-18409009"
+  },
+  {
+    "name": "Trunstadt",
+    "gewaesser": "Main",
+    "gebiet": "elbe",
+    "station_id": "24012203",
+    "slug": "trunstadt-24012203"
+  },
+  {
+    "name": "Türkheim",
+    "gewaesser": "Wertach",
+    "gebiet": "iller_lech",
+    "station_id": "12406008",
+    "slug": "tuerkheim-12406008"
+  },
+  {
+    "name": "Tutzing",
+    "gewaesser": "Kalkgraben",
+    "gebiet": "isar",
+    "station_id": "16668403",
+    "slug": "tutzing-16668403"
+  },
+  {
+    "name": "Übersee",
+    "gewaesser": "Überseer Bach",
+    "gebiet": "isar",
+    "station_id": "18460403",
+    "slug": "uebersee-18460403"
+  },
+  {
+    "name": "Unsleben",
+    "gewaesser": "Streu",
+    "gebiet": "main_unten",
+    "station_id": "24422001",
+    "slug": "unsleben-24422001"
+  },
+  {
+    "name": "Unterbergen",
+    "gewaesser": "Lochbach",
+    "gebiet": "kelheim",
+    "station_id": "12393201",
+    "slug": "unterbergen-12393201"
+  },
+  {
+    "name": "Unterbruck",
+    "gewaesser": "Haidenaab",
+    "gebiet": "naab_regen",
+    "station_id": "14201006",
+    "slug": "unterbruck-14201006"
+  },
+  {
+    "name": "Unterbruck Flutmulde",
+    "gewaesser": "Haidenaab",
+    "gebiet": "naab_regen",
+    "station_id": "14201108",
+    "slug": "unterbruck-flutmulde-14201108"
+  },
+  {
+    "name": "Untereppenried",
+    "gewaesser": "Ascha",
+    "gebiet": "naab_regen",
+    "station_id": "14465008",
+    "slug": "untereppenried-14465008"
+  },
+  {
+    "name": "Unterfinning",
+    "gewaesser": "Windach",
+    "gebiet": "isar",
+    "station_id": "16645000",
+    "slug": "unterfinning-16645000"
+  },
+  {
+    "name": "Untergoßzell",
+    "gewaesser": "Trailbach",
+    "gebiet": "passau",
+    "station_id": "15257655",
+    "slug": "untergosszell-15257655"
+  },
+  {
+    "name": "Unterhammer",
+    "gewaesser": "Südliche Regnitz",
+    "gebiet": "elbe",
+    "station_id": "56142055",
+    "slug": "unterhammer-56142055"
+  },
+  {
+    "name": "Unterjettenberg",
+    "gewaesser": "Saalach",
+    "gebiet": "isar",
+    "station_id": "18642003",
+    "slug": "unterjettenberg-18642003"
+  },
+  {
+    "name": "Unterkashof",
+    "gewaesser": "Reschwasser",
+    "gebiet": "passau",
+    "station_id": "17466007",
+    "slug": "unterkashof-17466007"
+  },
+  {
+    "name": "Unterköblitz",
+    "gewaesser": "Naab",
+    "gebiet": "naab_regen",
+    "station_id": "14002305",
+    "slug": "unterkoeblitz-14002305"
+  },
+  {
+    "name": "Unterlangenstadt",
+    "gewaesser": "Rodach",
+    "gebiet": "elbe",
+    "station_id": "24143008",
+    "slug": "unterlangenstadt-24143008"
+  },
+  {
+    "name": "Unterleinleiter",
+    "gewaesser": "Leinleiterbach",
+    "gebiet": "elbe",
+    "station_id": "24248403",
+    "slug": "unterleinleiter-24248403"
+  },
+  {
+    "name": "Untermerzbach",
+    "gewaesser": "Merzbach",
+    "gebiet": "elbe",
+    "station_id": "24169001",
+    "slug": "untermerzbach-24169001"
+  },
+  {
+    "name": "Unternogg",
+    "gewaesser": "Halbammer",
+    "gebiet": "isar",
+    "station_id": "16615203",
+    "slug": "unternogg-16615203"
+  },
+  {
+    "name": "Unterpennading",
+    "gewaesser": "Fensterbach",
+    "gebiet": "naab_regen",
+    "station_id": "14513009",
+    "slug": "unterpennading-14513009"
+  },
+  {
+    "name": "Untersteinach",
+    "gewaesser": "Schorgast",
+    "gebiet": "elbe",
+    "station_id": "24116005",
+    "slug": "untersteinach-24116005"
+  },
+  {
+    "name": "Untersteinach",
+    "gewaesser": "Untere Steinach",
+    "gebiet": "elbe",
+    "station_id": "24118703",
+    "slug": "untersteinach-24118703"
+  },
+  {
+    "name": "Untersteinach",
+    "gewaesser": "Warme Steinach",
+    "gebiet": "elbe",
+    "station_id": "24128004",
+    "slug": "untersteinach-24128004"
+  },
+  {
+    "name": "Unterthingau",
+    "gewaesser": "Kirnach",
+    "gebiet": "iller_lech",
+    "station_id": "12433102",
+    "slug": "unterthingau-12433102"
+  },
+  {
+    "name": "Untertraubenbach",
+    "gewaesser": "Knöblinger Bach",
+    "gebiet": "passau",
+    "station_id": "15257755",
+    "slug": "untertraubenbach-15257755"
+  },
+  {
+    "name": "Unterweißenbrunn",
+    "gewaesser": "Brend",
+    "gebiet": "main_unten",
+    "station_id": "24431002",
+    "slug": "unterweissenbrunn-24431002"
+  },
+  {
+    "name": "Unterwurmbach",
+    "gewaesser": "Wurmbach",
+    "gebiet": "kelheim",
+    "station_id": "13434009",
+    "slug": "unterwurmbach-13434009"
+  },
+  {
+    "name": "Unterzettlitz",
+    "gewaesser": "Roter Main",
+    "gebiet": "elbe",
+    "station_id": "24125006",
+    "slug": "unterzettlitz-24125006"
+  },
+  {
+    "name": "Unverzug",
+    "gewaesser": "Götzinger Achen",
+    "gebiet": "isar",
+    "station_id": "18683000",
+    "slug": "unverzug-18683000"
+  },
+  {
+    "name": "Valley",
+    "gewaesser": "Mangfall",
+    "gebiet": "isar",
+    "station_id": "18203003",
+    "slug": "valley-18203003"
+  },
+  {
+    "name": "Viechtach Reibenmühle",
+    "gewaesser": "Aitnach",
+    "gebiet": "passau",
+    "station_id": "15213500",
+    "slug": "viechtach-reibenmuehle-15213500"
+  },
+  {
+    "name": "Vilsbiburg",
+    "gewaesser": "Große Vils",
+    "gebiet": "passau",
+    "station_id": "17215007",
+    "slug": "vilsbiburg-17215007"
+  },
+  {
+    "name": "Vilseck",
+    "gewaesser": "Vils",
+    "gebiet": "naab_regen",
+    "station_id": "14602007",
+    "slug": "vilseck-14602007"
+  },
+  {
+    "name": "Vilseck",
+    "gewaesser": "Schmalnohebach",
+    "gebiet": "naab_regen",
+    "station_id": "14631005",
+    "slug": "vilseck-14631005"
+  },
+  {
+    "name": "Vilshofen",
+    "gewaesser": "Donau",
+    "gebiet": "passau",
+    "station_id": "10089006",
+    "slug": "vilshofen-10089006"
+  },
+  {
+    "name": "Vohburg",
+    "gewaesser": "Donau",
+    "gebiet": "kelheim",
+    "station_id": "10049001",
+    "slug": "vohburg-10049001"
+  },
+  {
+    "name": "Vorra",
+    "gewaesser": "Rauhe Ebrach",
+    "gebiet": "elbe",
+    "station_id": "24295505",
+    "slug": "vorra-24295505"
+  },
+  {
+    "name": "Waging",
+    "gewaesser": "Höllenbach",
+    "gebiet": "isar",
+    "station_id": "18687001",
+    "slug": "waging-18687001"
+  },
+  {
+    "name": "Walchen",
+    "gewaesser": "Walchen",
+    "gebiet": "isar",
+    "station_id": "16166008",
+    "slug": "walchen-16166008"
+  },
+  {
+    "name": "Waldberg",
+    "gewaesser": "Kellersbach",
+    "gebiet": "main_unten",
+    "station_id": "24456003",
+    "slug": "waldberg-24456003"
+  },
+  {
+    "name": "Waldkirchen",
+    "gewaesser": "Erlau",
+    "gebiet": "passau",
+    "station_id": "19141055",
+    "slug": "waldkirchen-19141055"
+  },
+  {
+    "name": "Waldsassen",
+    "gewaesser": "Wondreb",
+    "gebiet": "elbe",
+    "station_id": "53224001",
+    "slug": "waldsassen-53224001"
+  },
+  {
+    "name": "Waldstetten",
+    "gewaesser": "Günz",
+    "gebiet": "kelheim",
+    "station_id": "11584000",
+    "slug": "waldstetten-11584000"
+  },
+  {
+    "name": "Wallenfels",
+    "gewaesser": "Wilde Rodach",
+    "gebiet": "elbe",
+    "station_id": "24145808",
+    "slug": "wallenfels-24145808"
+  },
+  {
+    "name": "Wallersdorf",
+    "gewaesser": "Reißinger Bach",
+    "gebiet": "passau",
+    "station_id": "16965001",
+    "slug": "wallersdorf-16965001"
+  },
+  {
+    "name": "Wallersdorf (neu)",
+    "gewaesser": "Reißinger Bach",
+    "gebiet": "passau",
+    "station_id": "16964995",
+    "slug": "wallersdorf-neu-16964995"
+  },
+  {
+    "name": "Wamberg",
+    "gewaesser": "Kanker",
+    "gebiet": "isar",
+    "station_id": "16427205",
+    "slug": "wamberg-16427205"
+  },
+  {
+    "name": "Warnbach",
+    "gewaesser": "Schwarzach",
+    "gebiet": "naab_regen",
+    "station_id": "14408004",
+    "slug": "warnbach-14408004"
+  },
+  {
+    "name": "Wasserburg",
+    "gewaesser": "Inn",
+    "gebiet": "isar",
+    "station_id": "18003004",
+    "slug": "wasserburg-18003004"
+  },
+  {
+    "name": "Wechterswinkel",
+    "gewaesser": "Els",
+    "gebiet": "main_unten",
+    "station_id": "24429000",
+    "slug": "wechterswinkel-24429000"
+  },
+  {
+    "name": "Weg",
+    "gewaesser": "Isen",
+    "gebiet": "kelheim",
+    "station_id": "18381500",
+    "slug": "weg-18381500"
+  },
+  {
+    "name": "Weiboldshausen",
+    "gewaesser": "Felchbach",
+    "gebiet": "kelheim",
+    "station_id": "24214300",
+    "slug": "weiboldshausen-24214300"
+  },
+  {
+    "name": "Weichering",
+    "gewaesser": "Donaumoos Ach",
+    "gebiet": "kelheim",
+    "station_id": "13242507",
+    "slug": "weichering-13242507"
+  },
+  {
+    "name": "Weichselbaum",
+    "gewaesser": "Murn",
+    "gebiet": "isar",
+    "station_id": "18322002",
+    "slug": "weichselbaum-18322002"
+  },
+  {
+    "name": "Weiden",
+    "gewaesser": "Waldnaab",
+    "gebiet": "naab_regen",
+    "station_id": "14106504",
+    "slug": "weiden-14106504"
+  },
+  {
+    "name": "Weilbach",
+    "gewaesser": "Mud",
+    "gebiet": "main_unten",
+    "station_id": "24722005",
+    "slug": "weilbach-24722005"
+  },
+  {
+    "name": "Weilheim",
+    "gewaesser": "Ammer",
+    "gebiet": "isar",
+    "station_id": "16613004",
+    "slug": "weilheim-16613004"
+  },
+  {
+    "name": "Weinzierlein",
+    "gewaesser": "Bibert",
+    "gebiet": "kelheim",
+    "station_id": "24218800",
+    "slug": "weinzierlein-24218800"
+  },
+  {
+    "name": "Weißdorf",
+    "gewaesser": "Sächsische Saale",
+    "gebiet": "elbe",
+    "station_id": "56000500",
+    "slug": "weissdorf-56000500"
+  },
+  {
+    "name": "Weißenburg",
+    "gewaesser": "Schwäbische Rezat",
+    "gebiet": "kelheim",
+    "station_id": "24213602",
+    "slug": "weissenburg-24213602"
+  },
+  {
+    "name": "Weismain",
+    "gewaesser": "Weismain",
+    "gebiet": "elbe",
+    "station_id": "24134007",
+    "slug": "weismain-24134007"
+  },
+  {
+    "name": "Wendelstein",
+    "gewaesser": "Schwarzach",
+    "gebiet": "kelheim",
+    "station_id": "24217400",
+    "slug": "wendelstein-24217400"
+  },
+  {
+    "name": "Wernfels Kläranlage",
+    "gewaesser": "Fränkische Rezat",
+    "gebiet": "kelheim",
+    "station_id": "24212450",
+    "slug": "wernfels-klaeranlage-24212450"
+  },
+  {
+    "name": "Wernleiten",
+    "gewaesser": "Rote Traun",
+    "gebiet": "isar",
+    "station_id": "18487501",
+    "slug": "wernleiten-18487501"
+  },
+  {
+    "name": "Wertach",
+    "gewaesser": "Wertacher Starzlach",
+    "gebiet": "iller_lech",
+    "station_id": "12412000",
+    "slug": "wertach-12412000"
+  },
+  {
+    "name": "Wertach",
+    "gewaesser": "Wertach",
+    "gebiet": "iller_lech",
+    "station_id": "12401004",
+    "slug": "wertach-12401004"
+  },
+  {
+    "name": "Wertheim",
+    "gewaesser": "Main",
+    "gebiet": "main_unten",
+    "station_id": "24056005",
+    "slug": "wertheim-24056005"
+  },
+  {
+    "name": "Westerheim-Nord",
+    "gewaesser": "Westliche Günz",
+    "gebiet": "iller_lech",
+    "station_id": "11587007",
+    "slug": "westerheim-nord-11587007"
+  },
+  {
+    "name": "Westerheim-Süd",
+    "gewaesser": "Westliche Günz",
+    "gebiet": "iller_lech",
+    "station_id": "11587006",
+    "slug": "westerheim-sued-11587006"
+  },
+  {
+    "name": "Wiblingen",
+    "gewaesser": "Iller",
+    "gebiet": "kelheim",
+    "station_id": "11405000",
+    "slug": "wiblingen-11405000"
+  },
+  {
+    "name": "Wickendorf",
+    "gewaesser": "Teuschnitz",
+    "gebiet": "elbe",
+    "station_id": "24148655",
+    "slug": "wickendorf-24148655"
+  },
+  {
+    "name": "Wildenau",
+    "gewaesser": "Haidenaab",
+    "gebiet": "naab_regen",
+    "station_id": "14209008",
+    "slug": "wildenau-14209008"
+  },
+  {
+    "name": "Windischeschenbach",
+    "gewaesser": "Waldnaab",
+    "gebiet": "naab_regen",
+    "station_id": "14101205",
+    "slug": "windischeschenbach-14101205"
+  },
+  {
+    "name": "Winkel",
+    "gewaesser": "Starzlach",
+    "gebiet": "iller_lech",
+    "station_id": "11427603",
+    "slug": "winkel-11427603"
+  },
+  {
+    "name": "Winkl",
+    "gewaesser": "Verlorener Bach",
+    "gebiet": "kelheim",
+    "station_id": "13123995",
+    "slug": "winkl-13123995"
+  },
+  {
+    "name": "Winkl (alt)",
+    "gewaesser": "Verlorener Bach",
+    "gebiet": "kelheim",
+    "station_id": "13124001",
+    "slug": "winkl-alt-13124001"
+  },
+  {
+    "name": "Wirsberg",
+    "gewaesser": "Schorgast",
+    "gebiet": "elbe",
+    "station_id": "24115002",
+    "slug": "wirsberg-24115002"
+  },
+  {
+    "name": "Wittislingen",
+    "gewaesser": "Egau",
+    "gebiet": "kelheim",
+    "station_id": "11744005",
+    "slug": "wittislingen-11744005"
+  },
+  {
+    "name": "Witzelsmühle Silberseeabfluss",
+    "gewaesser": "Bayerische Schwarzach",
+    "gebiet": "naab_regen",
+    "station_id": "14426006",
+    "slug": "witzelsmuehle-silberseeabfluss-14426006"
+  },
+  {
+    "name": "Wolfsmünster",
+    "gewaesser": "Fränkische Saale",
+    "gebiet": "main_unten",
+    "station_id": "24409003",
+    "slug": "wolfsmuenster-24409003"
+  },
+  {
+    "name": "Wolnzach",
+    "gewaesser": "Wolnzach",
+    "gebiet": "kelheim",
+    "station_id": "13327855",
+    "slug": "wolnzach-13327855"
+  },
+  {
+    "name": "Wörth",
+    "gewaesser": "Isen",
+    "gebiet": "isar",
+    "station_id": "18382505",
+    "slug": "woerth-18382505"
+  },
+  {
+    "name": "Würzburg",
+    "gewaesser": "Main",
+    "gebiet": "main_unten",
+    "station_id": "24042000",
+    "slug": "wuerzburg-24042000"
+  },
+  {
+    "name": "Würzburg",
+    "gewaesser": "Pleichach",
+    "gebiet": "main_unten",
+    "station_id": "24374805",
+    "slug": "wuerzburg-24374805"
+  },
+  {
+    "name": "Wüstenzell",
+    "gewaesser": "Aalbach",
+    "gebiet": "main_unten",
+    "station_id": "24585006",
+    "slug": "wuestenzell-24585006"
+  },
+  {
+    "name": "Zaisertshofen",
+    "gewaesser": "Flossach",
+    "gebiet": "kelheim",
+    "station_id": "11649004",
+    "slug": "zaisertshofen-11649004"
+  },
+  {
+    "name": "Zigeunermühle",
+    "gewaesser": "Lehstenbach",
+    "gebiet": "elbe",
+    "station_id": "53211010",
+    "slug": "zigeunermuehle-53211010"
+  },
+  {
+    "name": "Zwiesel",
+    "gewaesser": "Schwarzer Regen",
+    "gebiet": "passau",
+    "station_id": "15210206",
+    "slug": "zwiesel-15210206"
+  },
+  {
+    "name": "Zwiesel",
+    "gewaesser": "Großer Regen",
+    "gebiet": "passau",
+    "station_id": "15214003",
+    "slug": "zwiesel-15214003"
+  },
+  {
+    "name": "Zwirkenberg",
+    "gewaesser": "Obere Argen",
+    "gebiet": "iller_lech",
+    "station_id": "21643004",
+    "slug": "zwirkenberg-21643004"
+  }
+]
