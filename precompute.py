@@ -407,7 +407,45 @@ def merge_extension(pegelonline_series, gkd_series):
 # ---------------------------------------------------------------------------
 
 def main():
+    live_only = "--live-only" in sys.argv
     stations = fetch_pegel_stations()
+
+    if live_only:
+        # Full history barely changes day to day; only refresh the last ~31
+        # days (live/) daily and keep the existing history/*.json + their
+        # stations.json metadata as-is (see .github/workflows for the split
+        # daily-live vs weekly-full schedule).
+        existing = {}
+        stations_file = DATA_DIR / "stations.json"
+        if stations_file.exists():
+            existing = {s["uuid"]: s for s in json.loads(stations_file.read_text())}
+
+        fetch_all_live(stations)
+
+        out_stations = []
+        for s in stations:
+            uuid = s["uuid"]
+            prev = existing.get(uuid, {})
+            out_stations.append({
+                "uuid": uuid,
+                "name": s["shortname"],
+                "water": s["water"]["longname"],
+                "km": s.get("km"),
+                "lat": s.get("latitude"),
+                "lon": s.get("longitude"),
+                "agency": s.get("agency"),
+                "history": prev.get("history"),
+            })
+        out_stations.sort(key=lambda s: (s["water"], s["name"]))
+        DATA_DIR.mkdir(parents=True, exist_ok=True)
+        (DATA_DIR / "stations.json").write_text(
+            json.dumps(out_stations, ensure_ascii=False, separators=(",", ":"))
+        )
+        (DATA_DIR / "meta.json").write_text(
+            json.dumps({"updated": datetime.utcnow().isoformat() + "Z"}, separators=(",", ":"))
+        )
+        print(f"Done (live-only). {len(out_stations)} stations updated.", file=sys.stderr)
+        return
 
     matches = json.loads(MATCHES_FILE.read_text()) if MATCHES_FILE.exists() else []
     gkd_extensions = fetch_gkd_extensions(matches)

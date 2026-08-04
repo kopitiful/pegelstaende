@@ -2,8 +2,14 @@ name: Update Pegelstände
 
 on:
   schedule:
-    - cron: "0 5 * * *"  # täglich 05:00 UTC
+    - cron: "0 5 * * *"  # täglich 05:00 UTC: nur Live-Daten (letzte ~31 Tage)
+    - cron: "0 3 * * 1"  # montags 03:00 UTC: volle Historie seit 2000 (langsam, ~2-3h)
   workflow_dispatch:
+    inputs:
+      full:
+        description: "Volle Historie neu laden (statt nur Live-Daten)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -11,6 +17,7 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 300
     steps:
       - uses: actions/checkout@v4
 
@@ -18,7 +25,12 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Precompute data
+      - name: Precompute data (live-only)
+        if: github.event.schedule == '0 5 * * *' || (github.event_name == 'workflow_dispatch' && github.event.inputs.full != 'true')
+        run: python3 precompute.py --live-only
+
+      - name: Precompute data (full history)
+        if: github.event.schedule == '0 3 * * 1' || (github.event_name == 'workflow_dispatch' && github.event.inputs.full == 'true')
         run: python3 precompute.py
 
       - name: Commit and push
