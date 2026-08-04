@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pegelstände Deutschland</title>
-<meta name="description" content="Wasserstände aller PEGELONLINE-Messstellen in Deutschland, mit echter Langzeit-Historie für bayerische Pegel an Donau und Main.">
+<meta name="description" content="Wasserstände aller PEGELONLINE-Messstellen in Deutschland, live und mit Historie seit 2000.">
 <link rel="icon" href="data:,">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 <style>
@@ -168,7 +168,7 @@
 <body>
 <div class="wrap">
   <h1>Pegelstände Deutschland</h1>
-  <p class="subtitle">Live-Wasserstände aller PEGELONLINE-Messstellen (WSV). Für bayerische Pegel an Donau &amp; Main zusätzlich echte Langzeit-Historie (GKD Bayern).</p>
+  <p class="subtitle">Wasserstände aller PEGELONLINE-Messstellen (WSV) — live und mit Historie seit 2000, für bayerische Donau-/Main-Pegel teils noch weiter zurück (GKD Bayern).</p>
 
   <div class="controls">
     <select id="waterSelect" aria-label="Fluss"></select>
@@ -277,18 +277,31 @@ function selectStation(uuid) {
   render();
 }
 
+const RANGE_DAYS = { "1y": 365, "5y": 365 * 5, "10y": 365 * 10, "50y": 365 * 50 };
+
+function availableHistoryDays() {
+  if (!currentStation || !currentStation.history) return 0;
+  const from = new Date(currentStation.history.from);
+  const to = new Date(currentStation.history.to);
+  return Math.round((to - from) / 86400000);
+}
+
 function updateRangeButtons() {
-  const hasHistory = !!(currentStation && currentStation.history);
+  const availableDays = availableHistoryDays();
   document.querySelectorAll(".range-btn").forEach(btn => {
     const r = btn.dataset.range;
-    const needsHistory = !LIVE_RANGES.has(r);
-    btn.disabled = needsHistory && !hasHistory;
+    if (LIVE_RANGES.has(r)) {
+      btn.disabled = false;
+      btn.title = "";
+    } else {
+      btn.disabled = availableDays < RANGE_DAYS[r];
+      btn.title = btn.disabled
+        ? `Für diesen Pegel liegen nur Daten seit ${currentStation.history ? currentStation.history.from : "-"} vor`
+        : "";
+    }
     btn.setAttribute("aria-pressed", r === currentRange ? "true" : "false");
-    btn.title = btn.disabled
-      ? "Nur für bayerische Pegel an Donau/Main verfügbar (GKD Bayern)"
-      : "";
   });
-  if (!hasHistory && !LIVE_RANGES.has(currentRange)) {
+  if (availableDays < RANGE_DAYS[currentRange] && !LIVE_RANGES.has(currentRange)) {
     currentRange = "7d";
     document.querySelectorAll(".range-btn").forEach(btn =>
       btn.setAttribute("aria-pressed", btn.dataset.range === "7d" ? "true" : "false"));
@@ -304,11 +317,11 @@ async function getLive(uuid) {
   } catch { return null; }
 }
 
-async function getHistory(gkdId) {
-  if (historyCache.has(gkdId)) return historyCache.get(gkdId);
+async function getHistory(uuid) {
+  if (historyCache.has(uuid)) return historyCache.get(uuid);
   try {
-    const data = await fetch(DATA + `history/${gkdId}.json`).then(r => r.ok ? r.json() : null);
-    historyCache.set(gkdId, data);
+    const data = await fetch(DATA + `history/${uuid}.json`).then(r => r.ok ? r.json() : null);
+    historyCache.set(uuid, data);
     return data;
   } catch { return null; }
 }
@@ -347,9 +360,9 @@ async function render() {
       values = live.v.slice(-points);
     }
   } else {
-    const hist = currentStation.history ? await getHistory(currentStation.history.gkd_id) : null;
+    const hist = currentStation.history ? await getHistory(currentStation.uuid) : null;
     if (hist && hist.d.length) {
-      const days = { "1y": 365, "5y": 365 * 5, "10y": 365 * 10, "50y": 365 * 50 }[currentRange];
+      const days = RANGE_DAYS[currentRange];
       const n = Math.min(days, hist.d.length);
       let d = hist.d.slice(-n), mean = hist.mean.slice(-n), max = hist.max.slice(-n), min = hist.min.slice(-n);
       if (n > 365 * 3) {
@@ -469,8 +482,8 @@ function renderStats(labels, values) {
   }
   const note = document.getElementById("rangeNote");
   note.textContent = currentStation.history
-    ? `Historische Daten (ab 1 Jahr) stammen vom Pegel ${titleCase(currentStation.name)} (GKD Bayern), verfügbar ${currentStation.history.from} – ${currentStation.history.to}. ★ = Pegel mit Langzeit-Historie.`
-    : "Für diesen Pegel stehen nur Live-Daten der letzten ~31 Tage zur Verfügung (PEGELONLINE/WSV). Lange Zeiträume sind aktuell nur für ausgewählte bayerische Pegel an Donau und Main freigeschaltet.";
+    ? `Historische Daten (ab 1 Jahr) stammen von PEGELONLINE (WSV), verfügbar ${currentStation.history.from} – ${currentStation.history.to}.`
+    : "Für diesen Pegel stehen nur Live-Daten der letzten ~31 Tage zur Verfügung (PEGELONLINE/WSV) — kein langfristiges Archiv gefunden.";
 }
 
 init();
