@@ -257,6 +257,11 @@ function titleCase(s) {
   return s.toLowerCase().replace(/(^|[\s-])\p{L}/gu, c => c.toUpperCase());
 }
 
+function historyMarker(s) {
+  if (!s.history) return "";
+  return s.history.from < "2000-01-01" ? " ★★" : " ★";
+}
+
 function populateStations(water) {
   const stationSelect = document.getElementById("stationSelect");
   stationSelect.innerHTML = "";
@@ -264,7 +269,7 @@ function populateStations(water) {
   for (const s of list) {
     const opt = document.createElement("option");
     opt.value = s.uuid;
-    opt.textContent = titleCase(s.name) + (s.history ? " ★" : "");
+    opt.textContent = titleCase(s.name) + historyMarker(s);
     stationSelect.appendChild(opt);
   }
   stationSelect.onchange = () => selectStation(stationSelect.value);
@@ -481,9 +486,16 @@ function renderStats(labels, values) {
     el.appendChild(div);
   }
   const note = document.getElementById("rangeNote");
-  note.textContent = currentStation.history
-    ? `Historische Daten (ab 1 Jahr) stammen von PEGELONLINE (WSV), verfügbar ${currentStation.history.from} – ${currentStation.history.to}.`
-    : "Für diesen Pegel stehen nur Live-Daten der letzten ~31 Tage zur Verfügung (PEGELONLINE/WSV) — kein langfristiges Archiv gefunden.";
+  if (!currentStation.history) {
+    note.textContent = "Für diesen Pegel stehen nur Live-Daten der letzten ~31 Tage zur Verfügung (PEGELONLINE/WSV) — kein langfristiges Archiv gefunden.";
+  } else {
+    const extended = currentStation.history.from < "2000-01-01";
+    const source = extended ? "PEGELONLINE (WSV) + GKD Bayern" : "PEGELONLINE (WSV)";
+    note.textContent = `Historische Daten (ab 1 Jahr) stammen von ${source}, verfügbar ${currentStation.history.from} – ${currentStation.history.to}. `
+      + (extended
+        ? "★★ = Historie reicht über das Jahr 2000 hinaus zurück."
+        : "★ = Historie seit 2000 verfügbar.");
+  }
 }
 
 init();
