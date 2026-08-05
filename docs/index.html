@@ -19,6 +19,7 @@
     --series-1: #2a78d6;
     --series-1-soft: rgba(42, 120, 214, 0.14);
     --accent-disabled: #cbc9c2;
+    --dot-prevyear: #e34948;
   }
   @media (prefers-color-scheme: dark) {
     :root:where(:not([data-theme="light"])) {
@@ -32,6 +33,7 @@
       --series-1: #3987e5;
       --series-1-soft: rgba(57, 135, 229, 0.18);
       --accent-disabled: #3a3a37;
+      --dot-prevyear: #e66767;
     }
   }
   :root[data-theme="dark"] {
@@ -45,6 +47,7 @@
     --series-1: #3987e5;
     --series-1-soft: rgba(57, 135, 229, 0.18);
     --accent-disabled: #3a3a37;
+    --dot-prevyear: #e66767;
   }
 
   * { box-sizing: border-box; }
@@ -263,6 +266,9 @@ let historyCache = new Map();
 let monthlyIndexCache = new Map();
 let currentMonthlyIndex = null;
 let lowsRequestId = 0;
+let prevYearDatasetStart = -1;
+let lastHoverIdx = undefined;
+const MAX_PREV_YEAR_DOTS = 6;
 
 const RANGE_LABELS = {
   "7d": "1 Woche", "31d": "1 Monat", "1y": "1 Jahr",
@@ -560,6 +566,31 @@ async function render() {
     fill: false,
   });
 
+  prevYearDatasetStart = isDateOnly && currentMonthlyIndex ? datasets.length : -1;
+  if (prevYearDatasetStart >= 0) {
+    const dotColor = getCss("--dot-prevyear");
+    for (let i = 0; i < MAX_PREV_YEAR_DOTS; i++) {
+      datasets.push({
+        label: "Vorjahresvergleich",
+        data: new Array(labels.length).fill(null),
+        showLine: false,
+        pointRadius: 5,
+        pointHoverRadius: 6,
+        pointBackgroundColor: dotColor,
+        pointBorderColor: dotColor,
+      });
+    }
+  }
+  lastHoverIdx = undefined;
+
+  let yBounds = {};
+  if (isDateOnly) {
+    const allVals = bandMax && bandMin ? values.concat(bandMax, bandMin) : values;
+    const lo = Math.min(...allVals), hi = Math.max(...allVals);
+    const pad = Math.max((hi - lo) * 0.08, 5);
+    yBounds = { min: Math.floor(lo - pad), max: Math.ceil(hi + pad) };
+  }
+
   const textSecondary = getCss("--text-secondary");
   const border = getCss("--border");
 
@@ -571,6 +602,11 @@ async function render() {
       responsive: true,
       maintainAspectRatio: false,
       interaction: { mode: "index", intersect: false },
+      onHover: (event, elements) => {
+        if (prevYearDatasetStart < 0) return;
+        const idx = elements.length ? elements[0].index : null;
+        updatePrevYearDots(idx);
+      },
       plugins: {
         legend: { display: false },
         tooltip: {
@@ -589,6 +625,7 @@ async function render() {
           grid: { color: border, display: false },
         },
         y: {
+          ...yBounds,
           ticks: { color: textSecondary },
           grid: { color: border },
           title: { display: true, text: "cm", color: textSecondary },
@@ -613,6 +650,27 @@ function getCss(varName) {
 
 const MONTH_NAMES = ["Januar", "Februar", "März", "April", "Mai", "Juni",
   "Juli", "August", "September", "Oktober", "November", "Dezember"];
+
+function updatePrevYearDots(idx) {
+  if (!chart || prevYearDatasetStart < 0 || idx === lastHoverIdx) return;
+  lastHoverIdx = idx;
+  const dsList = chart.data.datasets;
+  for (let i = 0; i < MAX_PREV_YEAR_DOTS; i++) {
+    dsList[prevYearDatasetStart + i].data.fill(null);
+  }
+  if (idx != null) {
+    const label = chart.data.labels[idx];
+    const month = label.slice(5, 7);
+    const hoveredYear = label.slice(0, 4);
+    const years = (currentMonthlyIndex.get(month) || [])
+      .filter(y => String(y.year) !== hoveredYear)
+      .slice(0, MAX_PREV_YEAR_DOTS);
+    years.forEach((y, i) => {
+      dsList[prevYearDatasetStart + i].data[idx] = y.mean;
+    });
+  }
+  chart.update("none");
+}
 
 function sameMonthPreviousYears(label, isDateOnly) {
   if (!isDateOnly || !currentMonthlyIndex || !label) return [];
