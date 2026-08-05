@@ -158,6 +158,54 @@
     padding: 40px 0;
     text-align: center;
   }
+  .lowsBox {
+    margin-top: 24px;
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px;
+  }
+  .lowsBox h2 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin: 0 0 4px;
+  }
+  .lowsBox .hint {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin: 0 0 12px;
+  }
+  .lowsList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .lowsList li {
+    background: var(--surface-1);
+    padding: 9px 12px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+  }
+  .lowsList .date {
+    color: var(--text-secondary);
+  }
+  .lowsList .value {
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+  .lowsList .ago {
+    color: var(--text-muted);
+    font-weight: 400;
+    margin-left: 6px;
+  }
   footer {
     margin-top: 40px;
     font-size: 0.75rem;
@@ -194,6 +242,12 @@
 
   <p class="note" id="rangeNote"></p>
 
+  <div class="lowsBox" id="lowsBox" style="display:none">
+    <h2>Wann war der Pegel schon mal so niedrig?</h2>
+    <p class="hint" id="lowsHint"></p>
+    <ol class="lowsList" id="lowsList"></ol>
+  </div>
+
   <footer id="footer"></footer>
 </div>
 
@@ -206,6 +260,9 @@ let currentRange = "7d";
 let chart = null;
 let liveCache = new Map();
 let historyCache = new Map();
+let monthlyIndexCache = new Map();
+let currentMonthlyIndex = null;
+let lowsRequestId = 0;
 
 const RANGE_LABELS = {
   "7d": "1 Woche", "31d": "1 Monat", "1y": "1 Jahr",
@@ -281,6 +338,7 @@ function selectStation(uuid) {
   currentStation = stations.find(s => s.uuid === uuid) || null;
   updateRangeButtons();
   render();
+  renderHistoricalLows();
 }
 
 const RANGE_DAYS = { "1y": 365, "5y": 365 * 5, "10y": 365 * 10, "50y": 365 * 50 };
@@ -334,6 +392,89 @@ async function getHistory(uuid) {
   } catch { return null; }
 }
 
+function buildMonthlyIndex(hist) {
+  const byMonth = new Map(); // "MM" -> Map(year -> {sum, n})
+  for (let i = 0; i < hist.d.length; i++) {
+    const month = hist.d[i].slice(5, 7);
+    const year = hist.d[i].slice(0, 4);
+    if (!byMonth.has(month)) byMonth.set(month, new Map());
+    const years = byMonth.get(month);
+    if (!years.has(year)) years.set(year, { sum: 0, n: 0 });
+    const e = years.get(year);
+    e.sum += hist.mean[i];
+    e.n++;
+  }
+  const index = new Map();
+  for (const [month, years] of byMonth) {
+    const arr = [...years.entries()].map(([year, e]) => ({
+      year: Number(year),
+      mean: Math.round((e.sum / e.n) * 10) / 10,
+    }));
+    arr.sort((a, b) => b.year - a.year);
+    index.set(month, arr);
+  }
+  return index;
+}
+
+function getMonthlyIndex(uuid, hist) {
+  if (!monthlyIndexCache.has(uuid)) monthlyIndexCache.set(uuid, buildMonthlyIndex(hist));
+  return monthlyIndexCache.get(uuid);
+}
+
+function findHistoricalLows(hist, currentValue, count = 5, minGapDays = 60) {
+  const points = [];
+  for (let i = 0; i < hist.d.length; i++) points.push({ date: hist.d[i], value: hist.min[i] });
+  let candidates = points.filter(p => p.value <= currentValue);
+  const belowCurrent = candidates.length > 0;
+  if (!candidates.length) candidates = points.slice();
+  candidates.sort((a, b) => a.value - b.value);
+  const picked = [];
+  for (const c of candidates) {
+    if (picked.length >= count) break;
+    const t = new Date(c.date).getTime();
+    if (picked.some(p => Math.abs(new Date(p.date).getTime() - t) < minGapDays * 86400000)) continue;
+    picked.push(c);
+  }
+  return { picked, belowCurrent };
+}
+
+async function renderHistoricalLows() {
+  const box = document.getElementById("lowsBox");
+  const hint = document.getElementById("lowsHint");
+  const list = document.getElementById("lowsList");
+  const myRequestId = ++lowsRequestId;
+  if (!currentStation || !currentStation.history) {
+    box.style.display = "none";
+    return;
+  }
+  const [live, hist] = await Promise.all([
+    getLive(currentStation.uuid),
+    getHistory(currentStation.uuid),
+  ]);
+  if (myRequestId !== lowsRequestId) return; // station changed while loading
+  if (!hist || !hist.d.length || !live || !live.v.length) {
+    box.style.display = "none";
+    return;
+  }
+  const currentValue = live.v[live.v.length - 1];
+  const { picked, belowCurrent } = findHistoricalLows(hist, currentValue);
+  if (!picked.length) {
+    box.style.display = "none";
+    return;
+  }
+  box.style.display = "block";
+  hint.textContent = belowCurrent
+    ? `Aktueller Stand: ${currentValue.toFixed(0)} cm. Historische Tage, an denen der Pegel ebenso niedrig oder niedriger war:`
+    : `Aktueller Stand: ${currentValue.toFixed(0)} cm — das ist niedriger als alles bisher Gemessene. Die niedrigsten historischen Tage:`;
+  const now = Date.now();
+  list.innerHTML = picked.map(p => {
+    const d = new Date(p.date);
+    const years = Math.floor((now - d.getTime()) / (365.25 * 86400000));
+    const ago = years > 0 ? `vor ${years} ${years === 1 ? "Jahr" : "Jahren"}` : "in diesem Jahr";
+    return `<li><span class="date">${d.toLocaleDateString("de-DE", { dateStyle: "medium" })} <span class="ago">${ago}</span></span><span class="value">${p.value.toFixed(0)} cm</span></li>`;
+  }).join("");
+}
+
 function monthlyAggregate(dates, mean, max, min) {
   const buckets = new Map();
   for (let i = 0; i < dates.length; i++) {
@@ -359,6 +500,7 @@ async function render() {
   if (!currentStation) return;
 
   let labels = [], values = [], bandMax = null, bandMin = null;
+  currentMonthlyIndex = null;
 
   if (LIVE_RANGES.has(currentRange)) {
     const live = await getLive(currentStation.uuid);
@@ -370,6 +512,7 @@ async function render() {
   } else {
     const hist = currentStation.history ? await getHistory(currentStation.uuid) : null;
     if (hist && hist.d.length) {
+      currentMonthlyIndex = getMonthlyIndex(currentStation.uuid, hist);
       const n = currentRange === "all" ? hist.d.length : Math.min(RANGE_DAYS[currentRange], hist.d.length);
       let d = hist.d.slice(-n), mean = hist.mean.slice(-n), max = hist.max.slice(-n), min = hist.min.slice(-n);
       if (n > 365 * 3) {
@@ -435,6 +578,7 @@ async function render() {
             title: (items) => formatLabel(items[0].label, isDateOnly),
             label: (item) => item.dataset.label === "Wasserstand [cm]"
               ? `${item.formattedValue} cm` : null,
+            afterBody: (items) => sameMonthPreviousYears(items[0]?.label, isDateOnly),
           },
           filter: (item) => item.dataset.label === "Wasserstand [cm]",
         },
@@ -465,6 +609,22 @@ function formatLabel(label, isDateOnly) {
 
 function getCss(varName) {
   return getComputedStyle(document.body).getPropertyValue(varName).trim() || "#2a78d6";
+}
+
+const MONTH_NAMES = ["Januar", "Februar", "März", "April", "Mai", "Juni",
+  "Juli", "August", "September", "Oktober", "November", "Dezember"];
+
+function sameMonthPreviousYears(label, isDateOnly) {
+  if (!isDateOnly || !currentMonthlyIndex || !label) return [];
+  const month = label.slice(5, 7);
+  const hoveredYear = label.slice(0, 4);
+  const years = currentMonthlyIndex.get(month) || [];
+  const others = years.filter(y => String(y.year) !== hoveredYear);
+  if (!others.length) return [];
+  const monthName = MONTH_NAMES[Number(month) - 1];
+  const lines = [`${monthName} in Vorjahren:`];
+  for (const y of others.slice(0, 7)) lines.push(`  ${y.year}: ${y.mean.toFixed(0)} cm`);
+  return lines;
 }
 
 function renderStats(labels, values) {
