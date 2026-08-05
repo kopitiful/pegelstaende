@@ -417,7 +417,6 @@ let currentMonthlyIndex = null;
 let lowsRequestId = 0;
 let prevYearDatasetStart = -1;
 let lastHoverIdx = undefined;
-const MAX_PREV_YEAR_DOTS = 6;
 
 const RANGE_LABELS = {
   "7d": "1 Woche", "31d": "1 Monat", "1y": "1 Jahr",
@@ -715,20 +714,18 @@ async function render() {
     fill: false,
   });
 
-  prevYearDatasetStart = isDateOnly && currentMonthlyIndex ? datasets.length : -1;
+  prevYearDatasetStart = isDateOnly ? datasets.length : -1;
   if (prevYearDatasetStart >= 0) {
     const dotColor = getCss("--dot-prevyear");
-    for (let i = 0; i < MAX_PREV_YEAR_DOTS; i++) {
-      datasets.push({
-        label: "Vorjahresvergleich",
-        data: new Array(labels.length).fill(null),
-        showLine: false,
-        pointRadius: 5,
-        pointHoverRadius: 6,
-        pointBackgroundColor: dotColor,
-        pointBorderColor: dotColor,
-      });
-    }
+    datasets.push({
+      label: "Vorjahresvergleich",
+      data: new Array(labels.length).fill(null),
+      showLine: false,
+      pointRadius: 5,
+      pointHoverRadius: 6,
+      pointBackgroundColor: dotColor,
+      pointBorderColor: dotColor,
+    });
   }
   lastHoverIdx = undefined;
 
@@ -754,7 +751,7 @@ async function render() {
       onHover: (event, elements) => {
         if (prevYearDatasetStart < 0) return;
         const idx = elements.length ? elements[0].index : null;
-        updatePrevYearDots(idx);
+        updateSameMonthDots(idx, labels, values);
       },
       plugins: {
         legend: { display: false },
@@ -800,23 +797,16 @@ function getCss(varName) {
 const MONTH_NAMES = ["Januar", "Februar", "März", "April", "Mai", "Juni",
   "Juli", "August", "September", "Oktober", "November", "Dezember"];
 
-function updatePrevYearDots(idx) {
+function updateSameMonthDots(idx, labels, values) {
   if (!chart || prevYearDatasetStart < 0 || idx === lastHoverIdx) return;
   lastHoverIdx = idx;
-  const dsList = chart.data.datasets;
-  for (let i = 0; i < MAX_PREV_YEAR_DOTS; i++) {
-    dsList[prevYearDatasetStart + i].data.fill(null);
-  }
+  const ds = chart.data.datasets[prevYearDatasetStart];
+  ds.data.fill(null);
   if (idx != null) {
-    const label = chart.data.labels[idx];
-    const month = label.slice(5, 7);
-    const hoveredYear = label.slice(0, 4);
-    const years = (currentMonthlyIndex.get(month) || [])
-      .filter(y => String(y.year) !== hoveredYear)
-      .slice(0, MAX_PREV_YEAR_DOTS);
-    years.forEach((y, i) => {
-      dsList[prevYearDatasetStart + i].data[idx] = y.mean;
-    });
+    const month = labels[idx].slice(5, 7);
+    for (let i = 0; i < labels.length; i++) {
+      if (i !== idx && labels[i].slice(5, 7) === month) ds.data[i] = values[i];
+    }
   }
   chart.update("none");
 }
