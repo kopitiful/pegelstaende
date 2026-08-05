@@ -182,6 +182,7 @@
     <button class="range-btn" data-range="5y">5 Jahre</button>
     <button class="range-btn" data-range="10y">10 Jahre</button>
     <button class="range-btn" data-range="50y">50 Jahre</button>
+    <button class="range-btn" data-range="all">Seit Beginn</button>
   </div>
 
   <div class="stats" id="stats"></div>
@@ -208,7 +209,7 @@ let historyCache = new Map();
 
 const RANGE_LABELS = {
   "7d": "1 Woche", "31d": "1 Monat", "1y": "1 Jahr",
-  "5y": "5 Jahre", "10y": "10 Jahre", "50y": "50 Jahre",
+  "5y": "5 Jahre", "10y": "10 Jahre", "50y": "50 Jahre", "all": "Seit Beginn",
 };
 const LIVE_RANGES = new Set(["7d", "31d"]);
 
@@ -291,22 +292,22 @@ function availableHistoryDays() {
   return Math.round((to - from) / 86400000);
 }
 
+function rangeFits(r, availableDays) {
+  if (LIVE_RANGES.has(r)) return true;
+  if (r === "all") return !!(currentStation && currentStation.history);
+  return availableDays >= RANGE_DAYS[r];
+}
+
 function updateRangeButtons() {
   const availableDays = availableHistoryDays();
   document.querySelectorAll(".range-btn").forEach(btn => {
     const r = btn.dataset.range;
-    if (LIVE_RANGES.has(r)) {
-      btn.disabled = false;
-      btn.title = "";
-    } else {
-      btn.disabled = availableDays < RANGE_DAYS[r];
-      btn.title = btn.disabled
-        ? `Für diesen Pegel liegen nur Daten seit ${currentStation.history ? currentStation.history.from : "-"} vor`
-        : "";
-    }
+    const fits = rangeFits(r, availableDays);
+    btn.disabled = !fits;
+    btn.title = fits ? "" : `Für diesen Pegel liegen nur Daten seit ${currentStation.history ? currentStation.history.from : "-"} vor`;
     btn.setAttribute("aria-pressed", r === currentRange ? "true" : "false");
   });
-  if (availableDays < RANGE_DAYS[currentRange] && !LIVE_RANGES.has(currentRange)) {
+  if (!rangeFits(currentRange, availableDays)) {
     currentRange = "7d";
     document.querySelectorAll(".range-btn").forEach(btn =>
       btn.setAttribute("aria-pressed", btn.dataset.range === "7d" ? "true" : "false"));
@@ -367,8 +368,7 @@ async function render() {
   } else {
     const hist = currentStation.history ? await getHistory(currentStation.uuid) : null;
     if (hist && hist.d.length) {
-      const days = RANGE_DAYS[currentRange];
-      const n = Math.min(days, hist.d.length);
+      const n = currentRange === "all" ? hist.d.length : Math.min(RANGE_DAYS[currentRange], hist.d.length);
       let d = hist.d.slice(-n), mean = hist.mean.slice(-n), max = hist.max.slice(-n), min = hist.min.slice(-n);
       if (n > 365 * 3) {
         const agg = monthlyAggregate(d, mean, max, min);
