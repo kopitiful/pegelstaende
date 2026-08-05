@@ -3,10 +3,82 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pegelstände Deutschland</title>
-<meta name="description" content="Wasserstände aller PEGELONLINE-Messstellen in Deutschland, live und mit Historie seit 2000.">
-<link rel="icon" href="data:,">
+<title>Pegelstände Deutschland – Live-Wasserstände & Historie aller Flüsse</title>
+<meta name="description" content="Live-Pegelstände und historische Wasserstände von 787 Messstellen an Rhein, Elbe, Donau, Weser, Mosel und allen deutschen Bundeswasserstraßen. Zeitreihen bis zu 125 Jahre zurück, Vergleich mit Vorjahren und historischen Niedrigwasserständen.">
+<meta name="keywords" content="Pegelstand, Wasserstand, Pegel, Rhein Pegel, Elbe Pegel, Donau Pegel, Hochwasser, Niedrigwasser, PEGELONLINE, Wasserstraßen- und Schifffahrtsverwaltung">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Wasserstraßen- und Schifffahrtsverwaltung des Bundes (WSV), Bayerisches Landesamt für Umwelt, LUBW Baden-Württemberg">
+<link rel="canonical" href="https://pegelstaende.makeand.run/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pegelstände Deutschland">
+<meta property="og:title" content="Pegelstände Deutschland – Live-Wasserstände & Historie aller Flüsse">
+<meta property="og:description" content="Live-Pegelstände und historische Wasserstände von 787 Messstellen an Rhein, Elbe, Donau, Weser, Mosel und allen deutschen Bundeswasserstraßen. Zeitreihen bis zu 125 Jahre zurück.">
+<meta property="og:url" content="https://pegelstaende.makeand.run/">
+<meta property="og:locale" content="de_DE">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Pegelstände Deutschland – Live-Wasserstände & Historie aller Flüsse">
+<meta name="twitter:description" content="Live-Pegelstände und historische Wasserstände von 787 Messstellen an deutschen Flüssen, Zeitreihen bis zu 125 Jahre zurück.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%8A%3C/text%3E%3C/svg%3E">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "Pegelstände Deutschland",
+      "url": "https://pegelstaende.makeand.run/",
+      "description": "Live-Wasserstände und historische Zeitreihen aller PEGELONLINE-Messstellen an deutschen Bundeswasserstraßen.",
+      "inLanguage": "de-DE"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Pegelstände Deutschland – Wasserstandsdaten",
+      "description": "Live-Wasserstände (15-Minuten-Werte, letzte 31 Tage) und historische Tagesmittelwerte (seit 2000, bei bayerischen Donau- und Main-Pegeln teils seit 1901) von 787 Messstellen an deutschen Bundeswasserstraßen wie Rhein, Elbe, Donau, Weser, Mosel und Oder.",
+      "url": "https://pegelstaende.makeand.run/",
+      "keywords": ["Pegelstand", "Wasserstand", "Rhein", "Elbe", "Donau", "Hochwasser", "Niedrigwasser", "PEGELONLINE"],
+      "creator": [
+        { "@type": "Organization", "name": "Wasserstraßen- und Schifffahrtsverwaltung des Bundes (WSV)", "url": "https://www.pegelonline.wsv.de" },
+        { "@type": "Organization", "name": "Bayerisches Landesamt für Umwelt (GKD Bayern)", "url": "https://www.gkd.bayern.de" }
+      ],
+      "temporalCoverage": "1901/..",
+      "spatialCoverage": { "@type": "Place", "name": "Deutschland" },
+      "distribution": {
+        "@type": "DataDownload",
+        "encodingFormat": "application/json",
+        "contentUrl": "https://pegelstaende.makeand.run/data/stations.json"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Wie aktuell sind die Pegelstände auf dieser Seite?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Die Live-Daten werden täglich aktualisiert und stammen direkt von PEGELONLINE (WSV), meist mit 15-Minuten-Auflösung für die letzten rund 31 Tage." }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie weit reicht die historische Wasserstandsdaten zurück?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Für die meisten der 787 Messstellen liegt Historie seit dem Jahr 2000 vor (PEGELONLINE-Archiv). Ausgewählte bayerische Pegel an Donau und Main reichen dank GKD Bayern bis zu 125 Jahre zurück, teils bis 1901. Einzelne extern eingespeiste Stationen wie Konstanz-Rhein haben zusätzlich Landesdaten (LUBW), hier bis 1984." }
+        },
+        {
+          "@type": "Question",
+          "name": "Woher stammen die Pegeldaten?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Primärquelle ist PEGELONLINE, der offizielle Wasserstandsdienst der Wasserstraßen- und Schifffahrtsverwaltung des Bundes (WSV). Ergänzend werden Daten des Bayerischen Landesamts für Umwelt (GKD Bayern) und der LUBW Baden-Württemberg eingebunden." }
+        },
+        {
+          "@type": "Question",
+          "name": "Welche Flüsse und Pegel sind abgedeckt?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Alle 787 PEGELONLINE-Messstellen an deutschen Bundeswasserstraßen, darunter Rhein, Elbe, Donau, Weser, Mosel, Oder, Saar, Neckar, Main und zahlreiche Nebenflüsse und Kanäle." }
+        }
+      ]
+    }
+  ]
+}
+</script>
 <style>
   :root {
     color-scheme: light;
@@ -214,12 +286,59 @@
     font-size: 0.75rem;
     color: var(--text-muted);
   }
+  .about {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+  }
+  .about h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 10px;
+  }
+  .about p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0 0 16px;
+    max-width: 68ch;
+  }
+  .faq details {
+    border-top: 1px solid var(--border);
+    padding: 10px 0;
+  }
+  .faq details:last-child { border-bottom: 1px solid var(--border); }
+  .faq summary {
+    font-size: 0.88rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--text-primary);
+  }
+  .faq summary::marker { color: var(--text-muted); }
+  .faq p {
+    font-size: 0.83rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 8px 0 2px;
+    max-width: 68ch;
+  }
+  .noscript-note {
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+  }
 </style>
 </head>
 <body>
 <div class="wrap">
+  <noscript>
+    <p class="noscript-note">Dieses Dashboard benötigt JavaScript für die interaktiven Diagramme. Die Rohdaten sind auch direkt als JSON abrufbar: <a href="data/stations.json">Stationsliste</a>.</p>
+  </noscript>
   <h1>Pegelstände Deutschland</h1>
-  <p class="subtitle">Wasserstände aller PEGELONLINE-Messstellen (WSV) — live und mit Historie seit 2000, für bayerische Donau-/Main-Pegel teils noch weiter zurück (GKD Bayern).</p>
+  <p class="subtitle">Live-Wasserstände und historische Zeitreihen aller 787 PEGELONLINE-Messstellen (WSV) an Rhein, Elbe, Donau, Weser, Mosel und allen deutschen Bundeswasserstraßen — live und mit Historie seit 2000, für bayerische Donau-/Main-Pegel teils noch weiter zurück (GKD Bayern).</p>
 
   <div class="controls">
     <select id="waterSelect" aria-label="Fluss"></select>
@@ -250,6 +369,36 @@
     <p class="hint" id="lowsHint"></p>
     <ol class="lowsList" id="lowsList"></ol>
   </div>
+
+  <section class="about">
+    <h2>Über dieses Dashboard</h2>
+    <p>
+      Pegelstände Deutschland zeigt Live-Wasserstände und historische Zeitreihen aller 787 Messstellen an
+      deutschen Bundeswasserstraßen — darunter Rhein, Elbe, Donau, Weser, Mosel, Oder, Saar, Neckar und Main.
+      Primärquelle ist PEGELONLINE, der offizielle Wasserstandsdienst der Wasserstraßen- und Schifffahrtsverwaltung
+      des Bundes (WSV). Für ausgewählte bayerische Donau- und Main-Pegel wird die Historie über das Bayerische
+      Landesamt für Umwelt (GKD Bayern) bis zu 125 Jahre zurück erweitert, für einzelne extern eingespeiste
+      Stationen wie Konstanz-Rhein zusätzlich über die LUBW Baden-Württemberg.
+    </p>
+    <div class="faq">
+      <details>
+        <summary>Wie aktuell sind die Pegelstände?</summary>
+        <p>Die Live-Daten werden täglich aktualisiert und stammen direkt von PEGELONLINE, meist mit 15-Minuten-Auflösung für die letzten rund 31 Tage.</p>
+      </details>
+      <details>
+        <summary>Wie weit reicht die historische Wasserstandsdaten zurück?</summary>
+        <p>Für die meisten der 787 Messstellen liegt Historie seit dem Jahr 2000 vor. Ausgewählte bayerische Pegel an Donau und Main (markiert mit ★★) reichen dank GKD Bayern bis zu 125 Jahre zurück, teils bis 1901.</p>
+      </details>
+      <details>
+        <summary>Woher stammen die Pegeldaten?</summary>
+        <p>Primärquelle ist PEGELONLINE (WSV). Ergänzend werden Daten des Bayerischen Landesamts für Umwelt (GKD Bayern, CC BY 4.0) und der LUBW Baden-Württemberg eingebunden.</p>
+      </details>
+      <details>
+        <summary>Welche Flüsse und Pegel sind abgedeckt?</summary>
+        <p>Alle 787 PEGELONLINE-Messstellen an deutschen Bundeswasserstraßen, darunter Rhein, Elbe, Donau, Weser, Mosel, Oder, Saar, Neckar, Main und zahlreiche Nebenflüsse und Kanäle.</p>
+      </details>
+    </div>
+  </section>
 
   <footer id="footer"></footer>
 </div>
