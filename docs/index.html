@@ -304,7 +304,9 @@ function updateRangeButtons() {
     const r = btn.dataset.range;
     const fits = rangeFits(r, availableDays);
     btn.disabled = !fits;
-    btn.title = fits ? "" : `Für diesen Pegel liegen nur Daten seit ${currentStation.history ? currentStation.history.from : "-"} vor`;
+    btn.title = fits ? "" : (currentStation.history
+      ? `Für diesen Pegel liegen nur Daten seit ${currentStation.history.from} vor`
+      : "Für diesen Pegel führt PEGELONLINE kein langfristiges Archiv (nur Live-Daten der letzten ~31 Tage)");
     btn.setAttribute("aria-pressed", r === currentRange ? "true" : "false");
   });
   if (!rangeFits(currentRange, availableDays)) {
@@ -487,7 +489,7 @@ function renderStats(labels, values) {
   }
   const note = document.getElementById("rangeNote");
   if (!currentStation.history) {
-    note.textContent = "Für diesen Pegel stehen nur Live-Daten der letzten ~31 Tage zur Verfügung (PEGELONLINE/WSV) — kein langfristiges Archiv gefunden.";
+    note.textContent = "Für diesen Pegel führt PEGELONLINE kein langfristiges Archiv (oft bei extern eingespeisten Messstellen, z.B. von Landesbehörden statt WSV) — das heißt nicht, dass der Pegel erst kürzlich in Betrieb genommen wurde, nur dass rückwirkende Daten hier nicht verfügbar sind. Live-Daten der letzten ~31 Tage werden trotzdem angezeigt.";
   } else {
     const extended = currentStation.history.from < "2000-01-01";
     const source = extended ? "PEGELONLINE (WSV) + GKD Bayern" : "PEGELONLINE (WSV)";
