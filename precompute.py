@@ -40,6 +40,7 @@ PEGEL_SITE_BASE = "https://www.pegelonline.wsv.de"
 GKD_ENQUEUE_URL = "https://www.gkd.bayern.de/de/downloadcenter/enqueue_download"
 
 MATCHES_FILE = ROOT / "cache" / "matches_downloadable.json"
+LUBW_MANUAL_DIR = ROOT / "cache" / "lubw_manual"
 
 HISTORY_START = "2000-01-01T01:00:00+01"
 
@@ -402,6 +403,22 @@ def merge_extension(pegelonline_series, gkd_series):
     }
 
 
+def fetch_lubw_manual_extensions():
+    """Load hand-exported LUBW/UDO series for stations with no PEGELONLINE
+    legacy archive (see cache/lubw_manual/README.md)."""
+    if not LUBW_MANUAL_DIR.exists():
+        return {}
+    results = {}
+    for path in LUBW_MANUAL_DIR.glob("*.json"):
+        uuid = path.stem
+        series = json.loads(path.read_text())
+        if series.get("d"):
+            results[uuid] = series
+    if results:
+        print(f"Loaded {len(results)} manual LUBW extension(s): {list(results)}", file=sys.stderr)
+    return results
+
+
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
@@ -449,6 +466,7 @@ def main():
 
     matches = json.loads(MATCHES_FILE.read_text()) if MATCHES_FILE.exists() else []
     gkd_extensions = fetch_gkd_extensions(matches)
+    lubw_extensions = fetch_lubw_manual_extensions()
 
     pegelonline_history = fetch_all_pegelonline_history(stations)
 
@@ -461,12 +479,13 @@ def main():
     for s in stations:
         uuid = s["uuid"]
         series = merge_extension(pegelonline_history.get(uuid), gkd_extensions.get(uuid))
+        series = merge_extension(series, lubw_extensions.get(uuid))
         hist_meta = None
         if series and series["d"]:
             (HISTORY_DIR / f"{uuid}.json").write_text(json.dumps(series, separators=(",", ":")))
             hist_meta = {"from": series["d"][0], "to": series["d"][-1]}
             n_with_history += 1
-            if uuid in gkd_extensions:
+            if uuid in gkd_extensions or uuid in lubw_extensions:
                 n_extended += 1
         out_stations.append({
             "uuid": uuid,
