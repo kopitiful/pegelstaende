@@ -40,7 +40,19 @@ jobs:
           git add docs/data
           if git diff --cached --quiet; then
             echo "No changes"
-          else
-            git commit -m "Update Pegelstände-Daten"
-            git push
+            exit 0
           fi
+          git commit -m "Update Pegelstände-Daten"
+
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              exit 0
+            fi
+            echo "Push rejected (attempt $attempt), rebasing onto latest main..."
+            git fetch origin main
+            git rebase origin/main
+            sleep $((attempt * 5))
+          done
+
+          echo "Push failed after retries"
+          exit 1
