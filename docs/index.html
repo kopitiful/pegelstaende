@@ -134,6 +134,13 @@
     margin: 0 auto;
     padding: 32px 20px 60px;
   }
+  .header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
   h1 {
     font-size: 1.5rem;
     font-weight: 600;
@@ -143,6 +150,25 @@
     color: var(--text-secondary);
     font-size: 0.9rem;
     margin: 0 0 28px;
+    max-width: 68ch;
+  }
+  .update-badge {
+    flex-shrink: 0;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 6px 12px;
+    white-space: nowrap;
+  }
+  .freshness {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin: -8px 0 18px;
+  }
+  .freshness.stale {
+    color: var(--dot-prevyear);
   }
   .controls {
     display: flex;
@@ -337,13 +363,20 @@
   <noscript>
     <p class="noscript-note">Dieses Dashboard benötigt JavaScript für die interaktiven Diagramme. Die Rohdaten sind auch direkt als JSON abrufbar: <a href="data/stations.json">Stationsliste</a>.</p>
   </noscript>
-  <h1>Pegelstände Deutschland</h1>
-  <p class="subtitle">Live-Wasserstände und historische Zeitreihen aller 787 PEGELONLINE-Messstellen (WSV) an Rhein, Elbe, Donau, Weser, Mosel und allen deutschen Bundeswasserstraßen — live und mit Historie seit 2000, für bayerische Donau-/Main-Pegel teils noch weiter zurück (GKD Bayern).</p>
+  <div class="header-row">
+    <div>
+      <h1>Pegelstände Deutschland</h1>
+      <p class="subtitle">Live-Wasserstände und historische Zeitreihen aller 787 PEGELONLINE-Messstellen (WSV) an Rhein, Elbe, Donau, Weser, Mosel und allen deutschen Bundeswasserstraßen — live und mit Historie seit 2000, für bayerische Donau-/Main-Pegel teils noch weiter zurück (GKD Bayern).</p>
+    </div>
+    <div class="update-badge" id="updateBadge"></div>
+  </div>
 
   <div class="controls">
     <select id="waterSelect" aria-label="Fluss"></select>
     <select id="stationSelect" aria-label="Pegel"></select>
   </div>
+
+  <p class="freshness" id="freshness"></p>
 
   <div class="ranges" id="ranges">
     <button class="range-btn" data-range="7d">1 Woche</button>
@@ -457,11 +490,13 @@ async function init() {
     render();
   });
 
+  document.getElementById("footer").textContent =
+    "Quellen: PEGELONLINE (WSV), GKD Bayern (Bayerisches Landesamt für Umwelt, CC BY 4.0)";
+
   if (meta && meta.updated) {
     const d = new Date(meta.updated);
-    document.getElementById("footer").textContent =
-      "Daten aktualisiert: " + d.toLocaleString("de-DE", { dateStyle: "medium", timeStyle: "short" }) +
-      " · Quellen: PEGELONLINE (WSV), GKD Bayern (Bayerisches Landesamt für Umwelt, CC BY 4.0)";
+    document.getElementById("updateBadge").textContent =
+      "Aktualisiert: " + d.toLocaleString("de-DE", { dateStyle: "medium", timeStyle: "short" });
   }
 }
 
@@ -493,6 +528,36 @@ function selectStation(uuid) {
   updateRangeButtons();
   render();
   renderHistoricalLows();
+  renderFreshness();
+}
+
+function relativeTime(dateIso) {
+  const diffMs = Date.now() - new Date(dateIso).getTime();
+  const mins = Math.round(diffMs / 60000);
+  if (mins < 60) return `vor ${mins} ${mins === 1 ? "Minute" : "Minuten"}`;
+  const hours = Math.round(mins / 60);
+  if (hours < 48) return `vor ${hours} ${hours === 1 ? "Stunde" : "Stunden"}`;
+  const days = Math.round(hours / 24);
+  return `vor ${days} ${days === 1 ? "Tag" : "Tagen"}`;
+}
+
+async function renderFreshness() {
+  const el = document.getElementById("freshness");
+  const myStation = currentStation;
+  if (!myStation) { el.textContent = ""; return; }
+  const live = await getLive(myStation.uuid);
+  if (myStation !== currentStation) return; // station changed while loading
+  el.classList.remove("stale");
+  if (!live || !live.t.length) {
+    el.textContent = "Keine Live-Daten für diesen Pegel verfügbar.";
+    return;
+  }
+  const last = live.t[live.t.length - 1];
+  const d = new Date(last);
+  const stale = Date.now() - d.getTime() > 36 * 3600 * 1000;
+  el.textContent = `Letzter Live-Messwert: ${d.toLocaleString("de-DE", { dateStyle: "medium", timeStyle: "short" })} (${relativeTime(last)})`
+    + (stale ? " — ungewöhnlich lange kein neuer Messwert" : "");
+  if (stale) el.classList.add("stale");
 }
 
 const RANGE_DAYS = { "1y": 365, "5y": 365 * 5, "10y": 365 * 10, "50y": 365 * 50 };
