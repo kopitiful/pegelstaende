@@ -553,9 +553,10 @@ async function renderFreshness() {
     return;
   }
   const last = live.t[live.t.length - 1];
+  const lastValue = live.v[live.v.length - 1];
   const d = new Date(last);
   const stale = Date.now() - d.getTime() > 36 * 3600 * 1000;
-  el.textContent = `Letzter Live-Messwert: ${d.toLocaleString("de-DE", { dateStyle: "medium", timeStyle: "short" })} (${relativeTime(last)})`
+  el.textContent = `Letzter Messwert: ${lastValue.toFixed(0)} cm am ${d.toLocaleString("de-DE", { dateStyle: "medium", timeStyle: "short" })} (${relativeTime(last)})`
     + (stale ? " — ungewöhnlich lange kein neuer Messwert" : "");
   if (stale) el.classList.add("stale");
 }
