@@ -472,10 +472,20 @@ def main():
 
     fetch_all_live(stations)
 
+    # If a station's fetch fails this run (e.g. an upstream source is down),
+    # keep whatever history it already has on disk instead of wiping it out -
+    # stale data beats no data.
+    existing = {}
+    stations_file = DATA_DIR / "stations.json"
+    if stations_file.exists():
+        existing = {s["uuid"]: s for s in json.loads(stations_file.read_text())}
+
     HISTORY_DIR.mkdir(parents=True, exist_ok=True)
     out_stations = []
     n_with_history = 0
     n_extended = 0
+    n_fresh = 0
+    n_kept_stale = 0
     for s in stations:
         uuid = s["uuid"]
         series = merge_extension(pegelonline_history.get(uuid), gkd_extensions.get(uuid))
@@ -484,9 +494,16 @@ def main():
         if series and series["d"]:
             (HISTORY_DIR / f"{uuid}.json").write_text(json.dumps(series, separators=(",", ":")))
             hist_meta = {"from": series["d"][0], "to": series["d"][-1]}
-            n_with_history += 1
+            n_fresh += 1
             if uuid in gkd_extensions or uuid in lubw_extensions:
                 n_extended += 1
+        else:
+            prev_meta = existing.get(uuid, {}).get("history")
+            if prev_meta and (HISTORY_DIR / f"{uuid}.json").exists():
+                hist_meta = prev_meta
+                n_kept_stale += 1
+        if hist_meta:
+            n_with_history += 1
         out_stations.append({
             "uuid": uuid,
             "name": s["shortname"],
@@ -508,7 +525,8 @@ def main():
     )
     print(
         f"Done. {len(out_stations)} stations, {n_with_history} with long-term history "
-        f"({n_extended} extended further back via GKD Bayern).",
+        f"({n_fresh} fresh, {n_kept_stale} kept from a previous run, {n_extended} extended "
+        f"further back via GKD Bayern).",
         file=sys.stderr,
     )
 
